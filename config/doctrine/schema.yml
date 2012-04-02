@@ -1,0 +1,29 @@
+Post:
+  actAs: { Timestampable: ~ }
+  columns:
+    title:          { type: string(255), notnull: true }
+    content_path1:  { type: string(1024), notnull: true }
+    content_path2:  { type: string(10240), notnull: true }
+
+Tag:
+  columns:
+    post_id: { type: integer, notnull: true }
+    word:    { type: string(128), notnull: true }
+  relations:
+    Post: { onDelete: CASCADE, local: post_id, foreign: id, foreignAlias: Tag }
+    
+User:
+  columns:
+    login: { type: string(16), notnull: true, unique: true }
+    password: { type: string(32), notnull: true, unique: true }
+    email: { type: string(255), notnull: true, unique: true }
+    
+Comment:
+  actAs: { Timestampable: ~ }
+  columns:
+    post_id: { type: integer, notnull: true }
+    user_id: { type: integer, notnull: true }
+    text:    { type: string(1024), notnull: true }
+  relations:
+    Post: { onDelete: CASCADE, local: post_id, foreign: id }
+    User: { onDelete: CASCADE, local: user_id, foreign: id }

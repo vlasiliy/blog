@@ -1,0 +1,24 @@
+post
+    id
+    title
+    content_path1
+    content_path2
+    date_create
+    date_update
+
+tag
+    id
+    post_id
+    word
+
+user
+    id
+    login
+    password
+    mail
+
+comment
+    id
+    post_id
+    user_id
+    text
