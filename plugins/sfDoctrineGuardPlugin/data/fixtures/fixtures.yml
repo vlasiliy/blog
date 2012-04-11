@@ -1,0 +1,38 @@
+sfGuardUser:
+  User_admin:
+    first_name:     Сергей
+    last_name:      Власов
+    email_address:  vlasiliy@gmail.com
+    username:       admin
+    password:       admin
+    is_super_admin: true
+    Groups:         [Group_admin]
+    
+  User_tester:
+    first_name:     Василий
+    last_name:      Пупкин
+    email_address:  vasa@gmail.com
+    username:       vasa
+    password:       admin
+    is_super_admin: true
+    Groups:         [Group_admin]
+
+sfGuardGroup:
+  Group_admin:
+    name:           admin
+    description:    Administrator group
+    Permissions:    [Permission_admin]
+
+  Group_user:
+    name:           user
+    description:    User group
+    Permissions:    [Permission_user]
+    
+sfGuardPermission:
+  Permission_admin:
+    name:           admin
+    description:    Administrator permission
+    
+  Permission_user:
+    name:           user
+    description:    User permission

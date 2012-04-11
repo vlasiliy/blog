@@ -20,4 +20,4 @@ Comment:
     text:    { type: string(1024), notnull: true }
   relations:
     Post: { onDelete: CASCADE, local: post_id, foreign: id }
-    User: { onDelete: CASCADE, local: user_id, foreign: id }
+    sfGuardUser: { onDelete: CASCADE, local: sf_guard_user_id, foreign: id }

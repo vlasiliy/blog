@@ -1,0 +1,10 @@
+Comment:
+  c1:
+    post_id: 1
+    sf_guard_user_id: 2
+    text: Привет! Это мой первый коментарий для проверки работоспособности...
+    
+  c2:
+    post_id: 1
+    sf_guard_user_id: 2
+    text: А єто второй... :)

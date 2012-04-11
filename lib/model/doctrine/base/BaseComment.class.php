@@ -9,15 +9,18 @@
  * @property integer $sf_guard_user_id
  * @property string $text
  * @property Post $Post
+ * @property sfGuardUser $sfGuardUser
  * 
- * @method integer getPostId()           Returns the current record's "post_id" value
- * @method integer getSfGuardUserId()    Returns the current record's "sf_guard_user_id" value
- * @method string  getText()             Returns the current record's "text" value
- * @method Post    getPost()             Returns the current record's "Post" value
- * @method Comment setPostId()           Sets the current record's "post_id" value
- * @method Comment setSfGuardUserId()    Sets the current record's "sf_guard_user_id" value
- * @method Comment setText()             Sets the current record's "text" value
- * @method Comment setPost()             Sets the current record's "Post" value
+ * @method integer     getPostId()           Returns the current record's "post_id" value
+ * @method integer     getSfGuardUserId()    Returns the current record's "sf_guard_user_id" value
+ * @method string      getText()             Returns the current record's "text" value
+ * @method Post        getPost()             Returns the current record's "Post" value
+ * @method sfGuardUser getSfGuardUser()      Returns the current record's "sfGuardUser" value
+ * @method Comment     setPostId()           Sets the current record's "post_id" value
+ * @method Comment     setSfGuardUserId()    Sets the current record's "sf_guard_user_id" value
+ * @method Comment     setText()             Sets the current record's "text" value
+ * @method Comment     setPost()             Sets the current record's "Post" value
+ * @method Comment     setSfGuardUser()      Sets the current record's "sfGuardUser" value
  * 
  * @package    blog
  * @subpackage model
@@ -49,6 +52,11 @@ abstract class BaseComment extends sfDoctrineRecord
         parent::setUp();
         $this->hasOne('Post', array(
              'local' => 'post_id',
+             'foreign' => 'id',
+             'onDelete' => 'CASCADE'));
+
+        $this->hasOne('sfGuardUser', array(
+             'local' => 'sf_guard_user_id',
              'foreign' => 'id',
              'onDelete' => 'CASCADE'));
 

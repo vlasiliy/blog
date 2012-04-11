@@ -1,42 +1,1297 @@
-Apr 01 17:35:19 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
-Apr 01 17:35:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Apr 01 17:35:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Apr 01 17:35:19 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
-Apr 01 17:35:19 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
-Apr 01 17:35:19 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
-Apr 01 17:35:19 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
-Apr 01 17:35:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Apr 01 17:35:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Apr 01 17:35:19 symfony [info] {sfWebDebugLogger} Configuration 103.89 ms (9)
-Apr 01 17:35:19 symfony [info] {sfWebDebugLogger} Factories 95.81 ms (1)
-Apr 01 17:35:19 symfony [info] {sfWebDebugLogger} Action "default/index" 0.14 ms (1)
-Apr 01 17:35:19 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 14.04 ms (1)
-Apr 01 17:35:19 symfony [info] {sfWebResponse} Send content (28826 o)
-Apr 01 17:35:24 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
-Apr 01 17:35:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Apr 01 17:35:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Apr 01 17:35:24 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
-Apr 01 17:35:24 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
-Apr 01 17:35:24 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
-Apr 01 17:35:24 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
-Apr 01 17:35:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Apr 01 17:35:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Apr 01 17:35:24 symfony [info] {sfWebDebugLogger} Configuration 1.72 ms (9)
-Apr 01 17:35:24 symfony [info] {sfWebDebugLogger} Factories 31.95 ms (1)
-Apr 01 17:35:24 symfony [info] {sfWebDebugLogger} Action "default/index" 0.13 ms (1)
-Apr 01 17:35:24 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 10.23 ms (1)
-Apr 01 17:35:24 symfony [info] {sfWebResponse} Send content (28891 o)
-Apr 02 17:23:34 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
-Apr 02 17:23:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Apr 02 17:23:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Apr 02 17:23:34 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
-Apr 02 17:23:34 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
-Apr 02 17:23:34 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
-Apr 02 17:23:34 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
-Apr 02 17:23:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Apr 02 17:23:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Apr 02 17:23:34 symfony [info] {sfWebDebugLogger} Configuration 1.84 ms (9)
-Apr 02 17:23:34 symfony [info] {sfWebDebugLogger} Factories 36.60 ms (1)
-Apr 02 17:23:34 symfony [info] {sfWebDebugLogger} Action "default/index" 0.20 ms (1)
-Apr 02 17:23:34 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 12.85 ms (1)
-Apr 02 17:23:34 symfony [info] {sfWebResponse} Send content (28823 o)
+Apr 09 12:58:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 09 12:58:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 09 12:58:50 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Apr 09 12:58:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 09 12:58:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 09 12:58:51 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Apr 09 12:58:51 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Apr 09 12:58:51 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Apr 09 12:58:51 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Apr 09 12:58:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 09 12:58:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 09 12:58:51 symfony [info] {sfWebDebugLogger} Configuration 527.69 ms (10)
+Apr 09 12:58:51 symfony [info] {sfWebDebugLogger} Factories 776.18 ms (1)
+Apr 09 12:58:51 symfony [info] {sfWebDebugLogger} Action "default/index" 0.21 ms (1)
+Apr 09 12:58:51 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 207.08 ms (1)
+Apr 09 12:58:51 symfony [info] {sfWebResponse} Send content (29703 o)
+Apr 11 12:21:14 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:21:14 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:21:14 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:21:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:21:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:21:15 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:21:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:21:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:21:15 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:21:15 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:21:15 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:21:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:21:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:21:15 symfony [info] {sfWebDebugLogger} Configuration 77.08 ms (10)
+Apr 11 12:21:15 symfony [info] {sfWebDebugLogger} Factories 354.82 ms (1)
+Apr 11 12:21:15 symfony [info] {sfWebDebugLogger} Action "post/index" 90.31 ms (1)
+Apr 11 12:21:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:21:15 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 158.33 ms (1)
+Apr 11 12:21:15 symfony [info] {sfWebResponse} Send content (50261 o)
+Apr 11 12:22:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:22:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:22:05 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/show/id/1 with parameters array (  'module' => 'post',  'action' => 'show',  'id' => '1',)
+Apr 11 12:22:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:22:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:22:05 symfony [info] {postActions} Call "postActions->executeShow()"
+Apr 11 12:22:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:22:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p WHERE (p.id = ?) LIMIT 1 - (1)
+Apr 11 12:22:05 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/showSuccess.php"
+Apr 11 12:22:05 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:22:05 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:22:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:22:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:22:05 symfony [info] {sfWebDebugLogger} Configuration 2.01 ms (9)
+Apr 11 12:22:05 symfony [info] {sfWebDebugLogger} Factories 77.25 ms (1)
+Apr 11 12:22:05 symfony [info] {sfWebDebugLogger} Action "post/show" 119.67 ms (1)
+Apr 11 12:22:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:22:05 symfony [info] {sfWebDebugLogger} View "Success" for "post/show" 33.33 ms (1)
+Apr 11 12:22:05 symfony [info] {sfWebResponse} Send content (36435 o)
+Apr 11 12:22:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:22:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:22:09 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/edit/id/1 with parameters array (  'module' => 'post',  'action' => 'edit',  'id' => '1',)
+Apr 11 12:22:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:22:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:22:09 symfony [info] {postActions} Call "postActions->executeEdit()"
+Apr 11 12:22:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:22:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p WHERE (p.id = ?) LIMIT 1 - (1)
+Apr 11 12:22:09 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/editSuccess.php"
+Apr 11 12:22:09 symfony [info] {sfPartialView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/_form.php"
+Apr 11 12:22:09 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:22:09 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:22:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:22:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:22:09 symfony [info] {sfWebDebugLogger} Configuration 2.32 ms (9)
+Apr 11 12:22:09 symfony [info] {sfWebDebugLogger} Factories 82.28 ms (1)
+Apr 11 12:22:09 symfony [info] {sfWebDebugLogger} Action "post/edit" 143.36 ms (1)
+Apr 11 12:22:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:22:09 symfony [info] {sfWebDebugLogger} View "Success" for "post/edit" 150.17 ms (1)
+Apr 11 12:22:09 symfony [info] {sfWebDebugLogger} Partial "post/_form" 107.08 ms (1)
+Apr 11 12:22:09 symfony [info] {sfWebResponse} Send content (52146 o)
+Apr 11 12:23:22 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:23:22 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:23:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/delete/id/1 with parameters array (  'module' => 'post',  'action' => 'delete',  'id' => '1',)
+Apr 11 12:23:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:23:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:23:22 symfony [info] {postActions} Call "postActions->executeDelete()"
+Apr 11 12:23:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:23:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p WHERE (p.id = ?) LIMIT 1 - (1)
+Apr 11 12:23:22 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM post WHERE id = ? - (1)
+Apr 11 12:23:22 symfony [info] {sfFrontWebController} Redirect to "http://blog/frontend_dev.php/post"
+Apr 11 12:23:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Apr 11 12:23:22 symfony [info] {sfWebResponse} Send header "Location: http://blog/frontend_dev.php/post"
+Apr 11 12:23:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:23:22 symfony [info] {sfWebDebugLogger} Configuration 1.79 ms (8)
+Apr 11 12:23:22 symfony [info] {sfWebDebugLogger} Factories 64.56 ms (1)
+Apr 11 12:23:22 symfony [info] {sfWebDebugLogger} Action "post/delete" 157.01 ms (1)
+Apr 11 12:23:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Apr 11 12:23:22 symfony [info] {sfWebResponse} Send content (104 o)
+Apr 11 12:23:22 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:23:22 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:23:22 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:23:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:23:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:23:22 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:23:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:23:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:23:22 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:23:22 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:23:22 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:23:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:23:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:23:22 symfony [info] {sfWebDebugLogger} Configuration 2.47 ms (9)
+Apr 11 12:23:22 symfony [info] {sfWebDebugLogger} Factories 70.83 ms (1)
+Apr 11 12:23:22 symfony [info] {sfWebDebugLogger} Action "post/index" 69.56 ms (1)
+Apr 11 12:23:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:23:22 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 45.27 ms (1)
+Apr 11 12:23:22 symfony [info] {sfWebResponse} Send content (46153 o)
+Apr 11 12:24:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:24:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:24:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:24:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:24:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:24:11 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:24:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:24:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:24:11 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:24:11 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:24:11 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:24:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:24:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:24:12 symfony [info] {sfWebDebugLogger} Configuration 2.04 ms (9)
+Apr 11 12:24:12 symfony [info] {sfWebDebugLogger} Factories 96.04 ms (1)
+Apr 11 12:24:12 symfony [info] {sfWebDebugLogger} Action "post/index" 94.99 ms (1)
+Apr 11 12:24:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:24:12 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 56.92 ms (1)
+Apr 11 12:24:12 symfony [info] {sfWebResponse} Send content (50641 o)
+Apr 11 12:24:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:24:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:24:26 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:24:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:24:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:24:26 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:24:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:24:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:24:26 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:24:26 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:24:26 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:24:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:24:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:24:26 symfony [info] {sfWebDebugLogger} Configuration 7.52 ms (9)
+Apr 11 12:24:26 symfony [info] {sfWebDebugLogger} Factories 116.41 ms (1)
+Apr 11 12:24:26 symfony [info] {sfWebDebugLogger} Action "post/index" 94.40 ms (1)
+Apr 11 12:24:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:24:26 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 49.83 ms (1)
+Apr 11 12:24:26 symfony [info] {sfWebResponse} Send content (50610 o)
+Apr 11 12:51:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:06 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:51:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:51:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:51:06 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:51:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:51:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:51:07 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:51:07 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:51:07 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:51:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:51:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:07 symfony [info] {sfWebDebugLogger} Configuration 182.91 ms (10)
+Apr 11 12:51:07 symfony [info] {sfWebDebugLogger} Factories 407.91 ms (1)
+Apr 11 12:51:07 symfony [info] {sfWebDebugLogger} Action "post/index" 618.95 ms (1)
+Apr 11 12:51:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:51:07 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 395.54 ms (1)
+Apr 11 12:51:07 symfony [info] {sfWebResponse} Send content (59262 o)
+Apr 11 12:51:10 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:10 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:10 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:10 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/img1.jpg" (/).
+Apr 11 12:51:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:11 symfony [info] {sfWebDebugLogger} Configuration 16.94 ms (5)
+Apr 11 12:51:11 symfony [info] {sfWebDebugLogger} Factories 691.70 ms (1)
+Apr 11 12:51:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/search_btn.gif" (/).
+Apr 11 12:51:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:11 symfony [info] {sfWebDebugLogger} Configuration 1.08 ms (5)
+Apr 11 12:51:11 symfony [info] {sfWebDebugLogger} Factories 1123.04 ms (1)
+Apr 11 12:51:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:12 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/img2.jpg" (/).
+Apr 11 12:51:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:12 symfony [info] {sfWebDebugLogger} Configuration 1.09 ms (5)
+Apr 11 12:51:12 symfony [info] {sfWebDebugLogger} Factories 1192.51 ms (1)
+Apr 11 12:51:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:12 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/go.gif" (/).
+Apr 11 12:51:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:12 symfony [info] {sfWebDebugLogger} Configuration 1.07 ms (5)
+Apr 11 12:51:12 symfony [info] {sfWebDebugLogger} Factories 1212.33 ms (1)
+Apr 11 12:51:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix1.jpg" (/).
+Apr 11 12:51:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:13 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (5)
+Apr 11 12:51:13 symfony [info] {sfWebDebugLogger} Factories 1402.72 ms (1)
+Apr 11 12:51:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix2.jpg" (/).
+Apr 11 12:51:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:13 symfony [info] {sfWebDebugLogger} Configuration 1.06 ms (5)
+Apr 11 12:51:13 symfony [info] {sfWebDebugLogger} Factories 1426.34 ms (1)
+Apr 11 12:51:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix3.jpg" (/).
+Apr 11 12:51:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:13 symfony [info] {sfWebDebugLogger} Configuration 1.06 ms (5)
+Apr 11 12:51:13 symfony [info] {sfWebDebugLogger} Factories 1305.24 ms (1)
+Apr 11 12:51:13 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix4.jpg" (/).
+Apr 11 12:51:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:13 symfony [info] {sfWebDebugLogger} Configuration 24.02 ms (5)
+Apr 11 12:51:13 symfony [info] {sfWebDebugLogger} Factories 1093.47 ms (1)
+Apr 11 12:51:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix5.jpg" (/).
+Apr 11 12:51:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:14 symfony [info] {sfWebDebugLogger} Configuration 1.04 ms (5)
+Apr 11 12:51:14 symfony [info] {sfWebDebugLogger} Factories 1107.33 ms (1)
+Apr 11 12:51:14 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix6.jpg" (/).
+Apr 11 12:51:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:14 symfony [info] {sfWebDebugLogger} Configuration 1.11 ms (5)
+Apr 11 12:51:14 symfony [info] {sfWebDebugLogger} Factories 910.50 ms (1)
+Apr 11 12:51:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:51:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:51:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:51:48 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:51:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:51:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:51:48 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:51:48 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:51:48 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:51:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:51:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:48 symfony [info] {sfWebDebugLogger} Configuration 1.97 ms (9)
+Apr 11 12:51:48 symfony [info] {sfWebDebugLogger} Factories 80.09 ms (1)
+Apr 11 12:51:48 symfony [info] {sfWebDebugLogger} Action "post/index" 92.20 ms (1)
+Apr 11 12:51:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:51:48 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 44.56 ms (1)
+Apr 11 12:51:48 symfony [info] {sfWebResponse} Send content (59255 o)
+Apr 11 12:51:49 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:49 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:49 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/img1.jpg" (/).
+Apr 11 12:51:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:49 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (5)
+Apr 11 12:51:49 symfony [info] {sfWebDebugLogger} Factories 164.65 ms (1)
+Apr 11 12:51:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:50 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/go.gif" (/).
+Apr 11 12:51:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:50 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (5)
+Apr 11 12:51:50 symfony [info] {sfWebDebugLogger} Factories 470.09 ms (1)
+Apr 11 12:51:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:50 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/img2.jpg" (/).
+Apr 11 12:51:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:51 symfony [info] {sfWebDebugLogger} Configuration 47.02 ms (5)
+Apr 11 12:51:51 symfony [info] {sfWebDebugLogger} Factories 779.87 ms (1)
+Apr 11 12:51:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:51 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/search_btn.gif" (/).
+Apr 11 12:51:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:51 symfony [info] {sfWebDebugLogger} Configuration 1.06 ms (5)
+Apr 11 12:51:51 symfony [info] {sfWebDebugLogger} Factories 1032.06 ms (1)
+Apr 11 12:51:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:51 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix1.jpg" (/).
+Apr 11 12:51:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:51 symfony [info] {sfWebDebugLogger} Configuration 1.01 ms (5)
+Apr 11 12:51:51 symfony [info] {sfWebDebugLogger} Factories 1325.14 ms (1)
+Apr 11 12:51:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:52 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:51:52 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:51:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix2.jpg" (/).
+Apr 11 12:51:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:52 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (5)
+Apr 11 12:51:52 symfony [info] {sfWebDebugLogger} Factories 1297.06 ms (1)
+Apr 11 12:51:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix3.jpg" (/).
+Apr 11 12:51:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:52 symfony [info] {sfWebDebugLogger} Configuration 3.04 ms (5)
+Apr 11 12:51:52 symfony [info] {sfWebDebugLogger} Factories 1186.50 ms (1)
+Apr 11 12:51:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix4.jpg" (/).
+Apr 11 12:51:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:52 symfony [info] {sfWebDebugLogger} Configuration 21.11 ms (5)
+Apr 11 12:51:52 symfony [info] {sfWebDebugLogger} Factories 1058.24 ms (1)
+Apr 11 12:51:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix5.jpg" (/).
+Apr 11 12:51:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:52 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (5)
+Apr 11 12:51:52 symfony [info] {sfWebDebugLogger} Factories 837.08 ms (1)
+Apr 11 12:51:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix6.jpg" (/).
+Apr 11 12:51:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:51:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:51:52 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (5)
+Apr 11 12:51:52 symfony [info] {sfWebDebugLogger} Factories 886.84 ms (1)
+Apr 11 12:52:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:52:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:52:50 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:52:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:52:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:52:50 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:52:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:52:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:52:50 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:52:50 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:52:50 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:52:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:52:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:52:50 symfony [info] {sfWebDebugLogger} Configuration 128.58 ms (10)
+Apr 11 12:52:50 symfony [info] {sfWebDebugLogger} Factories 99.74 ms (1)
+Apr 11 12:52:50 symfony [info] {sfWebDebugLogger} Action "post/index" 159.14 ms (1)
+Apr 11 12:52:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:52:50 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 208.58 ms (1)
+Apr 11 12:52:50 symfony [info] {sfWebResponse} Send content (59232 o)
+Apr 11 12:53:24 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:53:24 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:53:24 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/css/main.css" (/).
+Apr 11 12:53:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:53:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:53:24 symfony [info] {sfWebDebugLogger} Configuration 7.01 ms (5)
+Apr 11 12:53:24 symfony [info] {sfWebDebugLogger} Factories 65.71 ms (1)
+Apr 11 12:53:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:53:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:53:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:53:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:53:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:53:48 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:53:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:53:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:53:48 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:53:48 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:53:48 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:53:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:53:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:53:48 symfony [info] {sfWebDebugLogger} Configuration 1.91 ms (9)
+Apr 11 12:53:48 symfony [info] {sfWebDebugLogger} Factories 78.73 ms (1)
+Apr 11 12:53:48 symfony [info] {sfWebDebugLogger} Action "post/index" 92.74 ms (1)
+Apr 11 12:53:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:53:48 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 48.76 ms (1)
+Apr 11 12:53:48 symfony [info] {sfWebResponse} Send content (59226 o)
+Apr 11 12:54:02 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:02 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:02 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/css/main.css" (/).
+Apr 11 12:54:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:54:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:02 symfony [info] {sfWebDebugLogger} Configuration 7.94 ms (5)
+Apr 11 12:54:02 symfony [info] {sfWebDebugLogger} Factories 92.76 ms (1)
+Apr 11 12:54:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:54:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:54:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:54:05 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:54:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:54:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:54:05 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:54:05 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:54:05 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:54:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:54:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:05 symfony [info] {sfWebDebugLogger} Configuration 1.92 ms (9)
+Apr 11 12:54:05 symfony [info] {sfWebDebugLogger} Factories 86.80 ms (1)
+Apr 11 12:54:05 symfony [info] {sfWebDebugLogger} Action "post/index" 92.16 ms (1)
+Apr 11 12:54:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:54:05 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 54.65 ms (1)
+Apr 11 12:54:05 symfony [info] {sfWebResponse} Send content (59226 o)
+Apr 11 12:54:07 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:07 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:07 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:07 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:07 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:07 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/img2.jpg" (/).
+Apr 11 12:54:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:54:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:07 symfony [info] {sfWebDebugLogger} Configuration 1.06 ms (5)
+Apr 11 12:54:07 symfony [info] {sfWebDebugLogger} Factories 803.03 ms (1)
+Apr 11 12:54:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/img1.jpg" (/).
+Apr 11 12:54:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:54:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:08 symfony [info] {sfWebDebugLogger} Configuration 28.07 ms (5)
+Apr 11 12:54:08 symfony [info] {sfWebDebugLogger} Factories 1178.93 ms (1)
+Apr 11 12:54:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/search_btn.gif" (/).
+Apr 11 12:54:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:54:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:08 symfony [info] {sfWebDebugLogger} Configuration 34.04 ms (5)
+Apr 11 12:54:08 symfony [info] {sfWebDebugLogger} Factories 1551.57 ms (1)
+Apr 11 12:54:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/go.gif" (/).
+Apr 11 12:54:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:54:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:09 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (5)
+Apr 11 12:54:09 symfony [info] {sfWebDebugLogger} Factories 1181.87 ms (1)
+Apr 11 12:54:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix1.jpg" (/).
+Apr 11 12:54:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:54:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:09 symfony [info] {sfWebDebugLogger} Configuration 17.16 ms (5)
+Apr 11 12:54:09 symfony [info] {sfWebDebugLogger} Factories 1424.00 ms (1)
+Apr 11 12:54:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix2.jpg" (/).
+Apr 11 12:54:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:54:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:09 symfony [info] {sfWebDebugLogger} Configuration 1.08 ms (5)
+Apr 11 12:54:09 symfony [info] {sfWebDebugLogger} Factories 1373.47 ms (1)
+Apr 11 12:54:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix3.jpg" (/).
+Apr 11 12:54:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:54:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:10 symfony [info] {sfWebDebugLogger} Configuration 1.06 ms (5)
+Apr 11 12:54:10 symfony [info] {sfWebDebugLogger} Factories 1218.36 ms (1)
+Apr 11 12:54:10 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix4.jpg" (/).
+Apr 11 12:54:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:54:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:10 symfony [info] {sfWebDebugLogger} Configuration 33.20 ms (5)
+Apr 11 12:54:10 symfony [info] {sfWebDebugLogger} Factories 1019.85 ms (1)
+Apr 11 12:54:10 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix5.jpg" (/).
+Apr 11 12:54:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:54:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:10 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (5)
+Apr 11 12:54:10 symfony [info] {sfWebDebugLogger} Factories 1041.01 ms (1)
+Apr 11 12:54:10 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix6.jpg" (/).
+Apr 11 12:54:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:54:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:10 symfony [info] {sfWebDebugLogger} Configuration 1.06 ms (5)
+Apr 11 12:54:10 symfony [info] {sfWebDebugLogger} Factories 905.77 ms (1)
+Apr 11 12:54:57 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:57 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:57 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:54:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:54:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:54:57 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:54:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:54:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:54:57 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:54:57 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:54:57 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:54:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:54:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:57 symfony [info] {sfWebDebugLogger} Configuration 8.58 ms (9)
+Apr 11 12:54:57 symfony [info] {sfWebDebugLogger} Factories 74.84 ms (1)
+Apr 11 12:54:57 symfony [info] {sfWebDebugLogger} Action "post/index" 94.36 ms (1)
+Apr 11 12:54:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:54:57 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 58.93 ms (1)
+Apr 11 12:54:57 symfony [info] {sfWebResponse} Send content (59258 o)
+Apr 11 12:54:58 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:58 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:58 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/img1.jpg" (/).
+Apr 11 12:54:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:54:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:54:58 symfony [info] {sfWebDebugLogger} Configuration 9.65 ms (5)
+Apr 11 12:54:58 symfony [info] {sfWebDebugLogger} Factories 113.48 ms (1)
+Apr 11 12:54:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:54:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:54:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:55:00 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:55:00 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:55:00 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/img2.jpg" (/).
+Apr 11 12:55:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:55:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:55:00 symfony [info] {sfWebDebugLogger} Configuration 21.15 ms (5)
+Apr 11 12:55:00 symfony [info] {sfWebDebugLogger} Factories 731.03 ms (1)
+Apr 11 12:55:00 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:55:00 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:55:00 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:55:00 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:55:00 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/go.gif" (/).
+Apr 11 12:55:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:55:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:55:00 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (5)
+Apr 11 12:55:00 symfony [info] {sfWebDebugLogger} Factories 1025.83 ms (1)
+Apr 11 12:55:00 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:55:00 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:55:00 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/search_btn.gif" (/).
+Apr 11 12:55:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:55:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:55:00 symfony [info] {sfWebDebugLogger} Configuration 6.95 ms (5)
+Apr 11 12:55:00 symfony [info] {sfWebDebugLogger} Factories 1166.50 ms (1)
+Apr 11 12:55:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:55:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:55:01 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix1.jpg" (/).
+Apr 11 12:55:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:55:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:55:01 symfony [info] {sfWebDebugLogger} Configuration 6.15 ms (5)
+Apr 11 12:55:01 symfony [info] {sfWebDebugLogger} Factories 1070.85 ms (1)
+Apr 11 12:55:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:55:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:55:01 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix2.jpg" (/).
+Apr 11 12:55:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:55:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:55:01 symfony [info] {sfWebDebugLogger} Configuration 1.08 ms (5)
+Apr 11 12:55:01 symfony [info] {sfWebDebugLogger} Factories 1227.15 ms (1)
+Apr 11 12:55:01 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix3.jpg" (/).
+Apr 11 12:55:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:55:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:55:01 symfony [info] {sfWebDebugLogger} Configuration 2.58 ms (5)
+Apr 11 12:55:01 symfony [info] {sfWebDebugLogger} Factories 1289.43 ms (1)
+Apr 11 12:55:01 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix4.jpg" (/).
+Apr 11 12:55:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:55:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:55:01 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (5)
+Apr 11 12:55:01 symfony [info] {sfWebDebugLogger} Factories 1245.28 ms (1)
+Apr 11 12:55:02 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix5.jpg" (/).
+Apr 11 12:55:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:55:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:55:02 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (5)
+Apr 11 12:55:02 symfony [info] {sfWebDebugLogger} Factories 1085.58 ms (1)
+Apr 11 12:55:02 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix6.jpg" (/).
+Apr 11 12:55:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:55:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:55:02 symfony [info] {sfWebDebugLogger} Configuration 7.70 ms (5)
+Apr 11 12:55:02 symfony [info] {sfWebDebugLogger} Factories 932.17 ms (1)
+Apr 11 12:56:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:56:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:56:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:56:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:56:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:56:01 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:56:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:56:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:56:01 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:56:01 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:56:01 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:56:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:56:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:56:01 symfony [info] {sfWebDebugLogger} Configuration 7.14 ms (9)
+Apr 11 12:56:01 symfony [info] {sfWebDebugLogger} Factories 96.03 ms (1)
+Apr 11 12:56:01 symfony [info] {sfWebDebugLogger} Action "post/index" 105.02 ms (1)
+Apr 11 12:56:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:56:01 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 55.89 ms (1)
+Apr 11 12:56:01 symfony [info] {sfWebResponse} Send content (58021 o)
+Apr 11 12:56:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:56:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:56:03 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/img1.jpg" (/).
+Apr 11 12:56:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:56:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:56:03 symfony [info] {sfWebDebugLogger} Configuration 1.09 ms (5)
+Apr 11 12:56:03 symfony [info] {sfWebDebugLogger} Factories 96.58 ms (1)
+Apr 11 12:56:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:56:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:56:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:56:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:56:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:56:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:56:04 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/go.gif" (/).
+Apr 11 12:56:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:56:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:56:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:56:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:56:04 symfony [info] {sfWebDebugLogger} Configuration 23.92 ms (5)
+Apr 11 12:56:04 symfony [info] {sfWebDebugLogger} Factories 535.89 ms (1)
+Apr 11 12:56:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:56:04 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:56:04 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/search_btn.gif" (/).
+Apr 11 12:56:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:56:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:56:05 symfony [info] {sfWebDebugLogger} Configuration 37.84 ms (5)
+Apr 11 12:56:05 symfony [info] {sfWebDebugLogger} Factories 920.79 ms (1)
+Apr 11 12:56:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:56:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:56:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix1.jpg" (/).
+Apr 11 12:56:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:56:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:56:05 symfony [info] {sfWebDebugLogger} Configuration 1.80 ms (5)
+Apr 11 12:56:05 symfony [info] {sfWebDebugLogger} Factories 1190.32 ms (1)
+Apr 11 12:56:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:56:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:56:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix2.jpg" (/).
+Apr 11 12:56:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:56:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:56:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:56:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:56:05 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (5)
+Apr 11 12:56:05 symfony [info] {sfWebDebugLogger} Factories 1287.54 ms (1)
+Apr 11 12:56:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix3.jpg" (/).
+Apr 11 12:56:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:56:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:56:06 symfony [info] {sfWebDebugLogger} Configuration 8.02 ms (5)
+Apr 11 12:56:06 symfony [info] {sfWebDebugLogger} Factories 1258.26 ms (1)
+Apr 11 12:56:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix4.jpg" (/).
+Apr 11 12:56:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:56:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:56:06 symfony [info] {sfWebDebugLogger} Configuration 1.06 ms (5)
+Apr 11 12:56:06 symfony [info] {sfWebDebugLogger} Factories 1121.43 ms (1)
+Apr 11 12:56:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix5.jpg" (/).
+Apr 11 12:56:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:56:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:56:06 symfony [info] {sfWebDebugLogger} Configuration 1.04 ms (5)
+Apr 11 12:56:06 symfony [info] {sfWebDebugLogger} Factories 972.98 ms (1)
+Apr 11 12:56:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/pix6.jpg" (/).
+Apr 11 12:56:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Apr 11 12:56:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:56:06 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (5)
+Apr 11 12:56:06 symfony [info] {sfWebDebugLogger} Factories 787.70 ms (1)
+Apr 11 12:57:17 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:57:17 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:57:17 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:57:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:57:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:57:17 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:57:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:57:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:57:17 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:57:17 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:57:17 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:57:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:57:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:57:17 symfony [info] {sfWebDebugLogger} Configuration 9.46 ms (9)
+Apr 11 12:57:17 symfony [info] {sfWebDebugLogger} Factories 75.57 ms (1)
+Apr 11 12:57:17 symfony [info] {sfWebDebugLogger} Action "post/index" 88.82 ms (1)
+Apr 11 12:57:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:57:17 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 63.40 ms (1)
+Apr 11 12:57:17 symfony [info] {sfWebResponse} Send content (58029 o)
+Apr 11 12:58:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:58:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:58:46 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:58:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:58:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:58:46 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:58:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:58:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:58:46 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:58:46 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:58:46 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:58:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:58:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:58:46 symfony [info] {sfWebDebugLogger} Configuration 2.12 ms (9)
+Apr 11 12:58:46 symfony [info] {sfWebDebugLogger} Factories 80.10 ms (1)
+Apr 11 12:58:46 symfony [info] {sfWebDebugLogger} Action "post/index" 98.22 ms (1)
+Apr 11 12:58:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:58:46 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 53.52 ms (1)
+Apr 11 12:58:46 symfony [info] {sfWebResponse} Send content (58029 o)
+Apr 11 12:59:55 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 12:59:55 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 12:59:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 12:59:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 12:59:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 12:59:55 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 12:59:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 12:59:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 12:59:55 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 12:59:55 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:59:55 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 12:59:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 12:59:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 12:59:55 symfony [info] {sfWebDebugLogger} Configuration 7.40 ms (9)
+Apr 11 12:59:55 symfony [info] {sfWebDebugLogger} Factories 74.97 ms (1)
+Apr 11 12:59:55 symfony [info] {sfWebDebugLogger} Action "post/index" 94.03 ms (1)
+Apr 11 12:59:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 12:59:55 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 75.19 ms (1)
+Apr 11 12:59:55 symfony [info] {sfWebResponse} Send content (58029 o)
+Apr 11 13:00:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 13:00:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 13:00:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 13:00:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 13:00:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 13:00:40 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 13:00:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 13:00:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 13:00:40 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 13:00:40 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 13:00:40 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 13:00:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 13:00:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 13:00:40 symfony [info] {sfWebDebugLogger} Configuration 8.81 ms (9)
+Apr 11 13:00:40 symfony [info] {sfWebDebugLogger} Factories 89.86 ms (1)
+Apr 11 13:00:40 symfony [info] {sfWebDebugLogger} Action "post/index" 106.53 ms (1)
+Apr 11 13:00:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 13:00:40 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 56.11 ms (1)
+Apr 11 13:00:40 symfony [info] {sfWebResponse} Send content (58030 o)
+Apr 11 13:01:30 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 13:01:30 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 13:01:30 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 13:01:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 13:01:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 13:01:30 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 13:01:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 13:01:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 13:01:30 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 13:01:30 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 13:01:30 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 13:01:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 13:01:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 13:01:30 symfony [info] {sfWebDebugLogger} Configuration 11.10 ms (9)
+Apr 11 13:01:30 symfony [info] {sfWebDebugLogger} Factories 87.24 ms (1)
+Apr 11 13:01:30 symfony [info] {sfWebDebugLogger} Action "post/index" 90.37 ms (1)
+Apr 11 13:01:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 13:01:30 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 48.06 ms (1)
+Apr 11 13:01:30 symfony [info] {sfWebResponse} Send content (58030 o)
+Apr 11 13:02:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 13:02:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 13:02:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 13:02:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 13:02:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 13:02:01 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 13:02:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 13:02:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 13:02:01 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 13:02:01 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 13:02:01 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 13:02:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 13:02:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 13:02:01 symfony [info] {sfWebDebugLogger} Configuration 6.49 ms (9)
+Apr 11 13:02:01 symfony [info] {sfWebDebugLogger} Factories 79.26 ms (1)
+Apr 11 13:02:01 symfony [info] {sfWebDebugLogger} Action "post/index" 97.25 ms (1)
+Apr 11 13:02:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 13:02:01 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 49.90 ms (1)
+Apr 11 13:02:01 symfony [info] {sfWebResponse} Send content (58029 o)
+Apr 11 13:02:17 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 13:02:17 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 13:02:17 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 13:02:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 13:02:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 13:02:17 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 13:02:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 13:02:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 13:02:17 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 13:02:17 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 13:02:17 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 13:02:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 13:02:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 13:02:17 symfony [info] {sfWebDebugLogger} Configuration 2.11 ms (9)
+Apr 11 13:02:17 symfony [info] {sfWebDebugLogger} Factories 85.10 ms (1)
+Apr 11 13:02:17 symfony [info] {sfWebDebugLogger} Action "post/index" 95.22 ms (1)
+Apr 11 13:02:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 13:02:17 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 51.26 ms (1)
+Apr 11 13:02:17 symfony [info] {sfWebResponse} Send content (58406 o)
+Apr 11 13:32:52 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 13:32:52 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 13:32:52 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 13:32:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 13:32:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 13:32:52 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 13:32:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 13:32:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 13:32:53 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 13:32:53 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 13:32:53 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 13:32:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 13:32:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 13:32:53 symfony [info] {sfWebDebugLogger} Configuration 2.04 ms (9)
+Apr 11 13:32:53 symfony [info] {sfWebDebugLogger} Factories 494.40 ms (1)
+Apr 11 13:32:53 symfony [info] {sfWebDebugLogger} Action "post/index" 621.81 ms (1)
+Apr 11 13:32:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 13:32:53 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 193.44 ms (1)
+Apr 11 13:32:54 symfony [info] {sfWebResponse} Send content (57556 o)
+Apr 11 15:29:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 15:29:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 15:29:12 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /post/show/id/1 with parameters array (  'module' => 'post',  'action' => 'show',  'id' => '1',)
+Apr 11 15:29:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 15:29:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 15:29:13 symfony [info] {postActions} Call "postActions->executeShow()"
+Apr 11 15:29:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 15:29:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p WHERE (p.id = ?) LIMIT 1 - (1)
+Apr 11 15:29:13 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/showSuccess.php"
+Apr 11 15:29:14 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 15:29:14 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 15:29:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 15:29:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 15:29:14 symfony [info] {sfWebDebugLogger} Configuration 2.36 ms (9)
+Apr 11 15:29:14 symfony [info] {sfWebDebugLogger} Factories 511.27 ms (1)
+Apr 11 15:29:14 symfony [info] {sfWebDebugLogger} Action "post/show" 783.84 ms (1)
+Apr 11 15:29:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 15:29:14 symfony [info] {sfWebDebugLogger} View "Success" for "post/show" 231.21 ms (1)
+Apr 11 15:29:14 symfony [info] {sfWebResponse} Send content (43629 o)
+Apr 11 15:30:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 15:30:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 15:30:28 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 15:30:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 15:30:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 15:30:28 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 15:30:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 15:30:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 15:30:28 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 15:30:28 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 15:30:28 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 15:30:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 15:30:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 15:30:28 symfony [info] {sfWebDebugLogger} Configuration 2.06 ms (9)
+Apr 11 15:30:28 symfony [info] {sfWebDebugLogger} Factories 83.07 ms (1)
+Apr 11 15:30:28 symfony [info] {sfWebDebugLogger} Action "post/index" 149.69 ms (1)
+Apr 11 15:30:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 15:30:28 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 121.89 ms (1)
+Apr 11 15:30:28 symfony [info] {sfWebResponse} Send content (58408 o)
+Apr 11 16:08:27 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:08:27 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:08:27 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:08:27 symfony [info] {myUser} Automatic user logout due to timeout
+Apr 11 16:08:27 symfony [info] {myUser} User is not authenticated
+Apr 11 16:08:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:08:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:08:27 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:08:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:08:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:08:28 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:09:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:09:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:09:53 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:09:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:09:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:09:53 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:09:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:09:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:09:54 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:09:54 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:09:54 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:09:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:09:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:09:54 symfony [info] {sfWebDebugLogger} Configuration 5.09 ms (9)
+Apr 11 16:09:54 symfony [info] {sfWebDebugLogger} Factories 63.74 ms (1)
+Apr 11 16:09:54 symfony [info] {sfWebDebugLogger} Action "post/index" 74.70 ms (1)
+Apr 11 16:09:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:09:54 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 108.40 ms (1)
+Apr 11 16:09:54 symfony [info] {sfWebResponse} Send content (62923 o)
+Apr 11 16:10:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:10:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:10:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:10:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:10:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:10:39 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:10:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:10:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:10:39 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:10:39 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:10:39 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:10:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:10:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:10:39 symfony [info] {sfWebDebugLogger} Configuration 4.41 ms (9)
+Apr 11 16:10:39 symfony [info] {sfWebDebugLogger} Factories 96.66 ms (1)
+Apr 11 16:10:39 symfony [info] {sfWebDebugLogger} Action "post/index" 117.51 ms (1)
+Apr 11 16:10:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:10:39 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 48.43 ms (1)
+Apr 11 16:10:39 symfony [info] {sfWebResponse} Send content (62948 o)
+Apr 11 16:17:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:17:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:17:06 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:17:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:17:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:17:06 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:17:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:17:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:17:07 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:17:07 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:17:07 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:17:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:17:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:17:07 symfony [info] {sfWebDebugLogger} Configuration 2.15 ms (9)
+Apr 11 16:17:07 symfony [info] {sfWebDebugLogger} Factories 469.45 ms (1)
+Apr 11 16:17:07 symfony [info] {sfWebDebugLogger} Action "post/index" 727.11 ms (1)
+Apr 11 16:17:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (2)
+Apr 11 16:17:07 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 549.56 ms (1)
+Apr 11 16:17:08 symfony [info] {sfWebResponse} Send content (62984 o)
+Apr 11 16:31:45 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:31:45 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:31:45 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:31:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:31:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:31:46 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:31:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:31:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:31:46 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:31:46 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:31:46 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:31:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:31:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:31:46 symfony [info] {sfWebDebugLogger} Configuration 1.99 ms (9)
+Apr 11 16:31:46 symfony [info] {sfWebDebugLogger} Factories 221.77 ms (1)
+Apr 11 16:31:46 symfony [info] {sfWebDebugLogger} Action "post/index" 277.73 ms (1)
+Apr 11 16:31:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:31:46 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 193.38 ms (1)
+Apr 11 16:31:46 symfony [info] {sfWebResponse} Send content (62984 o)
+Apr 11 16:34:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:34:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:34:33 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:34:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:34:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:34:33 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:34:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:34:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:34:33 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:34:33 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:34:33 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:34:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:34:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:34:33 symfony [info] {sfWebDebugLogger} Configuration 6.03 ms (9)
+Apr 11 16:34:33 symfony [info] {sfWebDebugLogger} Factories 88.68 ms (1)
+Apr 11 16:34:33 symfony [info] {sfWebDebugLogger} Action "post/index" 105.26 ms (1)
+Apr 11 16:34:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:34:33 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 185.82 ms (1)
+Apr 11 16:34:33 symfony [info] {sfWebResponse} Send content (62994 o)
+Apr 11 16:34:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:34:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:34:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:34:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:34:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:34:39 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:34:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:34:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:34:39 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:34:39 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:34:39 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:34:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:34:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:34:39 symfony [info] {sfWebDebugLogger} Configuration 1.88 ms (9)
+Apr 11 16:34:39 symfony [info] {sfWebDebugLogger} Factories 93.50 ms (1)
+Apr 11 16:34:39 symfony [info] {sfWebDebugLogger} Action "post/index" 60.56 ms (1)
+Apr 11 16:34:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:34:39 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 58.71 ms (1)
+Apr 11 16:34:39 symfony [info] {sfWebResponse} Send content (62511 o)
+Apr 11 16:38:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:38:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:38:50 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:38:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:38:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:38:50 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:38:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:38:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:38:50 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:38:50 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:38:50 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:38:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:38:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:38:50 symfony [info] {sfWebDebugLogger} Configuration 1.91 ms (9)
+Apr 11 16:38:50 symfony [info] {sfWebDebugLogger} Factories 85.63 ms (1)
+Apr 11 16:38:50 symfony [info] {sfWebDebugLogger} Action "post/index" 104.47 ms (1)
+Apr 11 16:38:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:38:50 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 82.06 ms (1)
+Apr 11 16:38:50 symfony [info] {sfWebResponse} Send content (62547 o)
+Apr 11 16:39:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:39:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:39:03 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:39:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:39:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:39:03 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:39:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:39:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:39:03 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:39:03 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:39:03 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:39:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:39:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:39:03 symfony [info] {sfWebDebugLogger} Configuration 3.88 ms (9)
+Apr 11 16:39:03 symfony [info] {sfWebDebugLogger} Factories 103.56 ms (1)
+Apr 11 16:39:03 symfony [info] {sfWebDebugLogger} Action "post/index" 84.53 ms (1)
+Apr 11 16:39:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:39:03 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 55.43 ms (1)
+Apr 11 16:39:03 symfony [info] {sfWebResponse} Send content (62547 o)
+Apr 11 16:39:07 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:39:07 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:39:07 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:39:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:39:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:39:07 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:39:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:39:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:39:07 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:39:07 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:39:07 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:39:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:39:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:39:07 symfony [info] {sfWebDebugLogger} Configuration 2.35 ms (9)
+Apr 11 16:39:07 symfony [info] {sfWebDebugLogger} Factories 84.24 ms (1)
+Apr 11 16:39:07 symfony [info] {sfWebDebugLogger} Action "post/index" 72.03 ms (1)
+Apr 11 16:39:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:39:07 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 58.47 ms (1)
+Apr 11 16:39:07 symfony [info] {sfWebResponse} Send content (62546 o)
+Apr 11 16:39:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:39:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:39:50 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:39:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:39:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:39:50 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:39:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:39:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:39:50 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:39:50 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:39:50 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:39:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:39:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:39:50 symfony [info] {sfWebDebugLogger} Configuration 1.97 ms (9)
+Apr 11 16:39:50 symfony [info] {sfWebDebugLogger} Factories 69.00 ms (1)
+Apr 11 16:39:50 symfony [info] {sfWebDebugLogger} Action "post/index" 76.71 ms (1)
+Apr 11 16:39:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:39:50 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 68.92 ms (1)
+Apr 11 16:39:50 symfony [info] {sfWebResponse} Send content (62594 o)
+Apr 11 16:40:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:40:26 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:40:26 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:40:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:40:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:40:26 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:40:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:40:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:40:26 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:40:26 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:40:26 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:40:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:40:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:40:26 symfony [info] {sfWebDebugLogger} Configuration 1.94 ms (9)
+Apr 11 16:40:26 symfony [info] {sfWebDebugLogger} Factories 85.20 ms (1)
+Apr 11 16:40:26 symfony [info] {sfWebDebugLogger} Action "post/index" 85.94 ms (1)
+Apr 11 16:40:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:40:26 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 116.55 ms (1)
+Apr 11 16:40:26 symfony [info] {sfWebResponse} Send content (62532 o)
+Apr 11 16:42:17 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:42:17 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:42:17 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:42:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:42:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:42:17 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:42:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:42:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:42:17 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:42:17 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:42:17 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:42:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:42:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:42:17 symfony [info] {sfWebDebugLogger} Configuration 34.78 ms (9)
+Apr 11 16:42:17 symfony [info] {sfWebDebugLogger} Factories 65.81 ms (1)
+Apr 11 16:42:17 symfony [info] {sfWebDebugLogger} Action "post/index" 133.49 ms (1)
+Apr 11 16:42:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:42:17 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 101.42 ms (1)
+Apr 11 16:42:17 symfony [info] {sfWebResponse} Send content (62536 o)
+Apr 11 16:42:27 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:42:27 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:42:27 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:42:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:42:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:42:27 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:42:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:42:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:42:27 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:42:28 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:42:28 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:42:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:42:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:42:28 symfony [info] {sfWebDebugLogger} Configuration 1.95 ms (9)
+Apr 11 16:42:28 symfony [info] {sfWebDebugLogger} Factories 70.49 ms (1)
+Apr 11 16:42:28 symfony [info] {sfWebDebugLogger} Action "post/index" 65.10 ms (1)
+Apr 11 16:42:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:42:28 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 352.09 ms (1)
+Apr 11 16:42:28 symfony [info] {sfWebResponse} Send content (62500 o)
+Apr 11 16:42:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:42:48 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:42:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:42:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:42:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:42:48 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:42:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:42:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:42:48 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:42:48 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:42:48 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:42:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:42:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:42:48 symfony [info] {sfWebDebugLogger} Configuration 8.03 ms (9)
+Apr 11 16:42:48 symfony [info] {sfWebDebugLogger} Factories 70.83 ms (1)
+Apr 11 16:42:48 symfony [info] {sfWebDebugLogger} Action "post/index" 82.27 ms (1)
+Apr 11 16:42:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:42:48 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 59.45 ms (1)
+Apr 11 16:42:48 symfony [info] {sfWebResponse} Send content (62501 o)
+Apr 11 16:46:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:46:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:46:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:46:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:46:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:46:11 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:46:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:46:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:46:12 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:46:12 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:46:12 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:46:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:46:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:46:12 symfony [info] {sfWebDebugLogger} Configuration 2.04 ms (9)
+Apr 11 16:46:12 symfony [info] {sfWebDebugLogger} Factories 67.86 ms (1)
+Apr 11 16:46:12 symfony [info] {sfWebDebugLogger} Action "post/index" 78.40 ms (1)
+Apr 11 16:46:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:46:12 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 87.35 ms (1)
+Apr 11 16:46:12 symfony [info] {sfWebResponse} Send content (44130 o)
+Apr 11 16:50:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:50:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:50:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:50:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:50:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:50:39 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:50:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:50:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:50:40 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:50:40 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:50:40 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:50:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:50:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:50:40 symfony [info] {sfWebDebugLogger} Configuration 1.95 ms (9)
+Apr 11 16:50:40 symfony [info] {sfWebDebugLogger} Factories 391.29 ms (1)
+Apr 11 16:50:40 symfony [info] {sfWebDebugLogger} Action "post/index" 601.97 ms (1)
+Apr 11 16:50:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:50:40 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 266.85 ms (1)
+Apr 11 16:50:40 symfony [info] {sfWebResponse} Send content (43984 o)
+Apr 11 16:55:57 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 16:55:57 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 16:55:57 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 16:55:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 16:55:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 16:55:57 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 16:55:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 16:55:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 16:55:58 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 16:55:58 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:55:58 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 16:55:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 16:55:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 16:55:58 symfony [info] {sfWebDebugLogger} Configuration 2.08 ms (9)
+Apr 11 16:55:58 symfony [info] {sfWebDebugLogger} Factories 449.61 ms (1)
+Apr 11 16:55:58 symfony [info] {sfWebDebugLogger} Action "post/index" 694.21 ms (1)
+Apr 11 16:55:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 16:55:58 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 237.06 ms (1)
+Apr 11 16:55:58 symfony [info] {sfWebResponse} Send content (43067 o)
+Apr 11 17:04:44 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 17:04:44 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 17:04:44 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 17:04:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 17:04:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 17:04:44 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 17:04:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 17:04:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 17:04:45 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 17:04:45 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:04:45 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:04:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 17:04:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 17:04:45 symfony [info] {sfWebDebugLogger} Configuration 2.24 ms (9)
+Apr 11 17:04:45 symfony [info] {sfWebDebugLogger} Factories 354.40 ms (1)
+Apr 11 17:04:45 symfony [info] {sfWebDebugLogger} Action "post/index" 706.69 ms (1)
+Apr 11 17:04:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 17:04:45 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 505.28 ms (1)
+Apr 11 17:04:45 symfony [info] {sfWebResponse} Send content (42820 o)
+Apr 11 17:05:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 17:05:13 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 17:05:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 17:05:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 17:05:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 17:05:13 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 17:05:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 17:05:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 17:05:13 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 17:05:14 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:05:14 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:05:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 17:05:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 17:05:14 symfony [info] {sfWebDebugLogger} Configuration 1.99 ms (9)
+Apr 11 17:05:14 symfony [info] {sfWebDebugLogger} Factories 457.81 ms (1)
+Apr 11 17:05:14 symfony [info] {sfWebDebugLogger} Action "post/index" 545.91 ms (1)
+Apr 11 17:05:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 17:05:14 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 285.97 ms (1)
+Apr 11 17:05:14 symfony [info] {sfWebResponse} Send content (42696 o)
+Apr 11 17:05:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 17:05:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 17:05:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 17:05:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 17:05:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 17:05:59 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 17:06:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 17:06:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 17:06:00 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 17:06:00 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:06:00 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:06:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 17:06:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 17:06:00 symfony [info] {sfWebDebugLogger} Configuration 2.58 ms (9)
+Apr 11 17:06:00 symfony [info] {sfWebDebugLogger} Factories 404.97 ms (1)
+Apr 11 17:06:00 symfony [info] {sfWebDebugLogger} Action "post/index" 677.24 ms (1)
+Apr 11 17:06:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 17:06:00 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 222.19 ms (1)
+Apr 11 17:06:00 symfony [info] {sfWebResponse} Send content (42696 o)
+Apr 11 17:06:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 17:06:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 17:06:16 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 17:06:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 17:06:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 17:06:16 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 17:06:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 17:06:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 17:06:16 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 17:06:16 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:06:16 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:06:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 17:06:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 17:06:16 symfony [info] {sfWebDebugLogger} Configuration 6.44 ms (9)
+Apr 11 17:06:16 symfony [info] {sfWebDebugLogger} Factories 75.88 ms (1)
+Apr 11 17:06:16 symfony [info] {sfWebDebugLogger} Action "post/index" 141.41 ms (1)
+Apr 11 17:06:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 17:06:16 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 54.72 ms (1)
+Apr 11 17:06:16 symfony [info] {sfWebResponse} Send content (42970 o)
+Apr 11 17:08:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 17:08:37 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 17:08:37 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 17:08:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 17:08:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 17:08:37 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 17:08:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 17:08:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 17:08:38 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 17:08:38 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:08:38 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:08:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 17:08:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 17:08:38 symfony [info] {sfWebDebugLogger} Configuration 2.98 ms (9)
+Apr 11 17:08:38 symfony [info] {sfWebDebugLogger} Factories 190.34 ms (1)
+Apr 11 17:08:38 symfony [info] {sfWebDebugLogger} Action "post/index" 521.71 ms (1)
+Apr 11 17:08:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 17:08:38 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 154.02 ms (1)
+Apr 11 17:08:38 symfony [info] {sfWebResponse} Send content (42986 o)
+Apr 11 17:10:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 17:10:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 17:10:16 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 17:10:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 17:10:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 17:10:16 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 17:10:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 17:10:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 17:10:18 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 17:10:18 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:10:18 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:10:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 17:10:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 17:10:18 symfony [info] {sfWebDebugLogger} Configuration 2.08 ms (9)
+Apr 11 17:10:18 symfony [info] {sfWebDebugLogger} Factories 238.06 ms (1)
+Apr 11 17:10:18 symfony [info] {sfWebDebugLogger} Action "post/index" 1579.15 ms (1)
+Apr 11 17:10:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+Apr 11 17:10:18 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 558.84 ms (1)
+Apr 11 17:10:19 symfony [info] {sfWebResponse} Send content (43046 o)
+Apr 11 17:11:25 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 11 17:11:25 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 11 17:11:25 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+Apr 11 17:11:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 11 17:11:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 11 17:11:25 symfony [info] {postActions} Call "postActions->executeIndex()"
+Apr 11 17:11:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 11 17:11:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 11 17:11:25 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 11 17:11:25 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:11:25 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 11 17:11:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Apr 11 17:11:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 11 17:11:25 symfony [info] {sfWebDebugLogger} Configuration 2.02 ms (9)
+Apr 11 17:11:25 symfony [info] {sfWebDebugLogger} Factories 198.65 ms (1)
+Apr 11 17:11:25 symfony [info] {sfWebDebugLogger} Action "post/index" 288.47 ms (1)
+Apr 11 17:11:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Apr 11 17:11:25 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 160.29 ms (1)
+Apr 11 17:11:25 symfony [info] {sfWebResponse} Send content (43124 o)
