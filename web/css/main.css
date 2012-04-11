@@ -348,7 +348,7 @@ ol li .send {
 }
 #formauth input.editbox_login {
     margin:0;
-    padding:11px 6px 10px;
+    padding:6px 6px 10px;
     float:left;
     width:220px;
     border:none;
@@ -358,7 +358,7 @@ ol li .send {
 }
 #formauth input.editbox_search {
     margin:0;
-    padding:11px 6px 10px;
+    padding:6px 6px 10px;
     float:left;
     width:181px;
     border:none;
@@ -388,7 +388,7 @@ ol li .send {
 }
 #formsearch input.editbox_search {
     margin:0;
-    padding:11px 6px 10px;
+    padding:6px 6px 10px;
     float:left;
     width:181px;
     border:none;
