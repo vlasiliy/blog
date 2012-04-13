@@ -1,0 +1,48 @@
+Tag:
+  t1:
+    post_id: 1
+    word: zend
+    
+  t2:
+    post_id: 1
+    word: framework
+    
+  t3:
+    post_id: 1
+    word: конференция
+    
+  t4:
+    post_id: 2
+    word: zend
+    
+  t5:
+    post_id: 2
+    word: framework
+    
+  t6:
+    post_id: 2
+    word: конференция
+    
+  t7:
+    post_id: 3
+    word: sphinx
+    
+  t8:
+    post_id: 3
+    word: мастер-класс
+    
+  t9:
+    post_id: 4
+    word: html5
+  
+  t10:
+    post_id: 5
+    word: ssd
+    
+  t11:
+    post_id: 6
+    word: zend
+    
+  t12:
+    post_id: 6
+    word: framework

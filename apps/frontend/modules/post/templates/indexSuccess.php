@@ -1,10 +1,15 @@
-<?php foreach ($posts as $post): ?>
+<?php foreach ($posts as $id => $post): ?>
 <div class="article">
     <h2><?php echo $post->getTitle() ?></h2>
     <div class="clr"></div>
-    <p><span class="date"><?php echo format_date($post->getCreatedAt(), 'D', 'ru') ?></span> &nbsp;|&nbsp; Тэги: <a href="#">templates</a>, <a href="#">internet</a></p>
+    <p>
+        <span class="date"><?php echo format_date($post->getCreatedAt(), 'D') ?></span>&nbsp;|&nbsp;Тэги:
+        <?php foreach ($post->getTagsPost($post->getId()) as $tag): ?>
+            <a href="#"><?php echo $tag->getWord() ?></a>&nbsp;
+        <?php endforeach; ?>
+    </p>
     <?php echo $post->getContentPath1(ESC_RAW) ?>
-    <p class="spec"><a href="#" class="rm">Далее... &raquo;</a> <a href="#" class="com"><span>11</span> Коментариев</a></p>
+    <p class="spec"><a href="#" class="rm">Далее... &raquo;</a> <a href="#" class="com"><span><?php echo $post->getCountComment($post->getId()) ?></span> Коментариев</a></p>
 </div>
 <?php endforeach; ?>
 

@@ -15,10 +15,9 @@
             <div class="header_resize">
             <div class="menu_nav">
                 <ul>
-                <li class="active"><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О себе</a></li>
-                <li><a href="blog.html">Блог</a></li>
-                <li><a href="contact.html">Контакты</a></li>
+                    <li class="active"><a href="/blog">Блог</a></li>
+                    <li><a href="/about">О себе</a></li>
+                    <li><a href="/contact">Контакты</a></li>
                 </ul>
             </div>
             <div class="logo">
@@ -30,66 +29,65 @@
         <div class="content">
             <div class="content_resize">
             <div class="mainbar">
-            <?php echo $sf_content ?>
+                <?php echo $sf_content ?>
             </div>
             <div class="sidebar">
                 <div class="searchform">
-                <form id="formsearch" name="formsearch" method="post" action="#">
-                    <span>
-                    <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" value="Поиск по сайту:" type="text" />
-                    </span>
-                    <input name="button_search" src="/images/search_btn.gif" class="button_search" type="image" />
-                </form>
+                    <form id="formsearch" name="formsearch" method="post" action="#">
+                        <span>
+                        <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" value="Поиск по сайту:" type="text" />
+                        </span>
+                        <input name="button_search" src="/images/search_btn.gif" class="button_search" type="image" />
+                    </form>
                 </div>
                 <div class="gadget"><div class="clr"></div></div>
                 <div class="searchform">
-                <h2 class="star"><span>Авторизация</span></h2>
-                <form id="formauth" name="formauth" method="post" action="#">
-                    <span>
-                    <input name="editbox_login" class="editbox_login" id="editbox_login" maxlength="80" value="логин:" type="text" />
-                    </span>
-                    <br />
-                    <span>
-                    <input type="password" name="editbox_pass" class="editbox_search" id="editbox_pass" maxlength="80" value="пароль" type="text" />
-                    </span>
-                    <input name="button_pass" src="/images/go.gif" class="button_search" type="image" />
-                </form>
+                    <h2 class="star"><span>Авторизация</span></h2>
+                    <form id="formauth" name="formauth" method="post" action="#">
+                        <span>
+                        <input name="editbox_login" class="editbox_login" id="editbox_login" maxlength="80" value="логин:" type="text" />
+                        </span>
+                        <br />
+                        <span>
+                        <input type="password" name="editbox_pass" class="editbox_search" id="editbox_pass" maxlength="80" value="пароль" type="text" />
+                        </span>
+                        <input name="button_pass" src="/images/go.gif" class="button_search" type="image" />
+                    </form>
                 </div>
                 <div class="gadget"><div class="clr"></div></div>
                 <div class="gadget">
-                <h2 class="star"><span>Облако</span></h2>
-                <a href="#">слово</a>
-                <a href="#">ещеслово</a>
-                <a href="#">слово</a>
-                <a href="#">ещеслово</a>
-                <a href="#">слово</a>
-                <a href="#">ещеслово</a>
-                <a href="#">слово</a>
-                <a href="#">ещеслово</a>
+                    <h2 class="star"><span>Облако</span></h2>
+                    <a href="#">слово</a>
+                    <a href="#">ещеслово</a>
+                    <a href="#">слово</a>
+                    <a href="#">ещеслово</a>
+                    <a href="#">слово</a>
+                    <a href="#">ещеслово</a>
+                    <a href="#">слово</a>
+                    <a href="#">ещеслово</a>
                 </div>
                 <div class="gadget">
-                <h2 class="star"><span>Популярные</span></h2>
-                <div class="clr"></div>
-                <ul class="ex_menu">
-                    <li><a href="#">Lorem ipsum dolor</a><br />
-                    Donec libero. Suspendisse bibendum</li>
-                    <li><a href="#">Dui pede condimentum</a><br />
-                    Phasellus suscipit, leo a pharetra</li>
-                    <li><a href="#">Condimentum lorem</a><br />
-                    Tellus eleifend magna eget</li>
-                    <li><a href="#">Fringilla velit magna</a><br />
-                    Curabitur vel urna in tristique</li>
-                    <li><a href="#">Suspendisse bibendum</a><br />
-                    Cras id urna orbi tincidunt orci ac</li>
-                    <li><a href="#">Donec mattis</a><br />
-                    purus nec placerat bibendum</li>
-                </ul>
+                    <h2 class="star"><span>Популярные</span></h2>
+                    <div class="clr"></div>
+                    <ul class="ex_menu">
+                        <li><a href="#">Lorem ipsum dolor</a><br />
+                        Donec libero. Suspendisse bibendum</li>
+                        <li><a href="#">Dui pede condimentum</a><br />
+                        Phasellus suscipit, leo a pharetra</li>
+                        <li><a href="#">Condimentum lorem</a><br />
+                        Tellus eleifend magna eget</li>
+                        <li><a href="#">Fringilla velit magna</a><br />
+                        Curabitur vel urna in tristique</li>
+                        <li><a href="#">Suspendisse bibendum</a><br />
+                        Cras id urna orbi tincidunt orci ac</li>
+                        <li><a href="#">Donec mattis</a><br />
+                        purus nec placerat bibendum</li>
+                    </ul>
                 </div>
             </div>
             <div class="clr"></div>
             </div>
             <div class="clr"></div>
-            </div>
         </div>
         <div class="fbg">
             <div class="fbg_resize">

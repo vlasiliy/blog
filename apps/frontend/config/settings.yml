@@ -44,4 +44,6 @@ all:
     #default_timezone: Europe/Kiev
     
     # Локаль
-    #default_culture: ru_RU
+    default_culture: ru_RU
+    
+    i18n: true

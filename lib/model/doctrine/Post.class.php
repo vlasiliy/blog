@@ -12,4 +12,24 @@
  */
 class Post extends BasePost
 {
+    
+    public function getTagsPost($id_post)
+    {
+        $q = Doctrine_Query::create()
+                ->from('Tag t')
+                ->where('t.post_id = ?', $id_post);
+ 
+        return $q->execute();
+    }
+    
+    public function getCountComment($id_post)
+    {
+        $q = Doctrine_Query::create()
+                ->select('count(t.id) as countcomments')
+                ->from('Tag t')
+                ->where('t.post_id = ?', $id_post);
+ 
+        return $q->execute(array(), Doctrine_Core::HYDRATE_SINGLE_SCALAR);
+    }
+    
 }

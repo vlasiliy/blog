@@ -16,4 +16,5 @@ class TagTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Tag');
     }
+    
 }
