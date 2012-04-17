@@ -1,12 +1,3 @@
-<?php slot('cloudtags') ?>
-
-<h2 class="star"><span>Облако</span></h2>
-<?php foreach ($tags as $tag): ?>
-<a href="#"><?php echo $tag->getWord() ?></a>
-<?php endforeach; ?>
-
-<?php end_slot() ?>
-
 <?php foreach ($posts as $id => $post): ?>
 <div class="article">
     <h2><?php echo $post->getTitle() ?></h2>

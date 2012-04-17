@@ -12,4 +12,13 @@
  */
 class Tag extends BaseTag
 {
+    public static function getCloudTags()
+    {
+        $q = Doctrine_Query::create()
+             ->select('word, count(id)')
+             ->from('Tag t')
+             ->groupBy('word');
+        
+        return $q->execute();
+    }
 }

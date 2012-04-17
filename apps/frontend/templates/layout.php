@@ -56,7 +56,10 @@
                 </div>
                 <div class="gadget"><div class="clr"></div></div>
                 <div class="gadget">
-                    <?php include_slot('cloudtags') ?>
+                <h2 class="star"><span>Облако</span></h2>
+                <?php foreach (Tag::getCloudTags() as $tag): ?>
+                <a href="#"><?php echo $tag->getWord() ?></a>
+                <?php endforeach; ?>
                 </div>
                 <div class="gadget">
                     <h2 class="star"><span>Популярные</span></h2>
