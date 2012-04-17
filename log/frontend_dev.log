@@ -1,407 +1,545 @@
-Apr 13 21:54:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 13 21:54:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 13 21:54:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
-апр. 13 21:54:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 13 21:54:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 13 21:54:21 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
-апр. 13 21:54:21 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
-апр. 13 21:54:21 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
-апр. 13 21:54:21 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
-апр. 13 21:54:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-апр. 13 21:54:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 13 21:54:21 symfony [info] {sfWebDebugLogger} Configuration 25.04 ms (10)
-апр. 13 21:54:21 symfony [info] {sfWebDebugLogger} Factories 50.40 ms (1)
-апр. 13 21:54:21 symfony [info] {sfWebDebugLogger} Action "default/index" 0.21 ms (1)
-апр. 13 21:54:21 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 15.07 ms (1)
-апр. 13 21:54:22 symfony [info] {sfWebResponse} Send content (29877 o)
-Apr 13 21:54:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 13 21:54:28 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 13 21:54:28 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 13 21:54:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 13 21:54:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 13 21:54:28 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 13 21:54:28 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 13 21:54:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 13 21:54:28 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 13 21:54:28 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 13 21:54:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-апр. 13 21:54:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 13 21:54:28 symfony [info] {sfWebDebugLogger} Configuration 1.72 ms (9)
-апр. 13 21:54:28 symfony [info] {sfWebDebugLogger} Factories 47.29 ms (1)
-апр. 13 21:54:28 symfony [info] {sfWebDebugLogger} Action "post/index" 426.37 ms (1)
-апр. 13 21:54:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.09 ms (14)
-апр. 13 21:54:28 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 84.09 ms (1)
-апр. 13 21:54:28 symfony [info] {sfWebResponse} Send content (56756 o)
-Apr 13 21:55:23 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 13 21:55:23 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 13 21:55:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 13 21:55:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 13 21:55:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 13 21:55:23 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 13 21:55:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 13 21:55:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 13 21:55:24 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 13 21:55:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 13 21:55:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 13 21:55:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 13 21:55:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 13 21:55:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 13 21:55:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 13 21:55:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 13 21:55:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 13 21:55:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 13 21:55:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 13 21:55:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 13 21:55:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 13 21:55:24 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 13 21:55:24 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 13 21:55:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-апр. 13 21:55:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 13 21:55:24 symfony [info] {sfWebDebugLogger} Configuration 2.08 ms (9)
-апр. 13 21:55:24 symfony [info] {sfWebDebugLogger} Factories 48.13 ms (1)
-апр. 13 21:55:24 symfony [info] {sfWebDebugLogger} Action "post/index" 44.58 ms (1)
-апр. 13 21:55:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.09 ms (14)
-апр. 13 21:55:24 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 97.16 ms (1)
-апр. 13 21:55:24 symfony [info] {sfWebResponse} Send content (57424 o)
-Apr 14 09:02:15 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 14 09:02:15 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 14 09:02:15 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 14 09:02:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 14 09:02:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 14 09:02:15 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 14 09:02:16 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 14 09:02:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 14 09:02:16 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 14 09:02:16 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 14 09:02:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-апр. 14 09:02:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 14 09:02:16 symfony [info] {sfWebDebugLogger} Configuration 3.21 ms (9)
-апр. 14 09:02:16 symfony [info] {sfWebDebugLogger} Factories 1384.88 ms (1)
-апр. 14 09:02:16 symfony [info] {sfWebDebugLogger} Action "post/index" 300.45 ms (1)
-апр. 14 09:02:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.10 ms (14)
-апр. 14 09:02:16 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 515.85 ms (1)
-апр. 14 09:02:16 symfony [info] {sfWebResponse} Send content (57113 o)
-Apr 14 09:33:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 14 09:33:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 14 09:33:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 14 09:33:39 symfony [info] {myUser} Automatic user logout due to timeout
-апр. 14 09:33:39 symfony [info] {myUser} User is not authenticated
-апр. 14 09:33:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 14 09:33:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 14 09:33:39 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 14 09:33:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 14 09:33:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 14 09:33:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 14 09:33:39 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 14 09:33:39 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "title" on "Tag"
-апр. 14 09:33:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
-апр. 14 09:33:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 14 09:33:39 symfony [info] {sfWebDebugLogger} Configuration 1.83 ms (9)
-апр. 14 09:33:39 symfony [info] {sfWebDebugLogger} Factories 39.09 ms (1)
-апр. 14 09:33:39 symfony [info] {sfWebDebugLogger} Action "post/index" 68.26 ms (1)
-апр. 14 09:33:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
-апр. 14 09:33:39 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 79.94 ms (1)
-Apr 15 05:32:47 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 15 05:32:47 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 15 05:32:47 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 15 05:32:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 15 05:32:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 15 05:32:47 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 15 05:32:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 15 05:32:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 15 05:32:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 15 05:32:48 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 15 05:32:48 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "title" on "Tag"
-апр. 15 05:32:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
-апр. 15 05:32:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 15 05:32:48 symfony [info] {sfWebDebugLogger} Configuration 2.66 ms (9)
-апр. 15 05:32:48 symfony [info] {sfWebDebugLogger} Factories 595.95 ms (1)
-апр. 15 05:32:48 symfony [info] {sfWebDebugLogger} Action "post/index" 431.32 ms (1)
-апр. 15 05:32:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
-апр. 15 05:32:48 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 354.35 ms (1)
-Apr 15 06:46:20 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 15 06:46:20 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 15 06:46:20 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 15 06:46:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 15 06:46:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 15 06:46:20 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 15 06:46:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 15 06:46:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 15 06:46:21 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 15 06:46:21 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 15 06:46:21 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "title" on "Tag"
-апр. 15 06:46:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
-апр. 15 06:46:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 15 06:46:21 symfony [info] {sfWebDebugLogger} Configuration 2.00 ms (9)
-апр. 15 06:46:21 symfony [info] {sfWebDebugLogger} Factories 61.12 ms (1)
-апр. 15 06:46:21 symfony [info] {sfWebDebugLogger} Action "post/index" 63.57 ms (1)
-апр. 15 06:46:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
-апр. 15 06:46:21 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 116.35 ms (1)
-Apr 15 07:10:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 15 07:10:03 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 15 07:10:03 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 15 07:10:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 15 07:10:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 15 07:10:04 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 15 07:10:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 15 07:10:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 15 07:10:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 15 07:10:04 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 15 07:10:04 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "title" on "Tag"
-апр. 15 07:10:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
-апр. 15 07:10:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 15 07:10:04 symfony [info] {sfWebDebugLogger} Configuration 2.51 ms (9)
-апр. 15 07:10:04 symfony [info] {sfWebDebugLogger} Factories 641.18 ms (1)
-апр. 15 07:10:04 symfony [info] {sfWebDebugLogger} Action "post/index" 387.37 ms (1)
-апр. 15 07:10:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
-апр. 15 07:10:04 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 354.58 ms (1)
-Apr 15 07:19:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 15 07:19:36 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 15 07:19:36 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 15 07:19:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 15 07:19:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 15 07:19:36 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 15 07:19:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 15 07:19:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 15 07:19:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 15 07:19:36 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 15 07:19:36 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "title" on "Tag"
-апр. 15 07:19:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
-апр. 15 07:19:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 15 07:19:36 symfony [info] {sfWebDebugLogger} Configuration 6.14 ms (9)
-апр. 15 07:19:36 symfony [info] {sfWebDebugLogger} Factories 56.73 ms (1)
-апр. 15 07:19:36 symfony [info] {sfWebDebugLogger} Action "post/index" 60.60 ms (1)
-апр. 15 07:19:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
-апр. 15 07:19:36 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 97.15 ms (1)
-Apr 15 07:35:41 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 15 07:35:41 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 15 07:35:41 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 15 07:35:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 15 07:35:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 15 07:35:41 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 15 07:35:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 15 07:35:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 15 07:35:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 15 07:35:42 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 15 07:35:42 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "title" on "Tag"
-апр. 15 07:35:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
-апр. 15 07:35:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 15 07:35:42 symfony [info] {sfWebDebugLogger} Configuration 2.67 ms (9)
-апр. 15 07:35:42 symfony [info] {sfWebDebugLogger} Factories 540.63 ms (1)
-апр. 15 07:35:42 symfony [info] {sfWebDebugLogger} Action "post/index" 343.69 ms (1)
-апр. 15 07:35:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
-апр. 15 07:35:42 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 497.43 ms (1)
-Apr 16 15:52:02 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 16 15:52:02 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 16 15:52:02 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 16 15:52:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 16 15:52:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 16 15:52:03 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 16 15:52:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 16 15:52:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 16 15:52:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 16 15:52:04 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 16 15:52:04 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "title" on "Tag"
-апр. 16 15:52:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
-апр. 16 15:52:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 16 15:52:04 symfony [info] {sfWebDebugLogger} Configuration 2.58 ms (9)
-апр. 16 15:52:04 symfony [info] {sfWebDebugLogger} Factories 652.21 ms (1)
-апр. 16 15:52:04 symfony [info] {sfWebDebugLogger} Action "post/index" 599.22 ms (1)
-апр. 16 15:52:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
-апр. 16 15:52:04 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 387.34 ms (1)
-Apr 16 20:35:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 16 20:35:06 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 16 20:35:06 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 16 20:35:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 16 20:35:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 16 20:35:07 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 16 20:35:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 16 20:35:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 16 20:35:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 16 20:35:08 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 16 20:35:08 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "title" on "Tag"
-апр. 16 20:35:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
-апр. 16 20:35:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 16 20:35:08 symfony [info] {sfWebDebugLogger} Configuration 2.71 ms (9)
-апр. 16 20:35:08 symfony [info] {sfWebDebugLogger} Factories 840.88 ms (1)
-апр. 16 20:35:08 symfony [info] {sfWebDebugLogger} Action "post/index" 841.95 ms (1)
-апр. 16 20:35:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (3)
-апр. 16 20:35:08 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 365.86 ms (1)
-Apr 17 06:39:19 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 17 06:39:19 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 17 06:39:19 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 17 06:39:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 17 06:39:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 17 06:39:20 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 17 06:39:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 17 06:39:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 17 06:39:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 17 06:39:20 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 17 06:39:20 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "title" on "Tag"
-апр. 17 06:39:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
-апр. 17 06:39:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 17 06:39:20 symfony [info] {sfWebDebugLogger} Configuration 2.64 ms (9)
-апр. 17 06:39:20 symfony [info] {sfWebDebugLogger} Factories 685.31 ms (1)
-апр. 17 06:39:20 symfony [info] {sfWebDebugLogger} Action "post/index" 343.12 ms (1)
-апр. 17 06:39:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
-апр. 17 06:39:20 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 443.09 ms (1)
-Apr 17 06:41:55 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 17 06:41:55 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 17 06:41:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 17 06:41:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 17 06:41:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 17 06:41:55 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 17 06:41:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 17 06:41:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 17 06:41:56 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 17 06:41:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 17 06:41:56 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 17 06:41:56 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 17 06:41:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-апр. 17 06:41:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 17 06:41:56 symfony [info] {sfWebDebugLogger} Configuration 1.76 ms (9)
-апр. 17 06:41:56 symfony [info] {sfWebDebugLogger} Factories 44.07 ms (1)
-апр. 17 06:41:56 symfony [info] {sfWebDebugLogger} Action "post/index" 46.09 ms (1)
-апр. 17 06:41:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.10 ms (15)
-апр. 17 06:41:56 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 343.10 ms (1)
-апр. 17 06:41:56 symfony [info] {sfWebResponse} Send content (58732 o)
-Apr 17 06:47:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 17 06:47:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 17 06:47:09 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 17 06:47:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 17 06:47:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 17 06:47:09 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 17 06:47:09 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 17 06:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 17 06:47:09 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 17 06:47:09 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 17 06:47:09 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Undefined variable: tags)
-апр. 17 06:47:09 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Invalid argument supplied for foreach())
-апр. 17 06:47:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-апр. 17 06:47:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 17 06:47:09 symfony [info] {sfWebDebugLogger} Configuration 2.12 ms (9)
-апр. 17 06:47:09 symfony [info] {sfWebDebugLogger} Factories 43.46 ms (1)
-апр. 17 06:47:09 symfony [info] {sfWebDebugLogger} Action "post/index" 48.94 ms (1)
-апр. 17 06:47:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (15)
-апр. 17 06:47:09 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 101.10 ms (1)
-апр. 17 06:47:09 symfony [info] {sfWebResponse} Send content (58586 o)
-Apr 17 06:47:22 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 17 06:47:22 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 17 06:47:22 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 17 06:47:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 17 06:47:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 17 06:47:22 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 17 06:47:22 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 17 06:47:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 17 06:47:22 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 17 06:47:22 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 17 06:47:22 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Undefined variable: tags)
-апр. 17 06:47:22 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Invalid argument supplied for foreach())
-апр. 17 06:47:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-апр. 17 06:47:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 17 06:47:22 symfony [info] {sfWebDebugLogger} Configuration 1.74 ms (9)
-апр. 17 06:47:22 symfony [info] {sfWebDebugLogger} Factories 54.26 ms (1)
-апр. 17 06:47:22 symfony [info] {sfWebDebugLogger} Action "post/index" 48.83 ms (1)
-апр. 17 06:47:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.09 ms (15)
-апр. 17 06:47:22 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 87.39 ms (1)
-апр. 17 06:47:22 symfony [info] {sfWebResponse} Send content (58585 o)
-Apr 17 07:10:10 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
-Apr 17 07:10:10 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
-Apr 17 07:10:10 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
-апр. 17 07:10:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-апр. 17 07:10:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-апр. 17 07:10:10 symfony [info] {postActions} Call "postActions->executeIndex()"
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
-апр. 17 07:10:10 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 17 07:10:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
-апр. 17 07:10:10 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 17 07:10:10 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
-апр. 17 07:10:10 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Undefined variable: tags)
-апр. 17 07:10:10 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Invalid argument supplied for foreach())
-апр. 17 07:10:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-апр. 17 07:10:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-апр. 17 07:10:10 symfony [info] {sfWebDebugLogger} Configuration 1.69 ms (9)
-апр. 17 07:10:10 symfony [info] {sfWebDebugLogger} Factories 38.00 ms (1)
-апр. 17 07:10:10 symfony [info] {sfWebDebugLogger} Action "post/index" 40.95 ms (1)
-апр. 17 07:10:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (15)
-апр. 17 07:10:10 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 73.54 ms (1)
-апр. 17 07:10:11 symfony [info] {sfWebResponse} Send content (58585 o)
+Apr 17 10:18:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 10:18:12 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 10:18:12 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 10:18:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 10:18:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 10:18:12 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 10:18:12 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 10:18:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 10:18:12 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 10:18:12 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 10:18:12 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Undefined variable: tags)
+апр. 17 10:18:12 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Invalid argument supplied for foreach())
+апр. 17 10:18:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+апр. 17 10:18:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 10:18:12 symfony [info] {sfWebDebugLogger} Configuration 2.05 ms (9)
+апр. 17 10:18:12 symfony [info] {sfWebDebugLogger} Factories 67.66 ms (1)
+апр. 17 10:18:12 symfony [info] {sfWebDebugLogger} Action "post/index" 360.48 ms (1)
+апр. 17 10:18:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (15)
+апр. 17 10:18:12 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 144.51 ms (1)
+апр. 17 10:18:12 symfony [info] {sfWebResponse} Send content (58588 o)
+Apr 17 10:19:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 10:19:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 10:19:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 10:19:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 10:19:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 10:19:01 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 10:19:01 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 10:19:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 10:19:01 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 10:19:01 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 10:19:01 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Undefined variable: tags)
+апр. 17 10:19:01 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Invalid argument supplied for foreach())
+апр. 17 10:19:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+апр. 17 10:19:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 10:19:01 symfony [info] {sfWebDebugLogger} Configuration 1.94 ms (9)
+апр. 17 10:19:01 symfony [info] {sfWebDebugLogger} Factories 69.11 ms (1)
+апр. 17 10:19:01 symfony [info] {sfWebDebugLogger} Action "post/index" 73.50 ms (1)
+апр. 17 10:19:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (15)
+апр. 17 10:19:01 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 121.29 ms (1)
+апр. 17 10:19:01 symfony [info] {sfWebResponse} Send content (58373 o)
+Apr 17 10:19:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 10:19:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 10:19:53 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 10:19:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 10:19:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 10:19:53 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 10:19:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 10:19:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 10:19:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 10:19:53 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 10:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 10:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 10:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 10:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 10:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 10:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 10:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 10:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 10:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 10:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 10:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 10:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 10:19:54 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 10:19:54 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 10:19:54 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Undefined variable: tags)
+апр. 17 10:19:54 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Invalid argument supplied for foreach())
+апр. 17 10:19:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+апр. 17 10:19:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 10:19:54 symfony [info] {sfWebDebugLogger} Configuration 1.94 ms (9)
+апр. 17 10:19:54 symfony [info] {sfWebDebugLogger} Factories 78.05 ms (1)
+апр. 17 10:19:54 symfony [info] {sfWebDebugLogger} Action "post/index" 116.85 ms (1)
+апр. 17 10:19:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (15)
+апр. 17 10:19:54 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 210.50 ms (1)
+апр. 17 10:19:54 symfony [info] {sfWebResponse} Send content (58589 o)
+Apr 17 12:35:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 12:35:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 12:35:18 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 12:35:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 12:35:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 12:35:18 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 12:35:18 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 12:35:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 12:35:18 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 12:35:18 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 12:35:18 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Undefined variable: tags)
+апр. 17 12:35:18 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Invalid argument supplied for foreach())
+апр. 17 12:35:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+апр. 17 12:35:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 12:35:18 symfony [info] {sfWebDebugLogger} Configuration 4.29 ms (9)
+апр. 17 12:35:18 symfony [info] {sfWebDebugLogger} Factories 72.15 ms (1)
+апр. 17 12:35:18 symfony [info] {sfWebDebugLogger} Action "post/index" 90.86 ms (1)
+апр. 17 12:35:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (15)
+апр. 17 12:35:18 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 158.12 ms (1)
+апр. 17 12:35:18 symfony [info] {sfWebResponse} Send content (58388 o)
+Apr 17 12:37:40 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 12:37:40 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 12:37:40 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 12:37:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 12:37:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 12:37:40 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 12:37:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 12:37:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 12:37:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 12:37:40 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 12:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 12:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 12:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 12:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 12:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 12:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 12:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 12:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 12:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 12:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 12:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 12:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 12:37:41 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 12:37:41 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 12:37:41 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Undefined variable: tags)
+апр. 17 12:37:41 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Invalid argument supplied for foreach())
+апр. 17 12:37:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+апр. 17 12:37:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 12:37:41 symfony [info] {sfWebDebugLogger} Configuration 1.99 ms (9)
+апр. 17 12:37:41 symfony [info] {sfWebDebugLogger} Factories 56.27 ms (1)
+апр. 17 12:37:41 symfony [info] {sfWebDebugLogger} Action "post/index" 85.00 ms (1)
+апр. 17 12:37:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (15)
+апр. 17 12:37:41 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 115.58 ms (1)
+апр. 17 12:37:41 symfony [info] {sfWebResponse} Send content (58588 o)
+Apr 17 12:37:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 12:37:43 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 12:37:43 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 12:37:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 12:37:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 12:37:44 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 12:37:44 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 12:37:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 12:37:44 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 12:37:44 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 12:37:44 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Undefined variable: tags)
+апр. 17 12:37:44 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Invalid argument supplied for foreach())
+апр. 17 12:37:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+апр. 17 12:37:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 12:37:44 symfony [info] {sfWebDebugLogger} Configuration 2.68 ms (9)
+апр. 17 12:37:44 symfony [info] {sfWebDebugLogger} Factories 58.22 ms (1)
+апр. 17 12:37:44 symfony [info] {sfWebDebugLogger} Action "post/index" 61.74 ms (1)
+апр. 17 12:37:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (15)
+апр. 17 12:37:44 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 115.41 ms (1)
+апр. 17 12:37:44 symfony [info] {sfWebResponse} Send content (58588 o)
+Apr 17 12:37:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 12:37:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 12:37:50 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 12:37:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 12:37:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 12:37:50 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 12:37:50 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 12:37:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 12:37:50 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 12:37:50 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 12:37:50 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Undefined variable: tags)
+апр. 17 12:37:50 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Invalid argument supplied for foreach())
+апр. 17 12:37:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+апр. 17 12:37:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 12:37:50 symfony [info] {sfWebDebugLogger} Configuration 1.98 ms (9)
+апр. 17 12:37:50 symfony [info] {sfWebDebugLogger} Factories 55.31 ms (1)
+апр. 17 12:37:50 symfony [info] {sfWebDebugLogger} Action "post/index" 53.42 ms (1)
+апр. 17 12:37:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (15)
+апр. 17 12:37:50 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 133.24 ms (1)
+апр. 17 12:37:50 symfony [info] {sfWebResponse} Send content (58588 o)
+Apr 17 12:38:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 12:38:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 12:38:53 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 12:38:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 12:38:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 12:38:53 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 12:38:53 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 12:38:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 12:38:53 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 12:38:53 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 12:38:53 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Undefined variable: tagss)
+апр. 17 12:38:53 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/templates/layout.php on line 60 (Invalid argument supplied for foreach())
+апр. 17 12:38:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+апр. 17 12:38:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 12:38:53 symfony [info] {sfWebDebugLogger} Configuration 3.65 ms (9)
+апр. 17 12:38:53 symfony [info] {sfWebDebugLogger} Factories 62.59 ms (1)
+апр. 17 12:38:53 symfony [info] {sfWebDebugLogger} Action "post/index" 77.64 ms (1)
+апр. 17 12:38:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (15)
+апр. 17 12:38:53 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 146.41 ms (1)
+апр. 17 12:38:53 symfony [info] {sfWebResponse} Send content (58590 o)
+Apr 17 12:49:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 12:49:51 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 12:49:51 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 12:49:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 12:49:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 12:49:51 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 12:49:51 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 12:49:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 12:49:51 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 12:49:51 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 17 16:53:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 16:53:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 16:53:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 16:53:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 16:53:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 16:53:11 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 16:53:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 16:53:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 16:53:12 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 16:53:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 16:53:12 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 16:53:12 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+Apr 17 16:55:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 16:55:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 16:55:46 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 16:55:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 16:55:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 16:55:46 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 16:55:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 16:55:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 16:55:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 16:55:46 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 17 17:00:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 17:00:50 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 17:00:50 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 17:00:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 17:00:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 17:00:50 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 17:00:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 17:00:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 17:00:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 17:00:50 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 17 17:00:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 17:00:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 17:00:53 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 17:00:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 17:00:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 17:00:53 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 17:00:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 17:00:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 17:00:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 17:00:53 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 17 17:03:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 17:03:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 17:03:29 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 17:03:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 17:03:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 17:03:29 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 17:03:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 17:03:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 17:03:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 17:03:29 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 17:03:29 symfony [err] {InvalidArgumentException} Unable to load "SlotHelper.php" helper in: SF_ROOT_DIR/apps/frontend/lib/helper, SF_ROOT_DIR/lib/helper, SF_ROOT_DIR/lib/vendor/symfony/lib/helper.
+апр. 17 17:03:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+апр. 17 17:03:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 17:03:29 symfony [info] {sfWebDebugLogger} Configuration 1.96 ms (9)
+апр. 17 17:03:29 symfony [info] {sfWebDebugLogger} Factories 69.03 ms (1)
+апр. 17 17:03:29 symfony [info] {sfWebDebugLogger} Action "post/index" 70.95 ms (1)
+апр. 17 17:03:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+апр. 17 17:03:29 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 76.27 ms (1)
+Apr 17 17:03:57 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 17:03:57 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 17:03:57 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 17:03:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 17:03:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 17:03:57 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 17:03:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 17:03:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 17:03:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 17:03:57 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 17:03:57 symfony [err] {InvalidArgumentException} Unable to load "sssHelper.php" helper in: SF_ROOT_DIR/apps/frontend/lib/helper, SF_ROOT_DIR/lib/helper, SF_ROOT_DIR/lib/vendor/symfony/lib/helper.
+апр. 17 17:03:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+апр. 17 17:03:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 17:03:57 symfony [info] {sfWebDebugLogger} Configuration 1.98 ms (9)
+апр. 17 17:03:57 symfony [info] {sfWebDebugLogger} Factories 56.98 ms (1)
+апр. 17 17:03:57 symfony [info] {sfWebDebugLogger} Action "post/index" 94.35 ms (1)
+апр. 17 17:03:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+апр. 17 17:03:57 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 71.32 ms (1)
+Apr 17 17:04:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 17:04:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 17:04:08 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 17:04:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 17:04:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 17:04:08 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 17:04:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 17:04:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 17:04:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 17:04:08 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 17 17:08:49 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 17:08:49 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 17:08:49 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 17:08:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 17:08:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 17:08:49 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 17:08:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 17:08:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 17:08:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 17:08:50 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 17:08:50 symfony [err] {InvalidArgumentException} Unable to load "SlotsHelper.php" helper in: SF_ROOT_DIR/apps/frontend/lib/helper, SF_ROOT_DIR/lib/helper, SF_ROOT_DIR/lib/vendor/symfony/lib/helper.
+апр. 17 17:08:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+апр. 17 17:08:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 17:08:50 symfony [info] {sfWebDebugLogger} Configuration 1.89 ms (9)
+апр. 17 17:08:50 symfony [info] {sfWebDebugLogger} Factories 61.21 ms (1)
+апр. 17 17:08:50 symfony [info] {sfWebDebugLogger} Action "post/index" 347.05 ms (1)
+апр. 17 17:08:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+апр. 17 17:08:50 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 51.84 ms (1)
+Apr 17 17:09:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 17:09:21 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 17:09:21 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 17:09:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 17:09:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 17:09:21 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 17:09:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 17:09:21 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 17:09:21 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 17:09:21 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+Apr 17 17:11:30 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 17:11:30 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 17:11:30 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 17:11:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 17:11:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 17:11:30 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 17:11:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 17:11:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 17:11:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()
+апр. 17 17:11:30 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 17:11:30 symfony [info] {main} Set slot "cloudtags"
+апр. 17 17:11:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 17:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 17:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 17:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 17:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 17:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 17:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 17:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 17:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 17:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 17:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 17:11:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 17:11:31 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 17:11:31 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 17:11:31 symfony [info] {main} Get slot "cloudtags"
+апр. 17 17:11:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+апр. 17 17:11:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 17:11:31 symfony [info] {sfWebDebugLogger} Configuration 5.59 ms (9)
+апр. 17 17:11:31 symfony [info] {sfWebDebugLogger} Factories 54.54 ms (1)
+апр. 17 17:11:31 symfony [info] {sfWebDebugLogger} Action "post/index" 80.74 ms (1)
+апр. 17 17:11:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.08 ms (15)
+апр. 17 17:11:31 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 285.77 ms (1)
+апр. 17 17:11:31 symfony [info] {sfWebResponse} Send content (59313 o)
+Apr 17 17:33:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 17:33:05 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 17:33:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 17:33:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 17:33:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 17:33:05 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 17:33:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 17:33:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+Apr 17 17:47:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 17:47:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 17:47:16 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 17:47:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 17:47:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 17:47:16 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 17:47:16 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 17:47:16 symfony [info] {main} Set slot "cloudtags"
+апр. 17 17:47:16 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php on line 4 (Undefined variable: tags)
+апр. 17 17:47:16 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php on line 4 (Invalid argument supplied for foreach())
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 17:47:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 17:47:16 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 17:47:16 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 17:47:16 symfony [info] {main} Get slot "cloudtags"
+апр. 17 17:47:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+апр. 17 17:47:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 17:47:16 symfony [info] {sfWebDebugLogger} Configuration 3.78 ms (9)
+апр. 17 17:47:16 symfony [info] {sfWebDebugLogger} Factories 73.34 ms (1)
+апр. 17 17:47:16 symfony [info] {sfWebDebugLogger} Action "post/index" 72.72 ms (1)
+апр. 17 17:47:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (14)
+апр. 17 17:47:16 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 353.55 ms (1)
+апр. 17 17:47:17 symfony [info] {sfWebResponse} Send content (57948 o)
+Apr 17 17:49:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 17:49:16 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 17:49:16 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 17:49:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 17:49:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 17:49:16 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 17:49:16 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php"
+апр. 17 17:49:16 symfony [info] {main} Set slot "cloudtags"
+апр. 17 17:49:16 symfony [notice] {sfWebDebugLogger}  Notice at /var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php on line 4 (Undefined variable: tags)
+апр. 17 17:49:16 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/sfprojects/blog/apps/frontend/modules/post/templates/indexSuccess.php on line 4 (Invalid argument supplied for foreach())
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (1)
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (2)
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (3)
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (4)
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (5)
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 17:49:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(t.id) AS t__0 FROM tag t WHERE (t.post_id = ?) - (6)
+апр. 17 17:49:16 symfony [info] {sfPHPView} Decorate content with "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 17:49:16 symfony [info] {sfPHPView} Render "/var/www/sfprojects/blog/apps/frontend/templates/layout.php"
+апр. 17 17:49:16 symfony [info] {main} Get slot "cloudtags"
+апр. 17 17:49:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+апр. 17 17:49:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+апр. 17 17:49:16 symfony [info] {sfWebDebugLogger} Configuration 3.10 ms (9)
+апр. 17 17:49:16 symfony [info] {sfWebDebugLogger} Factories 67.87 ms (1)
+апр. 17 17:49:16 symfony [info] {sfWebDebugLogger} Action "post/index" 101.12 ms (1)
+апр. 17 17:49:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.09 ms (14)
+апр. 17 17:49:16 symfony [info] {sfWebDebugLogger} View "Success" for "post/index" 128.36 ms (1)
+апр. 17 17:49:16 symfony [info] {sfWebResponse} Send content (57949 o)
+Apr 17 17:49:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 17 17:49:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 17 17:49:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /post with parameters array (  'module' => 'post',  'action' => 'index',)
+апр. 17 17:49:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+апр. 17 17:49:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+апр. 17 17:49:59 symfony [info] {postActions} Call "postActions->executeIndex()"
+апр. 17 17:49:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+апр. 17 17:49:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.title AS p__title, p.content_path1 AS p__content_path1, p.content_path2 AS p__content_path2, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM post p - ()
+апр. 17 17:50:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id AS t__id, t.post_id AS t__post_id, t.word AS t__word FROM tag t - ()

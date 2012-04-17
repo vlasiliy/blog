@@ -38,7 +38,7 @@ all:
     enabled_modules:      [default, sfGuardAuth]
     
     # Подключение хелпера для Даты
-    standard_helpers: [Date]
+    standard_helpers: [Date, Partial]
     
     # Временная зона
     #default_timezone: Europe/Kiev

@@ -16,10 +16,6 @@ class postActions extends sfActions
            ->createQuery('a')
            ->execute();
       
-      $this->tags = Doctrine_Core::getTable('Tag')
-           ->createQuery('b')
-           ->execute();
-    
   }
 
   public function executeShow(sfWebRequest $request)
