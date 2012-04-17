@@ -57,14 +57,9 @@
                 <div class="gadget"><div class="clr"></div></div>
                 <div class="gadget">
                     <h2 class="star"><span>Облако</span></h2>
-                    <a href="#">слово</a>
-                    <a href="#">ещеслово</a>
-                    <a href="#">слово</a>
-                    <a href="#">ещеслово</a>
-                    <a href="#">слово</a>
-                    <a href="#">ещеслово</a>
-                    <a href="#">слово</a>
-                    <a href="#">ещеслово</a>
+                    <?php foreach ($tags as $tag): ?>
+                    <a href="#"><?php echo $tag->getWord() ?></a>
+                    <?php endforeach; ?>
                 </div>
                 <div class="gadget">
                     <h2 class="star"><span>Популярные</span></h2>

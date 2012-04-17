@@ -15,6 +15,10 @@ class postActions extends sfActions
       $this->posts = Doctrine_Core::getTable('Post')
            ->createQuery('a')
            ->execute();
+      
+      $this->tags = Doctrine_Core::getTable('Tag')
+           ->createQuery('b')
+           ->execute();
     
   }
 
