@@ -4,6 +4,7 @@ Post:
     title:          { type: string(255), notnull: true }
     content_path1:  { type: string(1024), notnull: true }
     content_path2:  { type: string(10240), notnull: true }
+    rating:         { type: integer, notnull: true, default: 0 }
 
 Tag:
   columns:
@@ -17,7 +18,13 @@ Comment:
   columns:
     post_id: { type: integer, notnull: true }
     sf_guard_user_id: { type: integer, notnull: true }
-    text:    { type: string(1024), notnull: true }
+    text: { type: string(1024), notnull: true }
   relations:
     Post: { onDelete: CASCADE, local: post_id, foreign: id }
     sfGuardUser: { onDelete: CASCADE, local: sf_guard_user_id, foreign: id }
+    
+Page:
+  columns:
+    name: { type: string(32), notnull: true }
+    title: { type: string(32), notnull: true }
+    content:  { type: string(10240), notnull: true }

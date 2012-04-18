@@ -8,17 +8,20 @@
  * @property string $title
  * @property string $content_path1
  * @property string $content_path2
+ * @property integer $rating
  * @property Doctrine_Collection $Tag
  * @property Doctrine_Collection $Comment
  * 
  * @method string              getTitle()         Returns the current record's "title" value
  * @method string              getContentPath1()  Returns the current record's "content_path1" value
  * @method string              getContentPath2()  Returns the current record's "content_path2" value
+ * @method integer             getRating()        Returns the current record's "rating" value
  * @method Doctrine_Collection getTag()           Returns the current record's "Tag" collection
  * @method Doctrine_Collection getComment()       Returns the current record's "Comment" collection
  * @method Post                setTitle()         Sets the current record's "title" value
  * @method Post                setContentPath1()  Sets the current record's "content_path1" value
  * @method Post                setContentPath2()  Sets the current record's "content_path2" value
+ * @method Post                setRating()        Sets the current record's "rating" value
  * @method Post                setTag()           Sets the current record's "Tag" collection
  * @method Post                setComment()       Sets the current record's "Comment" collection
  * 
@@ -46,6 +49,11 @@ abstract class BasePost extends sfDoctrineRecord
              'type' => 'string',
              'notnull' => true,
              'length' => 10240,
+             ));
+        $this->hasColumn('rating', 'integer', null, array(
+             'type' => 'integer',
+             'notnull' => true,
+             'default' => 0,
              ));
     }
 

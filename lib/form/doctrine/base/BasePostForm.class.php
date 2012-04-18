@@ -19,6 +19,7 @@ abstract class BasePostForm extends BaseFormDoctrine
       'title'         => new sfWidgetFormInputText(),
       'content_path1' => new sfWidgetFormTextarea(),
       'content_path2' => new sfWidgetFormTextarea(),
+      'rating'        => new sfWidgetFormInputText(),
       'created_at'    => new sfWidgetFormDateTime(),
       'updated_at'    => new sfWidgetFormDateTime(),
     ));
@@ -28,6 +29,7 @@ abstract class BasePostForm extends BaseFormDoctrine
       'title'         => new sfValidatorString(array('max_length' => 255)),
       'content_path1' => new sfValidatorString(array('max_length' => 1024)),
       'content_path2' => new sfValidatorString(array('max_length' => 10240)),
+      'rating'        => new sfValidatorInteger(array('required' => false)),
       'created_at'    => new sfValidatorDateTime(),
       'updated_at'    => new sfValidatorDateTime(),
     ));

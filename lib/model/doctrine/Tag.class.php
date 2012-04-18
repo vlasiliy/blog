@@ -15,10 +15,21 @@ class Tag extends BaseTag
     public static function getCloudTags()
     {
         $q = Doctrine_Query::create()
-             ->select('word, count(id)')
+             ->select('word, count(id) c')
              ->from('Tag t')
-             ->groupBy('word');
+             ->groupBy('word')
+             ->orderBy('c DESC');
         
         return $q->execute();
     }
+    
+    /*
+    public static function getCountTags()
+    {
+        $q = Doctrine_Query::create()
+             ->select('count(id) c')
+             ->from('Tag t')
+             ->orderBy('c DESC');
+    }
+    */
 }

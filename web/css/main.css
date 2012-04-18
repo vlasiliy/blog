@@ -175,7 +175,6 @@ ul.sb_menu li a, ul.ex_menu li a {
 }
 ul.sb_menu li a:hover, ul.ex_menu li a:hover {
     color:#5db166;
-    font-weight:bold;
 }
 ul.sb_menu li a:hover {
     text-decoration:underline;

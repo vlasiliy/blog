@@ -65,18 +65,9 @@
                     <h2 class="star"><span>Популярные</span></h2>
                     <div class="clr"></div>
                     <ul class="ex_menu">
-                        <li><a href="#">Lorem ipsum dolor</a><br />
-                        Donec libero. Suspendisse bibendum</li>
-                        <li><a href="#">Dui pede condimentum</a><br />
-                        Phasellus suscipit, leo a pharetra</li>
-                        <li><a href="#">Condimentum lorem</a><br />
-                        Tellus eleifend magna eget</li>
-                        <li><a href="#">Fringilla velit magna</a><br />
-                        Curabitur vel urna in tristique</li>
-                        <li><a href="#">Suspendisse bibendum</a><br />
-                        Cras id urna orbi tincidunt orci ac</li>
-                        <li><a href="#">Donec mattis</a><br />
-                        purus nec placerat bibendum</li>
+                    <?php foreach (Post::getPopularPosts() as $ppost): ?>
+                        <li><a href="#"><?php echo $ppost->getTitle() ?></a></li>
+                    <?php endforeach; ?> 
                     </ul>
                 </div>
             </div>

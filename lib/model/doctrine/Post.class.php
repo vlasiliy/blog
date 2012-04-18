@@ -32,4 +32,15 @@ class Post extends BasePost
         return $q->execute(array(), Doctrine_Core::HYDRATE_SINGLE_SCALAR);
     }
     
+    public static function getPopularPosts()
+    {
+        $q = Doctrine_Query::create()
+                ->select('title')
+                ->from('Post p')
+                ->orderBy('rating DESC')
+                ->limit('0, 10');
+ 
+        return $q->execute();
+    }
+    
 }
