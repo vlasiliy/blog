@@ -1,34 +1,22 @@
-<table>
-  <tbody>
-    <tr>
-      <th>Id:</th>
-      <td><?php echo $post->getId() ?></td>
-    </tr>
-    <tr>
-      <th>Title:</th>
-      <td><?php echo $post->getTitle() ?></td>
-    </tr>
-    <tr>
-      <th>Content path1:</th>
-      <td><?php echo $post->getContentPath1() ?></td>
-    </tr>
-    <tr>
-      <th>Content path2:</th>
-      <td><?php echo $post->getContentPath2() ?></td>
-    </tr>
-    <tr>
-      <th>Created at:</th>
-      <td><?php echo $post->getCreatedAt() ?></td>
-    </tr>
-    <tr>
-      <th>Updated at:</th>
-      <td><?php echo $post->getUpdatedAt() ?></td>
-    </tr>
-  </tbody>
-</table>
-
-<hr />
-
-<a href="<?php echo url_for('post/edit?id='.$post->getId()) ?>">Edit</a>
-&nbsp;
-<a href="<?php echo url_for('post/index') ?>">List</a>
+<div class="article">
+    <h2><?php echo $post->getTitle() ?></h2>
+    <div class="clr"></div>
+    <p>
+        <span class="date"><?php echo format_date($post->getCreatedAt(), 'D') ?></span>&nbsp;|&nbsp;Тэги:
+        <?php foreach ($post->getTagsPost($post->getId()) as $tag): ?>
+            <a href="#"><?php echo $tag->getWord() ?></a>&nbsp;
+        <?php endforeach; ?>
+    </p>
+    <?php echo $post->getContentPath1(ESC_RAW).$post->getContentPath2(ESC_RAW) ?>
+    <div class="comment">
+        <div class="title_comment"><a name="comments">Коментарии:</a></div>
+        <div class="comments">
+            <?php foreach ($comments as $comment): ?>
+                <strong>
+                    <?php echo $comment->getSf_guard_user()->getUsername() ?>&nbsp;(<?php echo $comment->getCreatedAt() ?>):
+                </strong><br />
+                <?php echo $comment->getText() ?><br /><br />
+            <?php endforeach; ?>
+        </div>
+    </div>
+</div>

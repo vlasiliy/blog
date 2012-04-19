@@ -1,10 +1,24 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+#маршрут для постов
+post_show:
+  url:   /post/:id
+  param: { module: post, action: show }
+  requirements:
+    id: \d+
+
+#посты по тэгу
+posts_for_tag:
+  url:   /tag/:id
+  param: { module: post, action: tag }
+  requirements:
+    id: \d+
+
 # default rules
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: post, action: index }
 
 # generic rules
 # please, remove them by adding more specific rules

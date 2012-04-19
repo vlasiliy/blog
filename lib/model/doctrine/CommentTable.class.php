@@ -16,4 +16,17 @@ class CommentTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Comment');
     }
+    
+    public function getCommentsPost($id_post)
+    {
+        $q = $this->createQuery('c')
+             ->select('u.username, c.text')
+             //->from('')
+             ->leftJoin('c.sfGuardUser u')   
+             ->where('c.post_id = ?', $id_post)
+             ->andWhere('c.sf_guard_user_id = u.id')
+             ->orderBy('c.created_at DESC');
+        
+        return $q->execute();
+    }
 }

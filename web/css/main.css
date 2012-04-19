@@ -271,11 +271,13 @@ ul.ex_menu li a:hover {
     width:260px;
 }
 .footer {
+    margin-bottom: 10px;;
 }
 .footer_resize {
     margin:0 auto;
     padding:26px;
-    width:922px;
+    width:918px;
+    border:1px solid #dfdede;
 }
 .footer p {
     margin:0;
@@ -400,4 +402,18 @@ ol li .send {
     padding:0;
     border:none;
     float:left;
+}
+
+.article ul{
+    padding-left: 25px;
+}
+.comment {
+    border-top: solid 1px #d8dbdc;
+}
+.title_comment {
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+.comments {
+    padding-left: 10px;
 }

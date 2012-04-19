@@ -15,11 +15,21 @@ class postActions extends sfActions
       $this->posts = Doctrine_Core::getTable('Post')
            ->createQuery('a')
            ->execute();
-      
+  }
+  
+  public function executeTag(sfWebRequest $request)
+  {
+      $this->posts = Doctrine_Core::getTable('Post')
+           ->createQuery('a')
+           ->execute();
   }
 
+  
+  
   public function executeShow(sfWebRequest $request)
   {
+    
+    $this->comments = CommentTable::getInstance()->getCommentsPost($request->getParameter('id'));
     $this->post = Doctrine_Core::getTable('Post')->find(array($request->getParameter('id')));
     $this->forward404Unless($this->post);
   }
