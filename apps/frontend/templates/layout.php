@@ -16,8 +16,8 @@
             <div class="menu_nav">
                 <ul>
                     <li class="active"><a href="<?php echo url_for('@homepage') ?>">Блог</a></li>
-                    <li><a href="/about">О себе</a></li>
-                    <li><a href="/contact">Контакты</a></li>
+                    <li><a href="<?php echo url_for('@homepage') ?>about">О себе</a></li>
+                    <li><a href="<?php echo url_for('@homepage') ?>contact">Контакты</a></li>
                 </ul>
             </div>
             <div class="logo">
@@ -58,7 +58,7 @@
                 <div class="gadget">
                 <h2 class="star"><span>Облако</span></h2>
                 <?php foreach (Tag::getCloudTags() as $tag): ?>
-                <a href="#"><?php echo $tag->getWord() ?></a>
+                    <a href="<?php echo url_for('post/tag?id='.$tag->getId()) ?>"><?php echo $tag->getWord() ?></a>
                 <?php endforeach; ?>
                 </div>
                 <div class="gadget">
@@ -66,7 +66,7 @@
                     <div class="clr"></div>
                     <ul class="ex_menu">
                     <?php foreach (Post::getPopularPosts() as $ppost): ?>
-                        <li><a href="#"><?php echo $ppost->getTitle() ?></a></li>
+                        <li><a href="<?php echo url_for('post/show?id='.$ppost->getId()) ?>"><?php echo $ppost->getTitle() ?></a></li>
                     <?php endforeach; ?> 
                     </ul>
                 </div>

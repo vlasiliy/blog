@@ -16,4 +16,15 @@ class PostTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Post');
     }
+    
+    public function getPostsForTag($id_tag)
+    {
+        $q = $this->createQuery('p')
+             ->leftJoin('p.TagPost tp')   
+             ->where('tp.tag_id = ?', $id_tag)
+             ->andWhere('p.id = tp.post_id')
+             ->orderBy('p.created_at DESC');
+        
+        return $q->execute();
+    }
 }

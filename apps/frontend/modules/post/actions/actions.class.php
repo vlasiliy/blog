@@ -2,11 +2,6 @@
 
 /**
  * post actions.
- *
- * @package    blog
- * @subpackage post
- * @author     Your name here
- * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
 class postActions extends sfActions
 {
@@ -19,13 +14,9 @@ class postActions extends sfActions
   
   public function executeTag(sfWebRequest $request)
   {
-      $this->posts = Doctrine_Core::getTable('Post')
-           ->createQuery('a')
-           ->execute();
+      $this->posts = Doctrine_Core::getTable('Post')->getPostsForTag($request->getParameter('id'));
   }
 
-  
-  
   public function executeShow(sfWebRequest $request)
   {
     

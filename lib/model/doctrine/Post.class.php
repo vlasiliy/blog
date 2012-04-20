@@ -16,8 +16,10 @@ class Post extends BasePost
     public function getTagsPost($id_post)
     {
         $q = Doctrine_Query::create()
+                ->select('t.*')
                 ->from('Tag t')
-                ->where('t.post_id = ?', $id_post);
+                ->leftJoin('t.TagPost tp')
+                ->andWhere('tp.post_id = ?', $id_post);
  
         return $q->execute();
     }
@@ -25,9 +27,9 @@ class Post extends BasePost
     public function getCountComment($id_post)
     {
         $q = Doctrine_Query::create()
-                ->select('count(t.id) as countcomments')
-                ->from('Tag t')
-                ->where('t.post_id = ?', $id_post);
+                ->select('count(c.id) as countcomments')
+                ->from('Comment c')
+                ->where('c.post_id = ?', $id_post);
  
         return $q->execute(array(), Doctrine_Core::HYDRATE_SINGLE_SCALAR);
     }
@@ -37,8 +39,8 @@ class Post extends BasePost
         $q = Doctrine_Query::create()
                 ->select('title')
                 ->from('Post p')
-                ->orderBy('rating DESC')
-                ->limit('0, 10');
+                ->limit(sfConfig::get('app_max_post_on_popular'))
+                ->orderBy('rating DESC');
  
         return $q->execute();
     }

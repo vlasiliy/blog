@@ -8,10 +8,15 @@ Post:
 
 Tag:
   columns:
+    word: { type: string(128), notnull: true }
+
+TagPost:
+  columns:
     post_id: { type: integer, notnull: true }
-    word:    { type: string(128), notnull: true }
+    tag_id: { type: integer, notnull: true }
   relations:
-    Post: { onDelete: CASCADE, local: post_id, foreign: id, foreignAlias: Tag }
+    Post: { onDelete: CASCADE, local: post_id, foreign: id }
+    Tag: { onDelete: CASCADE, local: tag_id, foreign: id }
     
 Comment:
   actAs: { Timestampable: ~ }
