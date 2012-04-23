@@ -7,9 +7,13 @@ class postActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-      $this->posts = Doctrine_Core::getTable('Post')
-           ->createQuery('a')
-           ->execute();
+      //$this->posts = Doctrine_Core::getTable('Post')->createQuery('a')->execute();
+      
+      $this->posts = new sfDoctrinePager('Post', sfConfig::get('app_max_post_on_page'));
+      $this->posts->setQuery(Doctrine_Core::getTable('Post')->createQuery('a'));
+      $this->posts->setPage($request->getParameter('page', 1));
+      $this->posts->init();
+  
   }
   
   public function executeTag(sfWebRequest $request)

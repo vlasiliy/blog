@@ -1,3 +1,6 @@
 /cache/.pear/
 /plugins/.registry/
 /plugins/.channels/
+/log/
+/cache/
+/nbproject/
