@@ -18,12 +18,27 @@
 </div>
 <?php endforeach; ?>
 
-<?if($posts->haveToPaginate()):?>
-         <div class="pager">
-         <?foreach($posts->getLinks() as $page):?>
-              <a href="<?=url_for('post/index/?page='.$page)?>"><span><?=$page?></span></a>
-         <?endforeach;?>
-         </div>
-<?endif;?>
+<p class="pages">
+    
+    <small>Страница 1 из 2 &nbsp;&nbsp;&nbsp;</small>
 
-<p class="pages"><small>Страница 1 из 2 &nbsp;&nbsp;&nbsp;</small> <span>1</span> <a href="#">2</a> <a href="#">&raquo;</a></p>
+<?php if ($posts->haveToPaginate()): ?>
+    <a href="<?php echo url_for('@default_index') ?>?page=1">&laquo;</a>
+ 
+    <a href="<?php echo url_for('@default_index') ?>?page=<?php echo $posts->getPreviousPage() ?>">&larr;</a>
+ 
+    <?php foreach ($posts->getLinks() as $page): ?>
+      <?php if ($page == $posts->getPage()): ?>
+        <span><?php echo $page ?></span>
+      <?php else: ?>
+        <a href="<?php echo url_for('@default_index') ?>?page=<?php echo $page ?>"><?php echo $page ?></a>
+      <?php endif; ?>
+    <?php endforeach; ?>
+ 
+    <a href="<?php echo url_for('@default_index') ?>?page=<?php echo $posts->getNextPage() ?>">&rarr;</a>
+ 
+    <a href="<?php echo url_for('@default_index') ?>?page=<?php echo $posts->getLastPage() ?>">&raquo;</a>
+
+<?php endif; ?>
+
+</p>
