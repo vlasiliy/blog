@@ -19,14 +19,14 @@
 <?php endforeach; ?>
 
 <p class="pages">
-    
+
     <small>Страница 1 из 2 &nbsp;&nbsp;&nbsp;</small>
 
 <?php if ($posts->haveToPaginate()): ?>
     <a href="<?php echo url_for('@default_index') ?>?page=1">&laquo;</a>
- 
-    <a href="<?php echo url_for('@default_index') ?>?page=<?php echo $posts->getPreviousPage() ?>">&larr;</a>
- 
+
+    <a href="<?php echo url_for('@default_index') ?>?page=<?php echo $posts->getPreviousPage() ?>">&#8249;</a>
+
     <?php foreach ($posts->getLinks() as $page): ?>
       <?php if ($page == $posts->getPage()): ?>
         <span><?php echo $page ?></span>
@@ -34,9 +34,9 @@
         <a href="<?php echo url_for('@default_index') ?>?page=<?php echo $page ?>"><?php echo $page ?></a>
       <?php endif; ?>
     <?php endforeach; ?>
- 
-    <a href="<?php echo url_for('@default_index') ?>?page=<?php echo $posts->getNextPage() ?>">&rarr;</a>
- 
+
+    <a href="<?php echo url_for('@default_index') ?>?page=<?php echo $posts->getNextPage() ?>">&#8250;</a>
+
     <a href="<?php echo url_for('@default_index') ?>?page=<?php echo $posts->getLastPage() ?>">&raquo;</a>
 
 <?php endif; ?>
