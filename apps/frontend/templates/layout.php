@@ -41,19 +41,7 @@
                     </form>
                 </div>
                 <div class="gadget"><div class="clr"></div></div>
-                <div class="searchform">
-                    <h2 class="star"><span>Авторизация</span></h2>
-                    <form id="formauth" name="formauth" method="post" action="#">
-                        <span>
-                        <input name="editbox_login" class="editbox_login" id="editbox_login" maxlength="80" value="логин:" type="text" />
-                        </span>
-                        <br />
-                        <span>
-                        <input type="password" name="editbox_pass" class="editbox_search" id="editbox_pass" maxlength="80" value="пароль" type="text" />
-                        </span>
-                        <input name="button_pass" src="/images/go.gif" class="button_search" type="image" />
-                    </form>
-                </div>
+                <?php include_component('sfGuardAuth','signin') ?>
                 <div class="gadget"><div class="clr"></div></div>
                 <div class="gadget">
                 <h2 class="star"><span>Облако</span></h2>

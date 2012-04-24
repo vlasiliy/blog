@@ -417,3 +417,6 @@ ol li .send {
 .comments {
     padding-left: 10px;
 }
+a.reg {
+    text-decoration:none;
+}

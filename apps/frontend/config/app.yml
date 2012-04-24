@@ -7,3 +7,6 @@
 all:
   max_post_on_page: 5
   max_post_on_popular: 10
+  
+  sf_guard_plugin:
+    routes_register: false

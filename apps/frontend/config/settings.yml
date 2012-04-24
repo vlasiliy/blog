@@ -37,6 +37,12 @@ all:
     # Подключение модуля плагина sfDoctrineGuardPlugin 
     enabled_modules:      [default, sfGuardAuth]
     
+    #login_module:           sfGuardAuth
+    #login_action:           signin
+ 
+    #secure_module:          sfGuardAuth
+    #secure_action:          secure
+    
     # Подключение хелпера для Даты
     standard_helpers: [Date, Partial]
     

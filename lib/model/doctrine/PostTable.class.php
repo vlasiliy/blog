@@ -25,6 +25,6 @@ class PostTable extends Doctrine_Table
              ->andWhere('p.id = tp.post_id')
              ->orderBy('p.created_at DESC');
         
-        return $q->execute();
+        return $q;
     }
 }

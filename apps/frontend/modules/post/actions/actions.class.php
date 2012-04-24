@@ -7,23 +7,28 @@ class postActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-      //$this->posts = Doctrine_Core::getTable('Post')->createQuery('a')->execute();
+      $this->route = "@homepage";
       
       $this->posts = new sfDoctrinePager('Post', sfConfig::get('app_max_post_on_page'));
       $this->posts->setQuery(Doctrine_Core::getTable('Post')->createQuery('a'));
       $this->posts->setPage($request->getParameter('page', 1));
       $this->posts->init();
-  
   }
   
   public function executeTag(sfWebRequest $request)
   {
-      $this->posts = Doctrine_Core::getTable('Post')->getPostsForTag($request->getParameter('id'));
+      $this->route = "@posts_for_tag?id=".$request->getParameter('id');
+      
+      $this->posts = new sfDoctrinePager('Post', sfConfig::get('app_max_post_on_page'));
+      $this->posts->setQuery(Doctrine_Core::getTable('Post')->getPostsForTag($request->getParameter('id')));
+      $this->posts->setPage($request->getParameter('page', 1));
+      $this->posts->init();
   }
 
   public function executeShow(sfWebRequest $request)
   {
     
+      
     $this->comments = CommentTable::getInstance()->getCommentsPost($request->getParameter('id'));
     $this->post = Doctrine_Core::getTable('Post')->find(array($request->getParameter('id')));
     $this->forward404Unless($this->post);

@@ -1,1 +1,1 @@
-<?php include_partial('post/list', array('posts' => $posts, )) ?>
+<?php include_partial('post/list', array('posts' => $posts, 'route' => $route)) ?>
