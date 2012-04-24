@@ -33,23 +33,23 @@ all:
 
     # Enable the database manager
     use_database:           true
-    
-    # Подключение модуля плагина sfDoctrineGuardPlugin 
+
+    # Подключение модуля плагина sfDoctrineGuardPlugin
     enabled_modules:      [default, sfGuardAuth]
-    
-    #login_module:           sfGuardAuth
-    #login_action:           signin
- 
-    #secure_module:          sfGuardAuth
-    #secure_action:          secure
-    
+
+    login_module:           sfGuardAuth
+    login_action:           signin
+
+    secure_module:          sfGuardAuth
+    secure_action:          secure
+
     # Подключение хелпера для Даты
     standard_helpers: [Date, Partial]
-    
+
     # Временная зона
     #default_timezone: Europe/Kiev
-    
+
     # Локаль
     default_culture: ru_RU
-    
+
     i18n: true

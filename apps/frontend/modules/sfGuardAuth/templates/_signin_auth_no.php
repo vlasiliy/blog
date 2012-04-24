@@ -34,23 +34,19 @@
 <!--
                 <div class="searchform">
                     <h2 class="star"><span>Авторизация</span></h2>
-                    <form id="formauth" name="formauth" method="post" action="<?php echo url_for('@sf_guard_signin') ?>">
-                        <?php echo $form->renderHiddenFields()?>
-                        <?php echo $form['username']->renderError() ?>
-                        <?php echo $form['password']->renderError() ?>
+                    <form id="formauth" name="formauth" method="post" action="">
+
                         <span>
-                        <!--<input name="username" class="editbox_login" id="username" maxlength="80" value="логин:" type="text" />-->
-                        <?php echo $form['username']->render() ?>
+                        <input name="username" class="editbox_login" id="username" maxlength="80" value="логин:" type="text" />
                         </span>
                         <br />
                         <span>
-                        <!--<input type="password" name="editbox_pass" class="editbox_search" id="editbox_pass" maxlength="80" value="пароль" type="text" />-->
-                        <?php echo $form['password']->render() ?>    
+                        <input type="password" name="editbox_pass" class="editbox_search" id="editbox_pass" maxlength="80" value="пароль" type="text" />
                         </span>
                         <input name="signinSubmit" id="signinSubmit" src="/images/go.gif" class="button_search" type="image" />
                         <img src="/images/loader.gif" style="padding-left:10px;display:none;" id="signinLoader">
                     </form>
-                    <a href="<?php echo url_for('@homepage') ?>registration" class="reg">Регистрация</a>
-                    <a href="<?php echo url_for('@homepage') ?>reсpass" class="reg">Забыли пароль?</a>
+                    <a href="#" class="reg">Регистрация</a>
+                    <a href="#" class="reg">Забыли пароль?</a>
                 </div>
 -->
