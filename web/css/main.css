@@ -335,19 +335,19 @@ ol li .send {
     font-weight: bold;
 }
 
-#formauth {
+#signinForm {
     margin:0;
     height:36px;
     padding:0 28px 10px 0;
 }
-#formauth span {
+#signinForm span {
     display:block;
     margin:0px 0 6px 0;
     padding:1px;
     float:left;
     background:#fff url(/images/auth.gif) no-repeat top left;
 }
-#formauth input.editbox_login {
+#signinForm input.editbox_login {
     margin:0;
     padding:6px 6px 10px;
     float:left;
@@ -357,7 +357,7 @@ ol li .send {
     font:normal 12px/1.5em Arial, Helvetica, sans-serif;
     color:#a8acb2;
 }
-#formauth input.editbox_search {
+#signinForm input.editbox_search {
     margin:0;
     padding:6px 6px 10px;
     float:left;
@@ -367,7 +367,7 @@ ol li .send {
     font:normal 12px/1.5em Arial, Helvetica, sans-serif;
     color:#a8acb2;
 }
-#formauth input.button_search {
+#signinForm input.button_search {
     margin:0;
     padding:0;
     border:none;

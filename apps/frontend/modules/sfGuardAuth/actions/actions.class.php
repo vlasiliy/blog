@@ -31,10 +31,9 @@ class sfGuardAuthActions extends BasesfGuardAuthActions
       if ($this->form->isValid())
       {
         $values = $this->form->getValues();
-        return $this->renderText(json_encode($values['remember']));
 
-        return $this->renderText(json_encode(array_key_exists('remember', $values)));
-
+        //return $this->renderText(json_encode(get_class($this->getUser())));
+                
         $this->getUser()->signin($values['user'], array_key_exists('remember', $values) ? $values['remember'] : false);
 
         if ($request->isXmlHttpRequest())

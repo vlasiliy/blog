@@ -42,7 +42,6 @@
                 </div>
                 <div class="gadget"><div class="clr"></div></div>
                 <?php include_component('sfGuardAuth','signin') ?>
-                <div class="gadget"><div class="clr"></div></div>
                 <div class="gadget">
                 <h2 class="star"><span>Облако</span></h2>
                 <?php foreach (Tag::getCloudTags() as $tag): ?>

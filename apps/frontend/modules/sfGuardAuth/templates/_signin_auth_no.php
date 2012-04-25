@@ -22,31 +22,22 @@
     })
   })
 </script>
-<form id="signinForm" action="<?php echo url_for('@sf_guard_signin') ?>" method="post">
-<?php echo $form->renderHiddenFields()?>
-<?php echo $form['username']->render(array('class'=>'inputbox','id'=>'login_username','size'=>'10','alt'=>'Username')) ?>
-<?php echo $form['password']->render(array('class'=>'inputbox','id'=>'login_password','size'=>'10','alt'=>'Password')) ?>
-<input id="signinSubmit" class="button" type="submit" name="Submit" value="Submit" />
-</form>
 
-
-
-<!--
-                <div class="searchform">
-                    <h2 class="star"><span>Авторизация</span></h2>
-                    <form id="formauth" name="formauth" method="post" action="">
-
-                        <span>
-                        <input name="username" class="editbox_login" id="username" maxlength="80" value="логин:" type="text" />
-                        </span>
-                        <br />
-                        <span>
-                        <input type="password" name="editbox_pass" class="editbox_search" id="editbox_pass" maxlength="80" value="пароль" type="text" />
-                        </span>
-                        <input name="signinSubmit" id="signinSubmit" src="/images/go.gif" class="button_search" type="image" />
-                        <img src="/images/loader.gif" style="padding-left:10px;display:none;" id="signinLoader">
-                    </form>
-                    <a href="#" class="reg">Регистрация</a>
-                    <a href="#" class="reg">Забыли пароль?</a>
-                </div>
--->
+<div class="searchform">
+    <h2 class="star"><span>Авторизация</span></h2>
+    <form id="signinForm" name="signinForm" method="post" <?php echo url_for('@sf_guard_signin') ?>>
+        <?php echo $form->renderHiddenFields()?>
+        <span>
+        <?php echo $form['username']->render(array('class'=>'editbox_login','id'=>'login_username','maxlenght'=>'80','alt'=>'Username','value'=>'логин:')) ?>
+        </span>
+        <br />
+        <span>
+        <?php echo $form['password']->render(array('class'=>'editbox_search','id'=>'login_password','alt'=>'Password')) ?>
+        </span>
+        <input id="signinSubmit" name="signinSubmit" src="/images/go.gif" class="button_search" type="image" />
+        <img src="/images/loader.gif" style="padding-left:10px;display:none;" id="signinLoader">
+    </form>
+    <a href="<?php echo url_for('@sf_guard_register') ?>" class="reg">Регистрация</a><br />
+    <a href="#" class="reg">Забыли пароль?</a>
+</div>
+<div class="gadget"><div class="clr"></div></div>

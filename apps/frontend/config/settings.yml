@@ -35,7 +35,7 @@ all:
     use_database:           true
 
     # Подключение модуля плагина sfDoctrineGuardPlugin
-    enabled_modules:      [default, sfGuardAuth]
+    enabled_modules:      [default, sfGuardAuth, sfGuardRegister]
 
     login_module:           sfGuardAuth
     login_action:           signin
