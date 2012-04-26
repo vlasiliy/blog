@@ -11,6 +11,7 @@ require_once(dirname(__FILE__)."/../../../../../plugins/sfDoctrineGuardPlugin/mo
  */
 class sfGuardAuthActions extends BasesfGuardAuthActions
 {
+  
   public function executeSignin($request)
   {
     $user = $this->getUser();

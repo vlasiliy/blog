@@ -13,7 +13,7 @@ sf_guard_signout:
 sf_guard_register:
   url:   /register
   param: { module: sfGuardRegister, action: index }
-
+  
 #маршрут для постов
 post_show:
   url:   /post/:id
