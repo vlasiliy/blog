@@ -17,6 +17,10 @@
         <target>Запомнить</target>
       </trans-unit>
       <trans-unit>
+        <source>Register</source>
+        <target>Регистрировать</target>
+      </trans-unit>
+      <trans-unit>
         <source>Signin</source>
         <target>Вход</target>
       </trans-unit>
