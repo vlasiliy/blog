@@ -14,6 +14,8 @@ class BasesfGuardRegisterForm extends sfGuardUserAdminForm
   {
     parent::setup();
 
+    //$this->widgetSchema->setLabel('username', 'Имя пользователя');
+    
     unset(
       $this['is_active'],
       $this['is_super_admin'],
