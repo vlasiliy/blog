@@ -3,7 +3,7 @@
 <div class="article">
     <h2>Регистрация</h2>
     <form action="<?php echo url_for('@sf_guard_register') ?>" method="post">
-        <table>
+        <table id="tbl_register">
             <?php echo $form ?>
             <tfoot>
                 <tr>

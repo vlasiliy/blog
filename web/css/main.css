@@ -420,3 +420,16 @@ ol li .send {
 a.reg {
     text-decoration:none;
 }
+#tbl_register {
+    margin-bottom: 40px;
+}
+#tbl_register input {
+    border: solid 1px #d8dbdc;
+    width: 250px;
+}
+#tbl_register th {
+    text-align: left;
+}
+#tbl_register tfoot td {
+    text-align: right;
+}
