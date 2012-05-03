@@ -169,6 +169,14 @@
         <source><![CDATA[from %from_date%<br />to %to_date%]]></source>
         <target><![CDATA[от %from_date%<br />до %to_date%]]></target>
       </trans-unit>
+      <trans-unit>
+        <source><![CDATA["%value%" is too long (%max_length% characters max).]]></source>
+        <target><![CDATA["%value%" слишком длинно (%max_length% символов максимум).]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source><![CDATA["%value%" is too short (%min_length% characters min).]]></source>
+        <target><![CDATA["%value%" слишком коротко (%min_length% символов минимум).]]></target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

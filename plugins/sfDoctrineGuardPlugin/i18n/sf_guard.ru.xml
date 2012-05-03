@@ -32,6 +32,10 @@
         <source>You don't have the required permission to access this page.</source>
         <target>У вас нет прав для просмотра этой спраницы.</target>
       </trans-unit>
+      <trans-unit>
+        <source>Required.</source>
+        <target>Обязательное поле.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
