@@ -14,7 +14,6 @@ abstract class BasesfGuardUserForm extends BaseFormDoctrine
 {
   public function setup()
   {
-      
     $this->setWidgets(array(
       'id'               => new sfWidgetFormInputHidden(),
       'first_name'       => new sfWidgetFormInputText(),
@@ -32,9 +31,6 @@ abstract class BasesfGuardUserForm extends BaseFormDoctrine
       'groups_list'      => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardGroup')),
       'permissions_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardPermission')),
     ));
-    
-    //$this->widgetSchema->setLabel('username', '1Username');
-    
 
     $this->setValidators(array(
       'id'               => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),

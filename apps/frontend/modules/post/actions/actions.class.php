@@ -8,6 +8,7 @@ class postActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
       $this->route = "@homepage";
+      //$this->active = "1";
       
       $this->posts = new sfDoctrinePager('Post', sfConfig::get('app_max_post_on_page'));
       $this->posts->setQuery(Doctrine_Core::getTable('Post')->createQuery('a'));

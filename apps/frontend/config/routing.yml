@@ -13,7 +13,7 @@ sf_guard_signout:
 sf_guard_register:
   url:   /register
   param: { module: sfGuardRegister, action: index }
-  
+
 #маршрут для постов
 post_show:
   url:   /post/:id
@@ -27,6 +27,13 @@ posts_for_tag:
   param: { module: post, action: tag }
   requirements:
     id: \d+
+
+#маршрут для страниц "О себе"
+page_show:
+  url:   /:name
+  param: { module: page, action: show }
+  requirements:
+    name: "[a-z]{3,20}"
 
 # default rules
 homepage:

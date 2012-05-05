@@ -15,7 +15,7 @@
             <div class="header_resize">
             <div class="menu_nav">
                 <ul>
-                    <li class="active"><a href="<?php echo url_for('@homepage') ?>">Блог</a></li>
+                    <li><a href="<?php echo url_for('@homepage') ?>">Блог</a></li>
                     <li><a href="<?php echo url_for('@homepage') ?>about">О себе</a></li>
                     <li><a href="<?php echo url_for('@homepage') ?>contact">Контакты</a></li>
                 </ul>
