@@ -21,12 +21,21 @@ class CommentTable extends Doctrine_Table
     {
         $q = $this->createQuery('c')
              ->select('u.username, c.text')
-             //->from('')
              ->leftJoin('c.sfGuardUser u')   
              ->where('c.post_id = ?', $id_post)
              ->andWhere('c.sf_guard_user_id = u.id')
              ->orderBy('c.created_at DESC');
         
         return $q->execute();
+    }
+    
+    public function getDateLastCommentUser($id_post, $id_user)
+    {
+        $q = $this->createQuery('c')->where('c.sf_guard_user_id='.$id_user.' AND post_id='.$id_post);
+        $result = $q->execute();
+        if( $result->count() == 0 )
+            {return 0;}
+        else
+            {return $result->getFirst()->getCreatedAt();}
     }
 }

@@ -21,6 +21,14 @@ post_show:
   requirements:
     id: \d+
 
+#сабмит для коментария поста
+post_submit:
+  url:   /post/submit/:id
+  param: { module: post, action: submit }
+  requirements:
+    id: \d+
+    sf_method: [post]
+
 #посты по тэгу
 posts_for_tag:
   url:   /tag/:id

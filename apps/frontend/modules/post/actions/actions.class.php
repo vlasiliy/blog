@@ -28,11 +28,43 @@ class postActions extends sfActions
 
   public function executeShow(sfWebRequest $request)
   {
-    
+    $this->form = new CommentPostForm();
       
     $this->comments = CommentTable::getInstance()->getCommentsPost($request->getParameter('id'));
     $this->post = Doctrine_Core::getTable('Post')->find(array($request->getParameter('id')));
     $this->forward404Unless($this->post);
+  }
+  
+  public function executeSubmit(sfWebRequest $request)
+  {
+    $id_post = $request->getParameter('id');
+    $id_user = $this->getUser()->getGuardUser()->getId();
+      
+    $dt = new sfDate();
+    $dt->diff();
+    
+    if(time() - CommentTable::getInstance()->getDateLastCommentUser($id_post, $id_user) < 120)
+        {echo "spam";}
+    else
+        {echo "NO spam";}
+    
+    die;
+      
+    $comment = new Comment();
+    $comment->text = $request->getParameter('text');
+    $comment->post_id = $request->getParameter('id');
+    $comment->sf_guard_user_id = $this->getUser()->getGuardUser()->getId();
+    //$comment->save();
+
+    //$this->executeIndex($request);
+   
+    $this->form = new CommentPostForm();
+      
+    $this->comments = CommentTable::getInstance()->getCommentsPost($request->getParameter('id'));
+    $this->post = Doctrine_Core::getTable('Post')->find(array($request->getParameter('id')));
+    $this->forward404Unless($this->post);
+    
+   
   }
 
   public function executeNew(sfWebRequest $request)
