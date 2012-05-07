@@ -31,11 +31,15 @@ class CommentTable extends Doctrine_Table
     
     public function getDateLastCommentUser($id_post, $id_user)
     {
-        $q = $this->createQuery('c')->where('c.sf_guard_user_id='.$id_user.' AND post_id='.$id_post);
-        $result = $q->execute();
-        if( $result->count() == 0 )
+        $q = $this->createQuery('c')
+                        ->select('Unix_Timestamp(c.created_at) as datestamp')
+                        ->where('c.sf_guard_user_id='.$id_user.' AND post_id='.$id_post)
+                        ->orderBy('c.created_at DESC')
+                        ->limit('1');
+        $result = $q->execute(array(), Doctrine_Core::HYDRATE_SINGLE_SCALAR);
+        if( sizeof($result) == 0 )
             {return 0;}
         else
-            {return $result->getFirst()->getCreatedAt();}
+            {return $result;}
     }
 }

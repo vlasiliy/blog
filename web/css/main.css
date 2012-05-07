@@ -420,6 +420,13 @@ ol li .send {
 a.reg {
     text-decoration:none;
 }
+.spam {
+    border: solid 1px #959595;
+    background-color: #ffffcc;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 #tbl_register {
     margin-bottom: 40px;
 }

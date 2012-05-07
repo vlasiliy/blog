@@ -10,6 +10,9 @@
     <?php echo $post->getContentPath1(ESC_RAW).$post->getContentPath2(ESC_RAW) ?>
     <div class="comment">
         <div class="title_comment"><a name="comments">Коментарии:</a></div>
+        <?php if (isset($spam)): ?>
+        <div class="spam">Извините, но дабвить коментарий Вы сможете не раньше чем через 2 минуты...</div>
+        <?php endif?>
         <div class="comments">
             <?php foreach ($comments as $comment): ?>
                 <strong>
