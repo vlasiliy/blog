@@ -5,6 +5,8 @@
  */
 class postActions extends sfActions
 {
+  //public $spam = false;  
+  
   public function executeIndex(sfWebRequest $request)
   {
       $this->route = "@homepage";
@@ -37,17 +39,23 @@ class postActions extends sfActions
   public function executeSubmit(sfWebRequest $request)
   {
     $id_post = $request->getParameter('id');
-      
+    
     if(!$this->getUser()->isAuthenticated())
     {
         $this->redirect($this->generateUrl('post_show', array('id' => $id_post)));
     }
-      
+    
     $id_user = $this->getUser()->getGuardUser()->getId();
 
     if(time() - CommentTable::getInstance()->getDateLastCommentUser($id_post, $id_user) < 120)
     {   
-        $this->spam = '1';
+        $this->spam = true;
+        
+        $this->form = new CommentPostForm();
+      
+        $this->comments = CommentTable::getInstance()->getCommentsPost($request->getParameter('id'));
+        $this->post = Doctrine_Core::getTable('Post')->find(array($request->getParameter('id')));
+        $this->forward404Unless($this->post);
     }
     else
     {
@@ -56,16 +64,8 @@ class postActions extends sfActions
         $comment->post_id = $request->getParameter('id');
         $comment->sf_guard_user_id = $this->getUser()->getGuardUser()->getId();
         $comment->save();
+        $this->redirect($this->generateUrl('post_show', array('id' => $id_post)));
     }
-
-    //$this->executeIndex($request);
-   
-    $this->form = new CommentPostForm();
-      
-    $this->comments = CommentTable::getInstance()->getCommentsPost($request->getParameter('id'));
-    $this->post = Doctrine_Core::getTable('Post')->find(array($request->getParameter('id')));
-    $this->forward404Unless($this->post);
-   
   }
 
   public function executeNew(sfWebRequest $request)

@@ -10,3 +10,6 @@ all:
   
   sf_guard_plugin:
     routes_register: false
+    
+  ckeditor:
+    basePath: '/js/ckeditor/'

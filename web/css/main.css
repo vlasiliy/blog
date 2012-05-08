@@ -410,6 +410,9 @@ ol li .send {
 .comment {
     border-top: solid 1px #d8dbdc;
 }
+.comment form {
+    margin-bottom: 20px;
+}
 .title_comment {
     font-weight: bold;
     padding-bottom: 16px;
@@ -439,4 +442,7 @@ a.reg {
 }
 #tbl_register tfoot td {
     text-align: right;
+}
+input {
+   border: solid 1px #d8dbdc; 
 }

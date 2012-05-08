@@ -1,4 +1,6 @@
 <?php use_helper('I18N') ?>
+
+<div class="article">
 <h2><?php echo __('Forgot your password?', null, 'sf_guard') ?></h2>
 
 <p>
@@ -7,10 +9,17 @@
 </p>
 
 <form action="<?php echo url_for('@sf_guard_forgot_password') ?>" method="post">
-  <table>
+  <table id="tbl_register">
     <tbody>
       <?php echo $form ?>
     </tbody>
-    <tfoot><tr><td><input type="submit" name="change" value="<?php echo __('Request', null, 'sf_guard') ?>" /></td></tr></tfoot>
+    <tfoot>
+        <tr>
+            <td colspan="2">
+                <input type="submit" name="change" value="<?php echo __('Request', null, 'sf_guard') ?>" />
+            </td>
+        </tr>
+    </tfoot>
   </table>
 </form>
+</div>

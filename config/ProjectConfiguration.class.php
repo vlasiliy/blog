@@ -10,6 +10,7 @@ class ProjectConfiguration extends sfProjectConfiguration
     $this->enablePlugins('sfDoctrinePlugin');
     $this->enablePlugins('sfDoctrineGuardPlugin');
     //$this->enablePlugins('sfDateTime2Plugin');
+    $this->enablePlugins('sfCKEditorPlugin');
   }
   
   public function configureDoctrine(Doctrine_Manager $manager) 

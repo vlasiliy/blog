@@ -38,6 +38,6 @@
         <img src="/images/loader.gif" style="padding-left:10px;display:none;" id="signinLoader">
     </form>
     <a href="<?php echo url_for('@sf_guard_register') ?>" class="reg">Регистрация</a><br />
-    <a href="#" class="reg">Забыли пароль?</a>
+    <a href="<?php echo url_for('@sf_guard_forgotpass') ?>" class="reg">Забыли пароль?</a>
 </div>
 <div class="gadget"><div class="clr"></div></div>

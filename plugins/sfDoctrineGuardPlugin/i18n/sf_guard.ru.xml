@@ -33,6 +33,18 @@
         <target>У вас нет прав для просмотра этой спраницы.</target>
       </trans-unit>
       <trans-unit>
+        <source>Do not worry, we can help you get back in to your account safely!</source>
+        <target>Не волнуйтесь, мы поможем благополучно восстановить ваш акаунт!</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Fill out the form below to request an e-mail with information on how to reset your password.</source>
+        <target>Заполните форму приведенную ниже, чтобы по e-mail получить уже восстановленый пароль.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Request</source>
+        <target>Запросить</target>
+      </trans-unit>
+      <trans-unit>
         <source>Required.</source>
         <target>Обязательное поле.</target>
       </trans-unit>

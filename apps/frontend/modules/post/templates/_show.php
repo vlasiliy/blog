@@ -17,12 +17,11 @@
             <?php foreach ($comments as $comment): ?>
                 <strong>
                     <?php echo $comment->getSf_guard_user()->getUsername() ?>&nbsp;(<?php echo $comment->getCreatedAt() ?>):
-                </strong><br />
-                <?php echo $comment->getText() ?><br /><br />
+                </strong>
+                <?php echo $comment->getText(ESC_RAW) ?>
             <?php endforeach; ?>
         </div>
         <?php if ($sf_user->isAuthenticated()): ?>
-            <div class="title_comment">Добавить коментарии:</div>
                 <form action="<?php echo url_for('post/submit?id='.$post->getId()) ?>#comments" method="POST">
                     <?php echo $form  ?>
                     <br />
