@@ -31,7 +31,7 @@ class sfGuardRegisterForm extends BasesfGuardRegisterForm
     $this->setValidators(array(
       'first_name'       => new sfValidatorString(array('max_length' => 255, 'min_length' => 4, 'required' => true)),
       'last_name'        => new sfValidatorString(array('max_length' => 255, 'required' => false)),
-      'email_address'    => new sfValidatorEmail(array(), array('invalid' => 'Ошибка')),
+      'email_address'    => new sfValidatorEmailUnique(array('is_unique' => true), array('invalid' => 'Ошибка')),
       'username'         => new sfValidatorString(array('max_length' => 255, 'min_length' => 4, 'required' => true)),
       'password'         => new sfValidatorString(array('max_length' => 20, 'min_length' => 6, 'required' => true)),
       'password_again'   => new sfValidatorString(array('max_length' => 20, 'min_length' => 6, 'required' => true))

@@ -15,5 +15,7 @@ class sfGuardRequestForgotPasswordForm extends BasesfGuardRequestForgotPasswordF
    */
   public function configure()
   {
+    $this->widgetSchema['email_address']->setLabel('Email адрес');
+    $this->setValidator('email_address', new sfValidatorEmailUnique (array('is_unique' => false), array('invalid' => 'Ошибка')));
   }
 }
