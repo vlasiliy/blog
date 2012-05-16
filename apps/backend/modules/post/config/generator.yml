@@ -13,17 +13,21 @@ generator:
 
     config:
       actions: ~
-      fields: ~
+      fields:
+        title: { label: Заголовок }
+        rating: { label: Рейтинг }
+        created_at: { label: Создано }
+        updated_at: { label: Обновлено }
+        content_path1: { label: Контен 1 }
+        content_path2: { label: Контен 2 }
+        
       list:
         title: Управление постами
         display: [id, =title, rating, updated_at]
-        fields:
-          title: { name: заголовок }
-          rating: { name: рейтинг }
-          updated_at: { name: обновлено }
         max_per_page: 5
         sort: [updated_at, desc]
-      filter:  ~
+      filter:
+        display: [title, created_at, updated_at]
       form:    ~
       edit:
         title: Редактировать пост "%%title%%"

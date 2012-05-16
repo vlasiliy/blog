@@ -177,6 +177,10 @@
         <source><![CDATA["%value%" is too short (%min_length% characters min).]]></source>
         <target><![CDATA["%value%" слишком коротко (%min_length% символов минимум).]]></target>
       </trans-unit>
+      <trans-unit>
+        <source>Are you sure?</source>
+        <target>Вы уверены?</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

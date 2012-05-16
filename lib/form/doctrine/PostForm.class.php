@@ -12,5 +12,19 @@ class PostForm extends BasePostForm
 {
   public function configure()
   {
+      
+      $this->widgetSchema['title']->setAttributes(array('style' => 'width:400px;'));
+      $this->widgetSchema['content_path1'] = new sfWidgetFormCKEditor(array(
+          'jsoptions'=>array(
+              'extraPlugins' => 'autogrow',
+              'toolbarCanCollapse' => false
+          )
+      ));
+      $this->widgetSchema['content_path2'] = new sfWidgetFormCKEditor(array(
+          'jsoptions'=>array(
+              'extraPlugins' => 'autogrow',
+              'toolbarCanCollapse' => false
+          )
+      ));
   }
 }
