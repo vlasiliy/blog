@@ -13,9 +13,19 @@ generator:
 
     config:
       actions: ~
-      fields:  ~
-      list:    ~
+      fields: ~
+      list:
+        title: Управление постами
+        display: [id, =title, rating, updated_at]
+        fields:
+          title: { name: заголовок }
+          rating: { name: рейтинг }
+          updated_at: { name: обновлено }
+        max_per_page: 5
+        sort: [updated_at, desc]
       filter:  ~
       form:    ~
-      edit:    ~
-      new:     ~
+      edit:
+        title: Редактировать пост "%%title%%"
+      new:
+        title: Создать пост

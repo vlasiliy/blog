@@ -1,0 +1,137 @@
+body {
+      background-color: #F7EAEA;
+      font-family: arial, sans-serif;
+      font-size: 12px;
+      font-weight: medium;
+     }
+td {
+    font-size: 12px;
+    font-weight: medium;    
+   }
+a:link {
+        color: #4509A7;
+        text-decoration: none;
+        font-weight:bold;
+       }
+a:visited {
+        color: #4509A7;
+        text-decoration: none;
+        font-weight:bold;
+          }
+a:active {
+        color: #4509A7;
+        text-decoration: none;
+        font-weight:bold;
+         }
+a:hover {
+        color: #4509A7;
+        text-decoration: none;
+        font-weight:bold;
+        }
+       
+.link
+   {
+    color: #4509A7;
+    text-decoration: none;
+    font-weight:bold;
+    cursor:pointer;
+   }
+.unlink
+   {
+    color: #000000;
+    text-decoration: none;
+    font-weight:normal;
+    cursor:auto;
+   }
+.noborder
+   {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+   }
+.inp
+  {
+   border: solid 1px #C9CCCC;
+  }
+.imglink
+  {
+   cursor:pointer;
+  }
+.linkpage
+  {
+   padding: 10px;
+  }
+.title
+  {
+   font-weight:bold;
+   text-decoration: underline;
+  }
+.adm_table
+   {
+    background-color: #A16E6E;
+    border: 0px;
+    border-spacing: 1px;
+    padding: 0px;
+   }  
+.adm_td_title
+   {
+    border: 0px;
+    margin:0px;
+    padding: 3px;
+    background-color: #DFDCDC;    
+    font-weight:bold;
+    color: #2492A5;
+   }
+.adm_td .cntr
+   {
+    border: 0px;
+    margin:0px;
+    padding: 3px;
+    background-color: #ffffff;    
+    text-align: center;
+   }
+.lang
+  {
+   display:inline-block;
+   width:25px;
+   padding: 0 5px 0 7px;
+  }
+#name_filter
+  {
+   margin-top:5px;
+   text-align:left;
+   font-weight:bold;
+  }
+#topmenu
+  {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    border: 0px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: #AEC387;
+    margin: 5px 0 5px 0;
+    padding: 0 0 3px 0;
+    background-color: #ECFEC9;
+  }
+#divspace
+  {
+   height: 51px;
+  }
+#content
+  {
+   width: 980px;
+   padding: 5px;
+   border: solid 1px #AEC387;
+   border-radius: 10px;
+   background-color: #ffffff;
+   margin: 0 auto 5px auto;
+   text-align: center;
+  }
+
+#auth
+{
+    width:180px;
+    margin: 50px auto 0px auto;
+}
