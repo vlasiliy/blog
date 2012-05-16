@@ -26,6 +26,10 @@ generator:
         display: [id, =title, rating, updated_at]
         max_per_page: 5
         sort: [updated_at, desc]
+        object_actions:
+          _edit:      ~
+          _delete:    ~
+          comments:   ~
       filter:
         display: [title, created_at, updated_at]
       form:    ~

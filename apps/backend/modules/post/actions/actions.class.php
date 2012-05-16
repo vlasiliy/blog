@@ -13,4 +13,8 @@ require_once dirname(__FILE__).'/../lib/postGeneratorHelper.class.php';
  */
 class postActions extends autoPostActions
 {
+    public function executeListComments(sfWebRequest $request)
+    {
+        $this->redirect('/');
+    }
 }

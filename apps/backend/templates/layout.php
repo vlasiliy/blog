@@ -16,15 +16,15 @@
       <tr>
         <td class="noborder" align="center">&nbsp;</td>
         <td class="noborder" width=85 height=32 align="center" style="background-image: url(/pict/posts.png);background-repeat:no-repeat;">
-          <a href="/admin/pages" style="padding: 10px 0 10px 35px;">посты</a>
+            <a href="<?php echo url_for('@post') ?>" style="padding: 10px 0 10px 35px;">посты</a>
         </td>
         <td class="noborder" align="center" width=20><img src="/pict/vertline.gif"></td>
         <td class="noborder" width=100 height=32 align="center" style="background-image: url(/pict/pages.png);background-repeat:no-repeat;">
-          <a href="/admin/info" style="padding: 10px 0 10px 35px;">страинцы</a>
+          <a href="<?php echo url_for('@page') ?>" style="padding: 10px 0 10px 35px;">страинцы</a>
         </td>
         <td class="noborder" align="center" width=20><img src="/pict/vertline.gif"></td>
         <td class="noborder" width=90 height=32 align="center" style="background-image: url(/pict/users.png);background-repeat:no-repeat;">
-          <a href="/admin/info" style="padding: 10px 0 10px 35px;">юзеры</a>
+          <a href="<?php echo url_for('@homepage') ?>" style="padding: 10px 0 10px 35px;">юзеры</a>
         </td>
         <td class="noborder" align="center" width=20><img src="/pict/vertline.gif"></td>
         <td class="noborder" width=85 height=32 align="center" style="background-image: url(/pict/exit.png);background-repeat:no-repeat;">
