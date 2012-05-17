@@ -20,7 +20,6 @@ generator:
         updated_at: { label: Обновлено }
         content_path1: { label: Контен 1 }
         content_path2: { label: Контен 2 }
-        
       list:
         title: Управление постами
         display: [id, =title, rating, updated_at]

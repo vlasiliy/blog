@@ -12,5 +12,11 @@ class PageForm extends BasePageForm
 {
   public function configure()
   {
+      $this->widgetSchema['content'] = new sfWidgetFormCKEditor(array(
+          'jsoptions'=>array(
+              'extraPlugins' => 'autogrow',
+              'toolbarCanCollapse' => false
+          )
+      ));
   }
 }

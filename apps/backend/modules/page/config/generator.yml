@@ -13,9 +13,16 @@ generator:
 
     config:
       actions: ~
-      fields:  ~
-      list:    ~
-      filter:  ~
+      fields:
+        title: { label: Заголовок }
+        name: { label: Имя }
+        content: { label: Контент }
+      list:
+        title: Управление страницами
+        display: [=name, title]
+      filter:
+        class: false
       form:    ~
-      edit:    ~
+      edit:  
+        title: Редактировать страницу "%%name%%"
       new:     ~

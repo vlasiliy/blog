@@ -1,3 +1,9 @@
+commentsofpost:
+  url:   /comment/:id/listofpost
+  param: { module: comment, action: listofpost }
+  requirements:
+    id: \d+
+
 comment:
   class: sfDoctrineRouteCollection
   options:

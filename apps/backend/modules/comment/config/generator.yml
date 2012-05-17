@@ -12,10 +12,15 @@ generator:
     actions_base_class:    sfActions
 
     config:
-      actions: ~
+      actions:
+        listofpost:
+          title: Управление комментариями     
       fields:  ~
-      list:    ~
-      filter:  ~
+      list:
+        display: [text, created_at, updated_at]
+        sort: [updated_at, desc]
+      filter:
+        display: [text, created_at, updated_at]
       form:    ~
       edit:    ~
       new:     ~

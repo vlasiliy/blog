@@ -13,4 +13,27 @@ require_once dirname(__FILE__).'/../lib/commentGeneratorHelper.class.php';
  */
 class commentActions extends autoCommentActions
 {
+    
+  public function executeListofpost(sfWebRequest $request)
+  {
+    //$this->comment = CommentTable::getInstance()->getCommentsPost($request->getParameter('id'));
+    // 
+    // sorting
+    if ($request->getParameter('sort') && $this->isValidSortColumn($request->getParameter('sort')))
+    {
+      $this->setSort(array($request->getParameter('sort'), $request->getParameter('sort_type')));
+    }
+
+    // pager
+    if ($request->getParameter('page'))
+    {
+      $this->setPage($request->getParameter('page'));
+    }
+
+    $this->setFilters(array('post_id' => $request->getParameter('id')));
+    
+    $this->pager = $this->getPager();
+    $this->sort = $this->getSort();
+  }
+    
 }

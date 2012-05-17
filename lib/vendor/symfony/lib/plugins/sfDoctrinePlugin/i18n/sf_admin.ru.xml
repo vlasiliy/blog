@@ -45,6 +45,14 @@
         <source>Back to list</source>
         <target>Вернуться к списку</target>
       </trans-unit>
+      <trans-unit>
+        <source>Back to list of posts</source>
+        <target>Вернуться к списку постов</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Comments</source>
+        <target>Комментарии</target>
+      </trans-unit>
 
       <!-- Filters -->
       <trans-unit>
