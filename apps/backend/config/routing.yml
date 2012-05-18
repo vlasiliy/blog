@@ -1,8 +1,4 @@
-commentsofpost:
-  url:   /comment/:id/listofpost
-  param: { module: comment, action: listofpost }
-  requirements:
-    id: \d+
+
 
 comment:
   class: sfDoctrineRouteCollection
@@ -12,6 +8,7 @@ comment:
     prefix_path:          /comment
     column:               id
     with_wildcard_routes: true
+#  object_actions:       { listofpost: GET}
 
 page:
   class: sfDoctrineRouteCollection
