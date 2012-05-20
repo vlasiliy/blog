@@ -8,7 +8,6 @@ comment:
     prefix_path:          /comment
     column:               id
     with_wildcard_routes: true
-#  object_actions:       { listofpost: GET}
 
 page:
   class: sfDoctrineRouteCollection

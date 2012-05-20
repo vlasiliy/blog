@@ -37,9 +37,11 @@
   </div>
   <div id="divspace"></div>
   <div id="content">
-      
+    <table width="100%">  
+        <tr><td align="center" style="border:0px;">
     <?php echo $sf_content ?>
-      
+        </td></tr>
+    </table>
   </div>
 
   </body>
