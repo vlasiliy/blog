@@ -12,7 +12,9 @@ generator:
     actions_base_class:    sfActions
 
     config:
-      actions: ~
+      actions:
+        listofpost:
+          title: Управление страницами
       fields:
         text: { label: Контент }
         created_at: { label: Создано }
@@ -26,5 +28,6 @@ generator:
         display: [text, created_at, updated_at]
       form:    ~
       edit:
-        title: Редактировать комментарий
+        title: Редактировать комментарий к посту<br>%%post%%
+        display: [text, created_at, updated_at]
       new:     ~

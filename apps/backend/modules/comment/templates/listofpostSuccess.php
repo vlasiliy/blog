@@ -19,7 +19,6 @@
     <?php include_partial('comment/list', array('pager' => $pager, 'sort' => $sort, 'helper' => $helper)) ?>
     <ul class="sf_admin_actions">
       <?php include_partial('comment/list_batch_actions', array('helper' => $helper)) ?>
-      <?php include_partial('comment/list_actions', array('helper' => $helper)) ?>
       <li class="sf_admin_action_list"><?php echo link_to(__('Back to list of posts', array(), 'sf_admin'), '@post') ?></li>
     </ul>
     </form>

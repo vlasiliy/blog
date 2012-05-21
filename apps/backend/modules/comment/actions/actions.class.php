@@ -49,6 +49,7 @@ class commentActions extends autoCommentActions
   public function executeListofpost(sfWebRequest $request)
   {
     $this->post_id = $request->getParameter('id');
+    $this->getUser()->setAttribute('post_id', $this->post_id); 
        
     //$this->comment = CommentTable::getInstance()->getCommentsPost($request->getParameter('id'));
     // 
@@ -167,7 +168,7 @@ public function executeBatch(sfWebRequest $request)
   public function executeDelete(sfWebRequest $request)
   {
     $request->checkCSRFProtection();
-
+    
     $this->dispatcher->notify(new sfEvent($this, 'admin.delete_object', array('object' => $this->getRoute()->getObject())));
 
     if ($this->getRoute()->getObject()->delete())
@@ -175,6 +176,14 @@ public function executeBatch(sfWebRequest $request)
       $this->getUser()->setFlash('notice', 'The item was deleted successfully.');
     }
 
-    $this->redirect('comment/listofpost?id='.$request->getParameter('id'));
+    $this->post_id = $this->getUser()->getAttribute('post_id', '0');
+    $this->redirect('comment/listofpost?id='.$this->post_id);
+  }
+  
+  public function executeEdit(sfWebRequest $request)
+  {
+    $this->comment = $this->getRoute()->getObject();
+    $this->form = $this->configuration->getForm($this->comment);
+    $this->post_id = $this->getUser()->getAttribute('post_id', '0');
   }
 }
