@@ -1,6 +1,6 @@
 <?php
 
-class CommentPostForm extends sfForm
+class SearchForm extends sfForm
 {
   public function configure()
   {
