@@ -9,7 +9,6 @@ class ProjectConfiguration extends sfProjectConfiguration
   {
     $this->enablePlugins('sfDoctrinePlugin');
     $this->enablePlugins('sfDoctrineGuardPlugin');
-    //$this->enablePlugins('sfDateTime2Plugin');
     $this->enablePlugins('sfCKEditorPlugin');
     
     sfValidatorBase::setDefaultMessage('required', 'Обязательное поле');

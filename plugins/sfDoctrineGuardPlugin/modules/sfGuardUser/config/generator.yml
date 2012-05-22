@@ -12,20 +12,31 @@ generator:
 
     config:
       fields:
-        password_again: { label: "Password (again)" }
+        first_name: {label: "Имя"}
+        last_name: {label: "Фамилия"}
+        email_address: {label: "Email адрес"}
+        username: {label: "Логин"}
+        is_active: {label: "Активный"}
+        is_super_admin: {label: "Суперадмин"}
+        last_login: {label: "Последний вход"}
+        created_at: {label: "Создан"}
+        updated_at: {label: "Обновлен"}
 
       list:
-        title:   User list
+        title:   Управление пользователями
         display: [=username, created_at, updated_at, last_login]
+
+      filter:
+        display: [first_name, last_name, email_address, username, is_active, is_super_admin, last_login, created_at, updated_at]
 
       form:
         class: sfGuardUserAdminForm
         display:
-          "User":                   [first_name, last_name, email_address, username, password, password_again]
-          "Permissions and groups": [is_active, is_super_admin, groups_list, permissions_list]
+          "Пользователи":        [first_name, last_name, email_address, username, password, password_again]
+          "Разрешения и группы": [is_active, is_super_admin, groups_list, permissions_list]
 
       edit:
-        title: Editing User "%%username%%"
+        title: Редакторовать пользователя "%%username%%"
 
       new:
         title: New User

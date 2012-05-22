@@ -38,3 +38,9 @@ all:
     default_culture: ru_RU
 
     i18n: true
+    
+    enabled_modules: [default, sfGuardAuth, sfGuardUser]
+    
+  .actions:
+    login_module: sfGuardAuth
+    login_action: signin

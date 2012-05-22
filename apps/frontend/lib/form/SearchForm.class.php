@@ -11,15 +11,7 @@ class SearchForm extends sfForm
      * 
      */
       
-      $this->widgetSchema['search'] = new sfWidgetFormCKEditor(array(
-          'jsoptions'=>array(
-              'extraPlugins' => 'autogrow',
-              'toolbarCanCollapse' => false,
-              'toolbar' => array(array('Bold', 'Italic', 'NumberedList', 'BulletedList', 'Link', 'Inlink', 'Smiley'))
-
-          )
-      ));
-      $this->widgetSchema['text']->setLabel('Добавить коментарий:');
+      $this->widgetSchema['search'] = new sfValidatorString(array('max_length' => 255, 'required' => true));
       
   }
 }
