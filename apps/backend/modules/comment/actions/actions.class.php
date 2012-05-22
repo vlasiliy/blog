@@ -49,7 +49,10 @@ class commentActions extends autoCommentActions
   public function executeListofpost(sfWebRequest $request)
   {
     $this->post_id = $request->getParameter('id');
-    $this->getUser()->setAttribute('post_id', $this->post_id); 
+    $this->getUser()->setAttribute('post_id', $this->post_id);
+            
+    $q = Doctrine_Query::create()->select('p.title')->from('Post p')->where('p.id = ?', $this->post_id);
+    $this->post_name = $q->execute(array(), Doctrine_Core::HYDRATE_SINGLE_SCALAR);
        
     //$this->comment = CommentTable::getInstance()->getCommentsPost($request->getParameter('id'));
     // 

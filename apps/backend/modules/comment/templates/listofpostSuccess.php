@@ -2,7 +2,7 @@
 <?php include_partial('comment/assets') ?>
 
 <div id="sf_admin_container">
-  <h1><?php echo __('Comment List', array(), 'messages') ?></h1>
+  <h1><?php echo __('Управление комментариями к посту<br>"%%post%%"', array('%%post%%' => $post_name), 'messages') ?></h1>
 
   <?php include_partial('comment/flashes') ?>
 

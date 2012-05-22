@@ -21,6 +21,8 @@ generator:
         last_login: {label: "Последний вход"}
         created_at: {label: "Создан"}
         updated_at: {label: "Обновлен"}
+        groups_list : {label: "Группы"}
+        permissions_list: {label: "Разрешения"}
 
       list:
         title:   Управление пользователями

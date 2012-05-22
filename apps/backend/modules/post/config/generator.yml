@@ -28,7 +28,8 @@ generator:
         object_actions:
           _edit:      ~
           _delete:    ~
-          comments:   ~
+          comments:
+            { label: Комментарии }
       filter:
         display: [title, created_at, updated_at]
       form:    ~
