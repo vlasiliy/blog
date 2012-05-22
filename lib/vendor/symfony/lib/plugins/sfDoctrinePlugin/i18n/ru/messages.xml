@@ -58,31 +58,27 @@
       </trans-unit>
       <trans-unit id="14">
         <source>Back to list</source>
-        <target/>
+        <target>Вернуться к списку</target>
       </trans-unit>
       <trans-unit id="15">
         <source>Comment List</source>
-        <target/>
+        <target>Управление комментариями</target>
       </trans-unit>
       <trans-unit id="16">
         <source>Back to list of posts</source>
-        <target/>
+        <target>Вернуться к списку постов</target>
       </trans-unit>
       <trans-unit id="17">
         <source>Reset</source>
-        <target/>
+        <target>Очистить</target>
       </trans-unit>
       <trans-unit id="18">
         <source>Filter</source>
-        <target/>
+        <target>Фильтр</target>
       </trans-unit>
       <trans-unit id="19">
-        <source>Редактировать комментарий к посту&lt;br&gt;%%post%%</source>
-        <target/>
-      </trans-unit>
-      <trans-unit id="20">
-        <source>Управление комментариями</source>
-        <target/>
+        <source>Edit comment of post&lt;br&gt;%%post%%</source>
+        <target>Редактировать комментарий к посту&lt;br&gt;%%post%%</target>
       </trans-unit>
     </body>
   </file>
