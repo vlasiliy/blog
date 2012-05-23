@@ -7,8 +7,8 @@
     </tbody>
     <tfoot>
       <tr>
-        <td colspan="2">
-          <input type="submit" value="<?php echo __('Signin', null, 'sf_guard') ?>" />
+        <td colspan="2" align="right">
+          <input type="submit" value="<?php echo __('Signin', null, 'sf_guard') ?>" id="input_submit" />
           
           <?php $routes = $sf_context->getRouting()->getRoutes() ?>
           <?php if (isset($routes['sf_guard_forgot_password'])): ?>

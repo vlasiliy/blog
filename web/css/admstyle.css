@@ -135,3 +135,15 @@ a:hover {
     width:180px;
     margin: 50px auto 0px auto;
 }
+input {
+   border: solid 1px #d8dbdc; 
+}
+#content h1 {
+    font-size: 14px;
+}
+#content label {
+    font-size: 12px;
+}
+#input_submit {
+    width: 181px;
+}

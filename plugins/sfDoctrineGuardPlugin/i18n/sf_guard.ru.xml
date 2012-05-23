@@ -48,6 +48,10 @@
         <source>Required.</source>
         <target>Обязательное поле.</target>
       </trans-unit>
+      <trans-unit>
+        <source>The username and/or password is invalid.</source>
+        <target>Логин и/или пароль не верны.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
