@@ -18,6 +18,11 @@ sf_guard_forgotpass:
   url:   /forgotpass
   param: { module: sfGuardForgotPassword, action: index }
 
+#маршрут для поиска
+post_serach:
+  url:   /post/search
+  param: { module: post, action: search }
+
 #маршрут для постов
 post_show:
   url:   /post/:id

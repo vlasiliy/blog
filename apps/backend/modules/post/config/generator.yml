@@ -34,6 +34,6 @@ generator:
         display: [title, created_at, updated_at]
       form:    ~
       edit:
-        title: Редактировать пост "%%title%%"
+        title: Редактировать пост <br>"%%title%%"
       new:
         title: Создать пост

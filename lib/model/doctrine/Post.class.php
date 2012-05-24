@@ -45,4 +45,14 @@ class Post extends BasePost
         return $q->execute();
     }
     
+    public function updateRating($post_id)
+    {
+        $q = Doctrine_Query::create()
+                ->update('Post p')
+                ->set('p.rating', 'p.rating + 1')
+                ->where('p.id = ?', $post_id);
+ 
+        return $q->execute();
+    }
+    
 }

@@ -7,6 +7,23 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
+    <script>
+        function OnFocusInput(id, message)
+        {
+            if(document.getElementById(id).value == message)
+                {
+                    document.getElementById(id).value = '';
+                }
+        }
+        
+        function OutFocusInput(id, message)
+        {
+            if(document.getElementById(id).value == '')
+                {
+                    document.getElementById(id).value = message;
+                }
+        }
+    </script>
   </head>
   <body>
         <!-- START PAGE SOURCE -->
@@ -33,9 +50,9 @@
             </div>
             <div class="sidebar">
                 <div class="searchform">
-                    <form id="formsearch" name="formsearch" method="post" action="#">
+                    <form id="formsearch" name="formsearch" method="post" action="<?php echo url_for('@post_serach') ?>">
                         <span>
-                        <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" value="Поиск по сайту:" type="text" />
+                        <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" value="Поиск по сайту:" type="text" onfocus="OnFocusInput('editbox_search', 'Поиск по сайту:');" />
                         </span>
                         <input name="button_search" src="/images/search_btn.gif" class="button_search" type="image" />
                     </form>

@@ -17,6 +17,22 @@ class PostTable extends Doctrine_Table
         return Doctrine_Core::getTable('Post');
     }
     
+    public function getPostSearch($text)
+    {
+        $arrtext = explode(" ",preg_replace("/(\s){2,}/", " ", trim($text)));
+        if($arrtext[0] == '')
+            {return $this->getRecordInstance();}
+        $like = "";
+        foreach ($arrtext as $value)
+        {
+            $like .= "OR p.content_path1 LIKE '%".$value."%' OR p.content_path2 LIKE '%".$value."%'";
+        }
+        $like = substr($like, 3);
+        $q = $this->createQuery('p')->where($like)->orderBy('p.created_at DESC');
+        
+        return $q->execute();
+    }
+    
     public function getPostsForTag($id_tag)
     {
         $q = $this->createQuery('p')
@@ -27,4 +43,5 @@ class PostTable extends Doctrine_Table
         
         return $q;
     }
+    
 }

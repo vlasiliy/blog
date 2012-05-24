@@ -28,7 +28,7 @@
     <form id="signinForm" name="signinForm" method="post" <?php echo url_for('@sf_guard_signin') ?>>
         <?php echo $form->renderHiddenFields()?>
         <span>
-        <?php echo $form['username']->render(array('class'=>'editbox_login','id'=>'login_username','maxlenght'=>'80','alt'=>'Username','value'=>'логин:')) ?>
+        <?php echo $form['username']->render(array('class'=>'editbox_login','id'=>'login_username','maxlenght'=>'80','alt'=>'Username','value'=>'логин:','onfocus'=>'OnFocusInput(editbox_search, логин:);','onblur'=>'OutFocusInput(editbox_search, логин:);')) ?>
         </span>
         <br />
         <span>

@@ -29,12 +29,45 @@ class postActions extends sfActions
       $this->posts->init();
   }
 
+  public function executeSearch(sfWebRequest $request)
+  {
+    $this->posts = PostTable::getInstance()->getPostSearch($request->getParameter('editbox_search'));
+    $count = $this->posts->count();
+    if($count == 0)
+        {$this->message = 'Ничего не найдено. :(';}
+    else
+        {$this->message = 'Найдено '.$count.' постов';}
+  }
+  
   public function executeShow(sfWebRequest $request)
   {
+    $post_id = $request->getParameter('id');
+      
     $this->form = new CommentPostForm();
       
-    $this->comments = CommentTable::getInstance()->getCommentsPost($request->getParameter('id'));
-    $this->post = Doctrine_Core::getTable('Post')->find(array($request->getParameter('id')));
+    $this->comments = CommentTable::getInstance()->getCommentsPost($post_id);
+    $this->post = Doctrine_Core::getTable('Post')->find(array($post_id));
+    if($this->post->count() != 0)
+    {
+        $p = new Post();
+        if($this->getUser()->hasAttribute('arrRead'))
+        {
+            $arrRead = $this->getUser()->getAttribute('arrRead');
+            if(!in_array($post_id, $arrRead))
+            {
+                 $arrRead[] = $post_id;
+                 $this->getUser()->setAttribute('arrRead', $arrRead);
+                 $p->updateRating($post_id);
+            }
+        }
+        else
+        {
+            $arrRead[] = $post_id;
+            $this->getUser()->setAttribute('arrRead', $arrRead);
+            $p->updateRating($post_id);
+        }
+        
+    }
     $this->forward404Unless($this->post);
   }
   
