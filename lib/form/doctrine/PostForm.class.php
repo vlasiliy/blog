@@ -26,5 +26,11 @@ class PostForm extends BasePostForm
               'toolbarCanCollapse' => false
           )
       ));
+      
+      unset($this->validatorSchema['created_at']);
+      unset($this->validatorSchema['updated_at']);
+      
+      $this->setWidget('tags', new sfWidgetFormInput());
+      
   }
 }

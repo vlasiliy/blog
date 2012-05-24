@@ -54,5 +54,19 @@ class Post extends BasePost
  
         return $q->execute();
     }
+
+
+    public function getTags()
+
+    {
+        return "hello";
+    }
     
+/*    
+    public function setTags($string)
+
+    {
+        return $this->countComments();
+    }
+*/  
 }

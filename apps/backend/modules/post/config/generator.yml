@@ -20,6 +20,7 @@ generator:
         updated_at: { label: Обновлено }
         content_path1: { label: Контен 1 }
         content_path2: { label: Контен 2 }
+        tags : { label: Тэги }
       list:
         title: Управление постами
         display: [id, =title, rating, updated_at]
@@ -32,8 +33,11 @@ generator:
             { label: Комментарии }
       filter:
         display: [title, created_at, updated_at]
-      form:    ~
+      form:
+        display: [title, content_path1, content_path2, rating, tags]
       edit:
         title: Редактировать пост <br>"%%title%%"
+        display: [title, content_path1, content_path2, rating, tags]
       new:
         title: Создать пост
+        display: [title, content_path1, content_path2, rating, tags]

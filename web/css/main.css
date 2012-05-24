@@ -446,3 +446,9 @@ a.reg {
 input {
    border: solid 1px #d8dbdc; 
 }
+.code {
+    border: solid 1px #d8dbdc;
+    background-color: #ffffcc;
+    padding: 5px;
+    text-overflow: clip;
+}
