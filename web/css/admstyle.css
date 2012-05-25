@@ -147,9 +147,3 @@ input {
 #input_submit {
     width: 181px;
 }
-.code {
-    border: solid 1px #d8dbdc;
-    background-color: #ffffcc;
-    padding: 5px;
-    text-overflow: clip;
-}

@@ -30,7 +30,19 @@ class PostForm extends BasePostForm
       unset($this->validatorSchema['created_at']);
       unset($this->validatorSchema['updated_at']);
       
-      $this->setWidget('tags', new sfWidgetFormInput());
+      $this->widgetSchema['tags'] = new sfWidgetFormInput();
+      $this->setDefault('tags', $this->getObject()->getTags());
       
+  }
+  
+  protected function doSave($con = null) 
+  {
+      echo "hello";die;
+      
+      $values = $this->getValues();
+      echo $values['tags']; die;
+      $this->getObject()->setTags($values['tags']);
+      
+      parent::doSave();
   }
 }

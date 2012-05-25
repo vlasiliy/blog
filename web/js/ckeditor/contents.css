@@ -23,3 +23,9 @@ ol,ul,dl
 	/* preserved spaces for rtl list item bullets. (#6249)*/
     padding-right:40px;
 }
+.code {
+    border: solid 1px #d8dbdc;
+    background-color: #ffffcc;
+    padding: 5px;
+    text-overflow: clip;
+}

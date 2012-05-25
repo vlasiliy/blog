@@ -15,9 +15,6 @@ class postActions extends autoPostActions
 {
     public function executeListComments(sfWebRequest $request)
     {
-        //$this->forward ('comment','listofpost',array('id' => $request->getParameter('id')));
-        //echo '@comment/'.$request->getParameter('id').'/listofpost';die;
         $this->redirect('comment/listofpost?id='.$request->getParameter('id'));
-        
     }
 }

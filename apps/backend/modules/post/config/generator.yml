@@ -37,7 +37,7 @@ generator:
         display: [title, content_path1, content_path2, rating, tags]
       edit:
         title: Редактировать пост <br>"%%title%%"
-        display: [title, content_path1, content_path2, rating, tags]
+        display: [ title, content_path1, content_path2, rating, tags]
       new:
         title: Создать пост
         display: [title, content_path1, content_path2, rating, tags]

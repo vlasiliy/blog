@@ -57,16 +57,42 @@ class Post extends BasePost
 
 
     public function getTags()
-
     {
-        return "hello";
+        $tags = "";
+        foreach($this->getTagsPost($this->getId()) as $tag)
+        {
+            $tags .= $tag->getWord().",";
+        }
+        return substr($tags, 0, -1);
     }
     
-/*    
-    public function setTags($string)
-
+    
+    public function setTags($strTags)
     {
-        return $this->countComments();
+        $tags = explode(",", $strTags);
+        
+        foreach($tags as $word)
+        {
+            $tag_id = 0;
+            $post_id = $this->getId();
+            $word = trim($word);
+            $result = Doctrine_Core::getTable('Post')->findBy('word', $word);
+            if($result->count() != 0)
+            {
+               $ins = Doctrine_Core::getTable('Tag')->create(array('word' => $word));
+            }
+            else
+            {
+                $tag_id = $result->getId();
+            }
+            $del = Doctrine_Query::create()
+                    ->delete()
+                    ->from('TafPost')
+                    ->andWhere('post_id = '.$post_id)
+                    ->andWhere('tag_id = '.$tag_id)
+                    ->execute();
+            $ins = Doctrine_Core::getTable('TagPost')->create(array('post_id' => '0', 'tag_id' => $post_id));
+        }
     }
-*/  
+    
 }
