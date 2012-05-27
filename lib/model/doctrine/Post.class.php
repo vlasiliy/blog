@@ -69,30 +69,38 @@ class Post extends BasePost
     
     public function setTags($strTags)
     {
-        $tags = explode(",", $strTags);
-        
-        foreach($tags as $word)
-        {
-            $tag_id = 0;
-            $post_id = $this->getId();
-            $word = trim($word);
-            $result = Doctrine_Core::getTable('Post')->findBy('word', $word);
-            if($result->count() != 0)
-            {
-               $ins = Doctrine_Core::getTable('Tag')->create(array('word' => $word));
-            }
-            else
-            {
-                $tag_id = $result->getId();
-            }
-            $del = Doctrine_Query::create()
+        $post_id = $this->getId();
+        echo '|'.$post_id.'|';die;
+        $del = Doctrine_Query::create()
                     ->delete()
-                    ->from('TafPost')
+                    ->from('TagPost')
                     ->andWhere('post_id = '.$post_id)
-                    ->andWhere('tag_id = '.$tag_id)
                     ->execute();
-            $ins = Doctrine_Core::getTable('TagPost')->create(array('post_id' => '0', 'tag_id' => $post_id));
-        }
+        
+        $tags = explode(",", $strTags);
+        if($tags[0] != '')
+        {
+            foreach($tags as $word)
+            {
+                $word = trim($word);
+                $result = Doctrine_Core::getTable('Tag')->findBy('word', $word);
+                if($result->count() == 0)
+                {
+                    $tag = new Tag();
+                    $tag->word = $word;
+                    $tag->save();
+                    $tag_id = $tag->getId();
+                }
+                else
+                {
+                    $tag_id = $result->getFirst()->getId();
+                }
+                $tagpost = new TagPost();
+                $tagpost->post_id = $post_id;
+                $tagpost->tag_id = $tag_id;
+                $tagpost->save();
+            }
+        }    
     }
     
 }

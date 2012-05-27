@@ -33,16 +33,18 @@ class PostForm extends BasePostForm
       $this->widgetSchema['tags'] = new sfWidgetFormInput();
       $this->setDefault('tags', $this->getObject()->getTags());
       
+      $this->validatorSchema->setOption('allow_extra_fields', true);
+      $this->validatorSchema->setOption('filter_extra_fields', false);
+      
+      $this->widgetSchema->setNameFormat('post[%s]');
+      
   }
   
   protected function doSave($con = null) 
   {
-      echo "hello";die;
-      
       $values = $this->getValues();
-      echo $values['tags']; die;
       $this->getObject()->setTags($values['tags']);
-      
       parent::doSave();
   }
+  
 }

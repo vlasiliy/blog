@@ -20,9 +20,6 @@ class pageActions extends sfActions
   public function executeShow(sfWebRequest $request)
   {
     $this->page = Doctrine_Core::getTable('Page')->findBy('name', $request->getParameter('name'));
-    //$this->page = Doctrine_Core::getTable('Page')->find('1');
-    //echo $this->page->getFirst()->getTitle();
-    //echo $this->page->count(); die;
     if($this->page->count() == 0)
         {$this->forward404('Страница не существует.');}
   }
