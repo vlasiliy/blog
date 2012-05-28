@@ -5,15 +5,20 @@ Post:
     content_path1:  { type: string(1024), notnull: true }
     content_path2:  { type: string(10240), notnull: true }
     rating:         { type: integer, notnull: true, default: 0 }
+#  relations:
+#    Tag: { onDelete: CASCADE, class: Tag, foreignAlias: Post, refClass: TagPost }
 
 Tag:
   columns:
     word: { type: string(128), notnull: true }
+#  relations:
+#    Post: { onDelete: CASCADE, class: Post, foreignAlias: Tag, refClass: TagPost }
+
 
 TagPost:
   columns:
-    post_id: { type: integer, notnull: true }
-    tag_id: { type: integer, notnull: true }
+    post_id: { type: integer, notnull: true, primary: true; }
+    tag_id: { type: integer, notnull: true , primary: true;}
   relations:
     Post: { onDelete: CASCADE, local: post_id, foreign: id }
     Tag: { onDelete: CASCADE, local: tag_id, foreign: id }

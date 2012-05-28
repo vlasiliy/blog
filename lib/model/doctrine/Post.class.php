@@ -12,6 +12,7 @@
  */
 class Post extends BasePost
 {
+    public $tags_id = array();
     
     public function getTagsPost($id_post)
     {
@@ -69,13 +70,16 @@ class Post extends BasePost
     
     public function setTags($strTags)
     {
-        $post_id = $this->getId();
-        echo '|'.$post_id.'|';die;
-        $del = Doctrine_Query::create()
+        //echo '|'.$post_id.'|';die;
+        if(!$this->isNew())
+        {
+            $post_id = $this->getId();
+            $del = Doctrine_Query::create()
                     ->delete()
                     ->from('TagPost')
                     ->andWhere('post_id = '.$post_id)
                     ->execute();
+        }
         
         $tags = explode(",", $strTags);
         if($tags[0] != '')
@@ -95,12 +99,21 @@ class Post extends BasePost
                 {
                     $tag_id = $result->getFirst()->getId();
                 }
-                $tagpost = new TagPost();
-                $tagpost->post_id = $post_id;
-                $tagpost->tag_id = $tag_id;
-                $tagpost->save();
+                $this->tags_id[] = $tag_id;
             }
-        }    
+        }
+    }
+   
+    public function setPostTags($arrTagsId)
+    {
+        $post_id = $this->getId();
+        foreach($arrTagsId as $tag_id)
+        {
+            $tagpost = new TagPost();
+            $tagpost->post_id = $post_id;
+            $tagpost->tag_id = $tag_id;
+            $tagpost->save();
+        }
     }
     
 }

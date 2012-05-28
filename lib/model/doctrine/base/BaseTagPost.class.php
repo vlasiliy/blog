@@ -31,11 +31,11 @@ abstract class BaseTagPost extends sfDoctrineRecord
         $this->setTableName('tag_post');
         $this->hasColumn('post_id', 'integer', null, array(
              'type' => 'integer',
-             'notnull' => true,
+             'primary' => true,
              ));
         $this->hasColumn('tag_id', 'integer', null, array(
              'type' => 'integer',
-             'notnull' => true,
+             'primary' => true,
              ));
     }
 

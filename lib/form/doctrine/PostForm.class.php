@@ -40,11 +40,14 @@ class PostForm extends BasePostForm
       
   }
   
-  protected function doSave($con = null) 
+  public function postSave($con = null)
   {
-      $values = $this->getValues();
-      $this->getObject()->setTags($values['tags']);
-      parent::doSave();
+      $this->getObject()->setPostTags($this->getObject()->tags_id);
   }
   
+  public function saveEmbeddedForms($con = null, $forms = null)
+  {
+     $this->postSave();
+     parent::saveEmbeddedForms();   
+  }
 }

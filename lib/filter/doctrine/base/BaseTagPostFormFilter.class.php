@@ -13,13 +13,9 @@ abstract class BaseTagPostFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'post_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Post'), 'add_empty' => true)),
-      'tag_id'  => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Tag'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
-      'post_id' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Post'), 'column' => 'id')),
-      'tag_id'  => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Tag'), 'column' => 'id')),
     ));
 
     $this->widgetSchema->setNameFormat('tag_post_filters[%s]');
@@ -39,9 +35,8 @@ abstract class BaseTagPostFormFilter extends BaseFormFilterDoctrine
   public function getFields()
   {
     return array(
-      'id'      => 'Number',
-      'post_id' => 'ForeignKey',
-      'tag_id'  => 'ForeignKey',
+      'post_id' => 'Number',
+      'tag_id'  => 'Number',
     );
   }
 }

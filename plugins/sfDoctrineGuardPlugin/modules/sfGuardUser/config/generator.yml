@@ -16,6 +16,8 @@ generator:
         last_name: {label: "Фамилия"}
         email_address: {label: "Email адрес"}
         username: {label: "Логин"}
+        password: {label: "Пароль"}
+        password_again: {label: "Повторить"}
         is_active: {label: "Активный"}
         is_super_admin: {label: "Суперадмин"}
         last_login: {label: "Последний вход"}
@@ -35,10 +37,10 @@ generator:
         class: sfGuardUserAdminForm
         display:
           "Пользователи":        [first_name, last_name, email_address, username, password, password_again]
-          "Разрешения и группы": [is_active, is_super_admin, groups_list, permissions_list]
+          "Разрешения и группы": [is_active, is_super_admin]
 
       edit:
         title: Редакторовать пользователя "%%username%%"
 
       new:
-        title: New User
+        title: Новый пользователь

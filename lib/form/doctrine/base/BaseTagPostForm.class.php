@@ -15,15 +15,13 @@ abstract class BaseTagPostForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id'      => new sfWidgetFormInputHidden(),
-      'post_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Post'), 'add_empty' => false)),
-      'tag_id'  => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Tag'), 'add_empty' => false)),
+      'post_id' => new sfWidgetFormInputHidden(),
+      'tag_id'  => new sfWidgetFormInputHidden(),
     ));
 
     $this->setValidators(array(
-      'id'      => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'post_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Post'))),
-      'tag_id'  => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Tag'))),
+      'post_id' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('post_id')), 'empty_value' => $this->getObject()->get('post_id'), 'required' => false)),
+      'tag_id'  => new sfValidatorChoice(array('choices' => array($this->getObject()->get('tag_id')), 'empty_value' => $this->getObject()->get('tag_id'), 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('tag_post[%s]');
