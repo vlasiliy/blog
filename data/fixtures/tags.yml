@@ -1,21 +1,36 @@
 Tag:
   t1:
-    word: zend
+    word: redirect
     
   t2:
-    word: framework
+    word: forward
     
   t3:
-    word: конференция
+    word: печать
     
   t4:
-    word: sphinx
+    word: symfony
     
   t5:
-    word: мастер-класс
+    word: stylesheet
     
   t6:
-    word: html5
+    word: HTML5
   
   t7:
-    word: ssd
+    word: required
+    
+  t8:
+    word: label
+    
+  t9:
+    word: формы
+    
+  t10:
+    word: doctrine
+    
+  t11:
+    word: кодировка
+    
+  t12:
+    word: оптимизация

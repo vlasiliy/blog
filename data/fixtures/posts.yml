@@ -1,79 +1,366 @@
 Post:
   p1:
-    title: ZFConf 2012 пройдет весной в Москве!
+    title: В чем разница между redirect и forward в Symfony
     content_path1: |
-                    <p>Главное новшество этого года — место проведения. В этом году конференция пройдет в Москве, а не в Санкт-Петербурге, как это было ранее.</p>
+                    <p>В некоторых случаях выполнение action заканчивается вызовом другого action. Например, action выполняющий обработку POST запроса, обычно редиректит(redirect) в другой action после сохранения данных в базу. Другой пример — подмена action, обычно используется в index actions, когда надо вывести список элементов, здесь происходит перенаправление в list action (forward). Базовый класс sfActions поддерживает два метода, чтобы перенаправить приложение в другое русло:</p>
     content_path2: |
-                    <p>Уже сейчас доступна предварительная регистрация. Финальная регистрация, как обычно, будет открыта после формирования итогового списка докладов. Участники, прошедшие предварительную регистрацию, получат приоритетные уведомления об этом.<br />Свое участие в качестве спикеров уже подтвердили ряд специалистов. Также ведутся переговоры с иностранными докладчиками, в том числе с <strong>Zend Framework Core Team</strong>.</p><p>Если вам есть что рассказать сообществу, напишите нам через специальную форму о предлагаемом докладе. Для иногородних докладчиков обсуждаются условия по компенсации расходов на поездку.&nbsp;</p><p>
-                    <strong>&nbsp;<br />Наиболее актуальные темы для докладов:</strong>
-                    </p><ul>
-                    <li><em>Zend Framework 2</em> &mdash; близится релиз! Возможно именно вы обладатель бесценного опыта внедрения, миграции?
-                    </li><li>Взаимодействие фреймворков <strong>Symfony 2</strong> и <strong>Zend Framework 2
-                    </strong></li><li>Истории реальных работающих проектов &mdash; архитектура, внедрение, решенные проблемы, организация процесса разработки
-                    </li><li>Проектирование модели в ZF (<strong>DDD</strong>, бизнес-логика, разделение по слоям, <strong>unit testing</strong>, ...)
-                    </li><li>Тестирование проектов (Zend_Test, PHPUnit, Selenium, <strong>BDD</strong>, ...)
-                    </li><li>Rich UI-приложения (JavaScript, Ajax, Flash, Flex, ActionScript, ...)
-                    </li><li>Интересный опыт работы с компонентами из Zend_Services, Zend_Tool, Zend_Search_Lucene, ...
-                    </li><li>Управление облачными инфраструктурами с помощью Zend Framework
-                    </li><li>Методологии и опыт кэширования данных c помощью Zend_Cache
-                    </li><li>Оптимизация Zend Framework для работы в нагруженных проектах
-                    </li><li>Интересные методологии, проблемы, проекты, с которыми вам приходилось работать? Расскажите нам о них!
-                    </li></ul>
-
-                    <p>
-                    К участию также приглашаются <a href="/goto/?url=http%3A%2F%2Fwww.zfconf.ru%2F2012%2Fsponsors%2F" target="_blank">спонсоры</a> и инфопартнеры. По всем предложениям и вопросам пишите, пожалуйста, через <a href="/goto/?url=http%3A%2F%2Fwww.zfconf.ru%2Fcontacts%2F" target="_blank">форму обратной связи</a>.
-                    </p>
-                    <p>
-                    Напомним также, что на сайте теперь доступно <a href="/goto/?url=http%3A%2F%2Fwww.zfconf.ru%2F2011%2Fvideo%2F" target="_blank">видео прошлой конференции</a>.
-                    </p>
-    rating: 5
-                    
+                    <p>Если action перенаправляет вызов в другой action:</p>
+                    <div class="code"><pre>
+                    $this->forward('otherModule', 'index');
+                    </pre></div>
+                    <p>Если нужно сделать простой web-redirect:</p>
+                    <div class="code"><pre>
+                    $this->redirect('otherModule/index');
+                    $this->redirect('http://www.google.com/');
+                    </pre>
+                    </div>
+                    <p>Выбор между forward и redirect иногда вызывает затруднения. Чтобы принять правильное решение, помните, что forward происходит внутри symfony и прозрачно для юзера (грубо говоря, url в браузере не меняется, просто подменяется контент сгенерированный action-ом на который был forward). Редирект же напротив посылает сообщение браузеру (заголовок header: Location bla-bla), часто на другой url.</p>
+                    <p>Когда приходит POST запрос, нужно всегда использовать redirect, чтобы юзер при обновлении страницы (или нажав кнопку назад) не увидел всплывшее окошко про post-данные и не отправил форму ещё раз.</p>
+    rating: 2
+    
   p2:
-    title: Zend Framework Day 2011, 12 ноября, Киев
+    title: Печать страниц сайта под управлением symfony
     content_path1: |
-                    <p>Друзья, хочу сообщить Вам, что 12 ноября в Киеве состоится конференция Zend Framework Day. Детальную и актуальную информацию о событии можно получить здесь: http://frameworksdays.com/event/zend-framework-day-2011</p>
+                    <p>Наверняка кто-то из программистов недоумевает, что происходит с их сайтом при попытке печати под управлением symfony. Верстка разъезжается в разные стороны, а стили вроде бы подключены. В чем же дело? Я сам ломал голову пару часов до тех пор, пока не посмотрел сорс страницы и не увидел что symfony автоматически добавляет атрибут media.</p>
+                    <p>
+                    <div class="code">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;screen&quot; href=&quot;/css/main.css&quot; /&gt;</div>
+                    </p>
     content_path2: |
-                    <p>Zend Framework Day —&nbsp;первое событие проходящее в рамках Frameworks Days. Zend Framework Day посвящен популярному PHP фреймворку <span style="text-decoration: underline;">Zend Framework</span> и является наследником конференции <strong>ZFConf Ukraine</strong>, прошедшей в 2010 году и собравшей более чем 500 участников из Украины, России, Белоруссии, Литвы и других стран СНГ.<br><br>В рамках мероприятия, среди спикеров, выступят непосредственные участники проекта Zend Framework, а также другие профессиональные разработчики. Конференция рассчитана на широкий круг PHP и веб-разработчиков.</p><p><br>P.S. А вот на этом сайте&nbsp;<a href="http://www.m-house.com.ua/mshop/graphic_tablets.htm">www.m-house.com.ua/mshop/graphic_tablets.htm</a> Вы можете купить планшет по доступной цене. Всегда удобно иметь такой девайс под рукой :)</p>
-    rating: 10
-                    
+                    <p>Атрибут media указывает, для каких устройств должна использоваться указанная таблица стилей. Таким образом, во время печати стили не подхватываются, так как symfony по умолчанию ставит значение «screen» (использование для мониторов), что приводит к разъехавшейся верстке и абсолютно непредсказуемому результату на листе бумаги.</p>
+                    <p>Итак, вариантов решения данной проблемы несколько:</p>
+                    <p><b>Вариант первый</b></p>
+                    <p>Поменять настройки symfony для существующей таблицы стилей, а именно – установить значение злополучного атрибута в «all». Это также можно сделать несколькими путями:</p>
+                    <p>В настройках в /имя_Application'а/config/view.yml файле:</p>
+                    <div class="code">stylesheets: [main.css: { media: all }]</div>
+                    <p>либо непосредственно в представлении будь то шаблон, или лейаут:</p>
+                    <div class="code"><pre>use_stylesheet('main.css', '', array('media' => 'all'));</div>
+                    <p>либо в контроллере:</p>
+                    <div class="code">$this->getResponse()->addStylesheet('paper', '', array('media' => 'all'));</div>
+                    <p><b>Вариант второй</b></p>
+                    <p>Так как мы серьезные разработчики, нам мало просто использовать существующие стили, мы хотим чтобы наша распечатанная страница выглядела красиво. Ведь по умолчанию браузеры не печатают ни бекграундных картинок, ни бекграундных цветов, а имеющаяся верстка наверняка не предусматривает подобных вещей. Тогда к нам на помощь приходит верстальщик =) (хотя любой уважающий себя web-программист должен уметь сделать все необходимые действия сам) и, конечно же, вышеупомянутые настройки symfony. В задачи верстки входит лишь написание дополнительной таблицы css, которая будет скрывать ненужные элементы существующей верстки, а так же, при необходимости, вносить изменения в расстановку элементов на листе. Потом нам останется подключить эту новую таблицу, используя любые из перечисленных в первом варианте методов предоставляемых symfony, только установив атрибут media в значение «print». Например:</p>
+                    <div class="code">stylesheets: [main.css: { media: all }, print.css: { media: print }]</div>
+    rating: 5
+    
   p3:
-    title: Мастер-класс по Sphinx в Киеве!
-    content_path1: |
-                    <p>В Киеве 18 июня пройдет мастер-класс по Sphinx, который проведет сам автор поискового движка Андрей Аксенов! Ранее я уже писал об использовании Sphinx. Вообще, после того, как я с ним поработал более плотно, понял что он намного гибче в работе, да и применять можно не только для поиска. Пойду на мастер-класс разузнать все детальнее :) А вот и анонс мастер-класса для ознакомления…</p>
-    content_path2: |
-                    <p>В субботу, 18-го июня в Киеве пройдет мастер-класс создателя движка полнотекстового<br>поиска Sphinx <strong>Андрея Аксенова</strong> «Как готовить Sphinx».</p><p>Мастер-класс будет интересен <strong>разработчикам, руководителям и владельцам проектов</strong>, которые сталкиваются с проблемой поиска при высоких нагрузках.</p><p>Sphinx используют такие монстры, как <strong>CraigsList</strong>, <strong>DailyMotion</strong>, <strong>Meetup</strong>, <strong>HupPages</strong>,<br><strong>HabraHabr </strong>и еще десятки высоконагруженных сайтов. Андрей Аксенов выступал<br>на многочисленных конференциях в России: “DevPoint 1-2″, “РИТ”, “DevConf<br>2011″, “HighLoad ++”. Организатор конференции пользователей Sphinx в Москве. Автор<br>нашумевшего доклада “Как прекратить писать”.</p><p>Конференция платная. На всякий случай:&nbsp;<a href="http://www.bestchange.ru/perfectmoney-eur-to-perfectmoney-usd.html" target="_blank">лучшие курсы PerfectMoney на PerfectMoney</a>.<br><br>Дополнительная информация и подробный план мастер-класса можна посмотреть на сайте <a title="Мастер-класс по Sphinx в Киеве!" href="http://www.smartme.com.ua/sphinx-workshop/" target="_blank">http://www.smartme.com.ua/sphinx-workshop/</a></p>                    
-    rating: 3
-
-  p4:
     title: HTML 5 уже на пороге!
     content_path1: |
                     <p>HTML 5 уже на пороге! :) Много браузеров уже поддерживают ряд фич нового стандарта. Нашел в сети некоторые материалы, которые интересно посмотреть и почитать…</p>
     content_path2: |
-                    <p>В первую очередь, оценить новые возможности вам поможет книга <a title="Dive Into HTML 5" href="/goto/?url=http%3A%2F%2Fdiveintohtml5.org%2F" target="_blank">Dive Into HTML 5 от Mark Piligrim</a>. Здесь обзорные материалы, здесь же и примеры :) Автор описывает как определять возможности клиента, рисование, новые особенности структуры <span style="text-decoration: underline;">HTML 5</span> документа, видео, аудио, <strong>geolocation API</strong>, локальные хранилища данных на клиенте и много других интересных вещей. Самыми ценными моментами я посчитал наличие <strong>примеров</strong>, а также, то, что автор описывает какие браузеры и что поддерживают, показывает альтернативные пути решения поставленных задач. В общем, стоит посмотреть :)</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>Также наткнулся на <a title="Примеры HTML 5" href="/goto/?url=https%3A%2F%2Fdemos.mozilla.org%2Fru%2F" target="_blank">демку новых возможностей от Firefox</a>. Тоже занимательно. Особенно понравились возможности работы с анимациями и рисованием. Круто!</p><p>&nbsp;</p><p>&nbsp;</p><p>Надеюсь был полезен :) Жду ваших комментариев, а также интересных ссылок.</p>
+                    <p>В первую очередь, оценить новые возможности вам поможет книга <a title="Dive Into HTML 5" href="/goto/?url=http%3A%2F%2Fdiveintohtml5.org%2F" target="_blank">Dive Into HTML 5 от Mark Piligrim</a>. Здесь обзорные материалы, здесь же и примеры :) Автор описывает как определять возможности клиента, рисование, новые особенности структуры <span style="text-decoration: underline;">HTML 5</span> документа, видео, аудио, <strong>geolocation API</strong>, локальные хранилища данных на клиенте и много других интересных вещей. Самыми ценными моментами я посчитал наличие <strong>примеров</strong>, а также, то, что автор описывает какие браузеры и что поддерживают, показывает альтернативные пути решения поставленных задач. В общем, стоит посмотреть :)</p>
+                    <p>Также наткнулся на <a title="Примеры HTML 5" href="/goto/?url=https%3A%2F%2Fdemos.mozilla.org%2Fru%2F" target="_blank">демку новых возможностей от Firefox</a>. Тоже занимательно. Особенно понравились возможности работы с анимациями и рисованием. Круто!</p>
+                    <p>Надеюсь был полезен :) Жду ваших комментариев, а также интересных ссылок.</p>
     rating: 1
-
+    
+  p4:
+    title: Обозначение обязательных для заполнения полей
+    content_path1: |
+                    <p>Symfony разделяет презентацию формы и валидацию на два разных набора классов: виджеты и валидаторы. Чаще всего они живут счастливо не подозревая о существовании друг друга. Когда данные из валидаторов должны присутствовать в презентационном слое, например, для вывода сообщений об ошибках, в Symfony есть класс <b>sfFormField</b>.</p>
+                    <p>Зачастую необходимо показать пользователю какие поля в веб-форме являются обязательными для заполнения. Однако сделать это в Symfony не простоя задача из-за разделения между валидаторами и виджетами. Но это можно сделать и довольно просто. </p>
+    content_path2: |
+                    <p><b>Встреча валидаторов и виджетов</b></p>
+                    <p>На первом этапе необходимо проинформировать виджеты об обязательных для заполнения полях. Мы можем это сделать передавая массив с именами полей в схему виджетов после того, как форма будет полностью сконфигурирована:</p>
+                    <div class="code"><pre>
+                    class BaseFormDoctrine extends sfFormDoctrine
+                    {
+                      public function __construct($object = null, $options = array(), $CSRFSecret = null)
+                      {
+                        parent::__construct($object, $options, $CSRFSecret);
+                        
+                        // говорим схеме виждетов какие поля обязательные
+                        $this->widgetSchema->addOption(
+                          'required_fields',
+                          $this->getRequiredFields()
+                        );
+                      }
+                      
+                      // ...
+                    }
+                    </pre>
+                    </div>
+                    <p>Метод <b>getRequiredFields()</b> возвращает простой массив отформатированных имен полей, которые соответствуют тем валидаторам, которые помечены как обязательные. Для этого мы рекурсивно проходим через валидаторы формы: </p>
+                    <div class="code"><pre>
+                    class BaseFormDoctrine extends sfFormDoctrine
+                    {
+                      // ...
+                      
+                      protected function getRequiredFields(sfValidatorSchema $validatorSchema = null, $format = null)
+                      {
+                        if (is_null($validatorSchema))
+                        {
+                          $validatorSchema = $this->validatorSchema;
+                        }
+                        
+                        if (is_null($format))
+                        {
+                          $format = $this->widgetSchema->getNameFormat();
+                        }
+                        
+                        $fields = array();
+                        
+                        foreach ($validatorSchema->getFields() as $name => $validator)
+                        {
+                          $field = sprintf($format, $name);
+                          if ($validator instanceof sfValidatorSchema)
+                          {
+                            // рекурсия
+                            $fields = array_merge(
+                              $fields,
+                              $this->getRequiredFields($validator, $field.'[%s]')
+                            );
+                          }
+                          else if ($validator->getOption('required'))
+                          {
+                            // обязательное поле
+                            $fields[] = $field;
+                          }
+                        }
+                        
+                        return $fields;
+                      }
+                    }
+                    </pre>
+                    </div>
+                    <p><b>Форматирование тега label</b></p>
+                    <p>После того, как виджеты узнают какие поля обязательные, очередь переходит к декораторам формы для правильной разметки этих полей. Я сделал это немного изменив стандартный класс <b>sfWidgetFormSchemaFormatterTable</b>:</p>
+                    <div class="code"><pre>
+                    class RequiredLabelsFormatterTable extends sfWidgetFormSchemaFormatterTable
+                    {
+                      protected
+                        $requiredLabelClass = 'required';
+                      
+                      public function generateLabel($name, $attributes = array())
+                      {
+                        // ищем опцию "required_fields"
+                        $widget = $this->widgetSchema;
+                        do
+                        {
+                          $requiredFields = (array) $widget->getOption('required_fields');
+                        }
+                        while ($widget = $widget->getParent());
+                        
+                        // если поле обязательное, тогда добавляем класс
+                        if (in_array($this->widgetSchema->generateName($name), $requiredFields))
+                        {
+                          $attributes['class'] = isset($attributes['class']) ?
+                            $attributes['class'].' '.$this->requiredLabelClass :
+                            $this->requiredLabelClass;
+                        }
+                        
+                        return parent::generateLabel($name, $attributes);
+                      }
+                    }
+                    </pre>
+                    </div>
+                    <p>И наконец, необходимо добавить наш новый класс для презентации формы. Для этого необходимо переписать метод <b>__construct()</b>:</p>
+                    <div class="code"><pre>
+                    class BaseFormDoctrine extends sfFormDoctrine
+                    {
+                      public function __construct($object = null, $options = array(), $CSRFSecret = null)
+                      {
+                        // ...
+                        
+                        $this->widgetSchema->addFormFormatter('table',
+                          new RequiredLabelsFormatterTable($this->widgetSchema)
+                        );
+                      }
+                    }
+                    </pre>
+                    </div>
+                    <p>Теперь в теге <b>label</b> у полей обязательных для заполнения будет класс <b>required</b>. Конечно, вы можете сделать что-то другое, добавить знак * или добавить класс для всей строки таблицы, но реализация останется такой же. </p>
+    rating: 6
+    
   p5:
-    title: Solid-State Drives (SSD) - Будущее хранения информации
+    title: Doctrine. Установка кодировки и сравнения для базы данных
     content_path1: |
-                    <p>Недавно наткнулся на информацию о том, что уже давным давно в мире развиваются альтернативные нынешним винчестерам устройства <a title="Твердотельный накопитель" href="http://ru.wikipedia.org/wiki/%D0%A2%D0%B2%D0%B5%D1%80%D0%B4%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BD%D0%B0%D0%BA%D0%BE%D0%BF%D0%B8%D1%82%D0%B5%D0%BB%D1%8C" target="_blank">SSD винчестеры</a>!</p>
-                    <p>Их преимущества меня просто поразили и позволили мне порадоваться за будущие серверные решения, которые смогут поднять производительность веб-серверов в разы</p>
-    content_path2: |
-                    <p><strong>Преимущества по сравнению с жесткими дисками:</strong>
-                    </p><ul><li>меньше время загрузки системы, переход Power On - Ready 1 с;</li><li>отсутствие движущихся частей;</li><li>латентность в режиме чтения 85 мкс;</li><li>латентность в режиме записи 115 мкс;</li><li>производительность: чтение до 270 МБ/с, запись до 270 МБ/с;</li><li>низкая потребляемая мощность;</li><li>полное отсутствие шума от движущихся частей и охлаждающих вентиляторов;</li><li>высокая механическая стойкость;</li><li>широкий диапазон рабочих температур;</li><li>практически устойчивое время считывания файлов вне зависимости от их расположения или фрагментации;</li><li>малый размер и вес;</li></ul><p>
-                    <strong>Недостатки твердотельных накопителей:</strong>
-                    </p><ul><li>высокая цена за 1 ГБ (от 3 долларов за гигабайт);</li><li>более высокая чувствительность к некоторым эффектам, например, внезапной потере питания, магнитным и электрическим полям;</li><li>ограниченное количество циклов перезаписи: обычная флеш-память
-                    позволяет записывать данные до 100 тыс. раз, более дорогостоящие виды
-                    памяти&nbsp;&mdash; до 5&nbsp;млн. раз;</li></ul><p><strong>UPD</strong>: на сегодняшний день, SSD винчестеры уже довольно развиты и для домашнего использования они просто идеальны (для серверных систем еще дороговато, т.к. циклов перезаписи еще не так много). На этот же очень шустрый носитель вы можете накачать много своих любимых бесплатных фильмов, сериалов и других торрентов для этого рекомендую&nbsp;<a href="http://youtor.org/">торрент трекер без регистрации</a>&nbsp;- YouTor.</p>
-    rating: 11
-
+                    <p><b>/config/ProjectConfiguration.class.php</b></p>
+                    <p>
+                    <div class="code"><pre>
+                    public function configureDoctrine(Doctrine_Manager $manager)
+                    {
+                      $manager->setCollate('utf8_unicode_ci');
+                      $manager->setCharset('utf8');
+                    }
+                    </pre>
+                    </div>
+                    </p>
+    content_path2:
+    rating: 1
+    
   p6:
-    title: Модульное программирование в Zend Framework
+    title: Оптимизация работы с Doctrine с помощью специализированных запросов
     content_path1: |
-                    <p><b>Что такое модульное программирование</b></p>
-                    <p>Zend Framework, как и любой другой фреймворк, предоставляет возможности для модульного программирования. Модульное программирование — это такая техника программирования, когда разработка программы разбивается в несколько этапов, максимально независимых один от другого.</p>
+                    <p>В настоящий момент я работаю над большим проектом на Symfony, который содержит множество моделей и сложных запросов. Я нашел способ организовать их в объектно-ориентированный и понятный вид, вместо традиционного подхода с использованием <b>addNamedQuery()</b> и <b>createNamedQuery()</b> методов.</p>
+                    <p>Идея заключается в том, чтобы создать для данной модели специальный класс для запросов. В этом случае можно создать удобные методы для создания запросов.</p>
+                    <p>Теория сложна для понимания, давайте рассмотрим конкретный пример:</p>
+                    <p>ЗАМЕЧАНИЕ. В примере могут содержаться незначительные ошибки. </p>
+
     content_path2: |
-                    <p>Zend Framework, как и любой другой фреймворк, предоставляет возможности для модульного программирования. Модульное программирование — это такая техника программирования, когда разработка программы разбивается в несколько этапов, максимально независимых один от другого.</p>
-                    <p>Например, сначала проектируется ядро приложения и воплощается в програмном коде, при этом учитывая возможность подключения модулей. Потом пишутся необходимые модули (отдельные части приложения, которые независят от других частей, а только минимально от ядра). В модулях программист воплощает необходимый ему функционал, который легко подключить к приложению.</p>
-                    <p>Такая техника программирования позволяет программисту использовать уже готовые части приложения во многих проектах, экономя своё время и силы. Таким образом под каждого конкретного заказчика можно собрать специализированный пакет програмного кода, реализиющий весь нужный ему функционал.</p>
-                    <p>Такой подход очень удобен и в веб-программировании для реализации собственной системы управления контентом.</p>
-    rating: 2
+                    <div class="code"><pre>
+                    BlogAuthor:
+                      columns:
+                        id:
+                          type:             integer(4)
+                          primary:          true
+                          autoincrement:    true  
+                        name:
+                          type:             string(255)
+                      relations:
+                        Post:
+                          type:             one
+                          class:            BlogPost
+                          local:            id
+                          foreign:          author_id
+
+                    BlogPost:
+                      columns:
+                        id:
+                          type:             integer(4)
+                          primary:          true
+                          autoincrement:    true
+                        author_id:
+                          type:             integer(4)
+                          notnull:          true
+                        title:
+                          type:             string(255)
+                        content:
+                          type:             string(65535)
+                      relations:
+                        Author:
+                          type:             one
+                          class:            BlogAuthor
+                          local:            author_id
+                          foreign:          id
+                        Comments:
+                          type:             many
+                          class:            BlogComment
+                          local:            id
+                          foreign:          post_id
+
+                    BlogComment:
+                      columns:
+                        id:
+                          type:             integer(4)
+                          primary:          true
+                          autoincrement:    true
+                        post_id:
+                          type:             integer(4)
+                          notnull:          true
+                        author:
+                          type:             string(255)
+                        content:
+                          type:             string(5000)
+                      relations:
+                        Post:
+                          type:             one
+                          class:            BlogPost
+                          local:            post_id
+                          foreign:          id
+                    </pre>
+                    </div>
+                    <p>Давайте теперь представим как будет выглядеть Query класс для создания запросов для таблицы BlogPost:</p>
+                    <div class="code"><pre>
+                    class BlogPostQuery extends Doctrine_Query
+                    {
+                      static public function create($conn = null, $class = null)
+                      {
+                        return parent::create($conn, 'BlogPostQuery')
+                          ->from('BlogPost p');
+                      }
+
+                      public function addPosts($fields = 'p.*')
+                      {
+                        return $this->addSelect($fields);
+                      }
+
+                      public function addComments($fields = 'c.*')
+                      {
+                        return $this
+                          ->addSelect($fields)
+                          ->leftJoin('p.Comments c')
+                          ->addGroupBy('c.id');
+                      }
+
+                      public function addAuthors($fields = 'a.*')
+                      {
+                        return $this
+                          ->addSelect($fields)
+                          ->leftJoin('p.Author a')
+                          ->addGroupBy('a.id');
+                      }
+
+                      public function addCommentsCount($alias = 'nb_comments')
+                      {
+                        return $this
+                          ->addSelect(sprintf('COUNT(c.id) as %s', $alias))
+                          ->addGroupBy('c.id');
+                      }
+
+                      public function filterByAuthorName($authorName)
+                      {
+                        return $this
+                          ->andWhere('a.name = ?', $authorName);
+                      }
+                    }                    
+                    </pre>
+                    </div>
+                    <p>Вот несколько примеров использования:</p>
+                    <div class="code"><pre>
+                    // Выбрать все посты
+                    $posts = BlogPostQuery::create()
+                      ->addPosts()
+                      ->fetchArray();
+
+                    // Выбрать все посты с комментариями
+                    $posts = BlogPostQuery::create()
+                      ->addPosts()
+                      ->addComments()
+                      ->fetchArray();
+
+                    // Выбрать все посты с комментариями и посчитать их число для каждого поста
+                    $posts = BlogPostQuery::create()
+                      ->addPosts()
+                      ->addComments()
+                      ->addCommentsCount('yataa')
+                      ->fetchArray();
+
+                    // Выбрать все посты автора Chuck и комментарии
+                    $posts = BlogPostQuery::create()
+                      ->addAuthors()
+                      ->addPosts()
+                      ->addComments()
+                      ->filterByAuthorName('Сhuck')
+                      ->fetchArray();
+
+                    // и так далее
+                    </pre>
+                    </div>
+                    <p>В данном случае выигрыш не слишком большой, из-за того, что модель слишком проста, но когда у вас дюжина объектов, такой подход позволяет сделать код в модели более понятным.</p>
+                    <p>Пример класса <b>BlogPostTable</b>:</p>
+                    <div class="code"><pre>
+                    class BlogPostTable extends Doctrine_Table
+                    {
+                      static public function getPostsWithCommentsByAuthor($authorName)
+                      {
+                        return BlogPostQuery::create()
+                          ->addPosts()
+                          ->addComments()
+                          ->filterByAuthorName($authorName)
+                          ->fetchArray()
+                        ;
+                      }
+                    }
+                    </pre>
+                    </div>
+                    <p>Контроллер: </p>
+                    <div class="code"><pre>
+                    class blogActions extends sfActions
+                    {
+                      public function executeListByAuthor(sfWebRequest $request)
+                      {
+                        $this->posts = BlogPostTable::getPostsWithCommentsByAuthor($request->getParameter('author'));
+                      }
+                    }
+                    </pre>
+                    </div>
+                    
+    rating: 4

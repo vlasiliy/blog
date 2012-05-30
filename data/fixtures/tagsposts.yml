@@ -8,41 +8,49 @@ TagPost:
     tag_id: 2
     
   tp3:
-    post_id: 1
+    post_id: 2
     tag_id: 3
-    
+  
   tp4:
     post_id: 2
-    tag_id: 1
+    tag_id: 4
     
   tp5:
     post_id: 2
-    tag_id: 2
+    tag_id: 5
     
   tp6:
-    post_id: 2
-    tag_id: 3
+    post_id: 3
+    tag_id: 6
     
   tp7:
-    post_id: 3
-    tag_id: 4
+    post_id: 4
+    tag_id: 7
     
   tp8:
-    post_id: 3
-    tag_id: 5
+    post_id: 4
+    tag_id: 8
     
   tp9:
     post_id: 4
-    tag_id: 6
-  
+    tag_id: 9
+    
   tp10:
-    post_id: 5
-    tag_id: 7
+    post_id: 4
+    tag_id: 4
     
   tp11:
-    post_id: 6
-    tag_id: 1
+    post_id: 5
+    tag_id: 10
     
   tp12:
+    post_id: 5
+    tag_id: 11
+    
+  tp13:
     post_id: 6
-    tag_id: 2
+    tag_id: 10
+    
+  tp14:
+    post_id: 6
+    tag_id: 12

@@ -13,9 +13,9 @@ sfGuardUser:
     last_name:      Пупкин
     email_address:  vasa@gmail.com
     username:       vasa
-    password:       admin
-    is_super_admin: true
-    Groups:         [Group_admin]
+    password:       vasa
+    is_super_admin: false
+    Groups:         [Group_user]
 
 sfGuardGroup:
   Group_admin:
