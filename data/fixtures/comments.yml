@@ -7,4 +7,9 @@ Comment:
   c2:
     post_id: 1
     sf_guard_user_id: 2
-    text: <p>А єто второй... :)</p>
+    text: <p>А Это второй... :)</p>
+    
+  c3:
+    post_id: 2
+    sf_guard_user_id: 1
+    text: <p>Вот оно где собака то порылась... <img alt="wink" src="http://blog/js/ckeditor/plugins/smiley/images/wink_smile.gif" title="wink" height="20" width="20"></p>

@@ -29,14 +29,17 @@ class sfGuardRegisterForm extends BasesfGuardRegisterForm
     ));
 
     $this->setValidators(array(
-      'first_name'       => new sfValidatorString(array('max_length' => 255, 'min_length' => 4, 'required' => true)),
-      'last_name'        => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+      'first_name'       => new sfValidatorString(array('max_length' => 255, 'min_length' => 4, 'required' => true, 'trim' => false)),
+      'last_name'        => new sfValidatorString(array('max_length' => 255, 'required' => false, 'trim' => false)),
       'email_address'    => new sfValidatorEmailUnique(array('is_unique' => true), array('invalid' => 'Ошибка')),
-      'username'         => new sfValidatorString(array('max_length' => 255, 'min_length' => 4, 'required' => true)),
-      'password'         => new sfValidatorString(array('max_length' => 20, 'min_length' => 6, 'required' => true)),
-      'password_again'   => new sfValidatorString(array('max_length' => 20, 'min_length' => 6, 'required' => true))
+      'password'         => new sfValidatorString(array('max_length' => 20, 'min_length' => 6, 'required' => true, 'trim' => false)),
+      'password_again'   => new sfValidatorString(array('max_length' => 20, 'min_length' => 6, 'required' => true, 'trim' => false))
     ));
     
-      
+   $this->setValidator('username', new sfValidatorAnd(array(
+       new sfValidatorString(array('max_length' => 255, 'min_length' => 4, 'required' => true, 'trim' => false)),
+       new sfValidatorRegex(array('pattern' =>  '/[[:alnum:]]/', 'required' => false), array('invalid' => 'Используйте латиницу, цифры и знак подчеркивания'))
+   ))); 
+    
   }
 }

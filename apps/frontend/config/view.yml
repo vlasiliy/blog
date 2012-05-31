@@ -14,8 +14,8 @@ default:
 
   stylesheets:    [main.css]
 
-  javascripts:    [jquery-1.7.2.min.js, jquery.form.js, radius.js]
-  #javascripts:    [cufon-yui.js, arial.js, cuf_run.js, jquery-1.7.2.min.js, jquery.form.js, radius.js]
+  #javascripts:    [jquery-1.7.2.min.js, jquery.form.js, radius.js, inp-focus.js]
+  javascripts:    [cufon-yui.js, arial.js, cuf_run.js, jquery-1.7.2.min.js, jquery.form.js, radius.js, inp-focus.js]
 
   has_layout:     true
   layout:         layout

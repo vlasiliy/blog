@@ -19,6 +19,8 @@ class PostTable extends Doctrine_Table
     
     public function getPostSearch($text)
     {
+        
+        $text = str_replace('\'', '', $text);
         $arrtext = explode(" ",preg_replace("/(\s){2,}/", " ", trim($text)));
         if($arrtext[0] == '')
             {return $this->getRecordInstance();}

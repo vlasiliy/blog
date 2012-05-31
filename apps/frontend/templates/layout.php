@@ -7,23 +7,6 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
-    <script>
-        function OnFocusInput(id, message)
-        {
-            if(document.getElementById(id).value == message)
-                {
-                    document.getElementById(id).value = '';
-                }
-        }
-        
-        function OutFocusInput(id, message)
-        {
-            if(document.getElementById(id).value == '')
-                {
-                    document.getElementById(id).value = message;
-                }
-        }
-    </script>
   </head>
   <body>
         <!-- START PAGE SOURCE -->
@@ -33,8 +16,9 @@
             <div class="menu_nav">
                 <ul>
                     <li><a href="<?php echo url_for('@homepage') ?>">Блог</a></li>
-                    <li><a href="<?php echo url_for('@homepage') ?>about">О себе</a></li>
-                    <li><a href="<?php echo url_for('@homepage') ?>contact">Контакты</a></li>
+                    <?php foreach (Page::getListPage() as $page): ?>
+                    <li><a href="<?php echo url_for('@homepage').$page['name'] ?>"><?php echo $page['title'] ?></a></li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <div class="logo">
@@ -81,7 +65,7 @@
         </div>
         <div class="footer">
             <div class="footer_resize">
-            <p class="lf">Copyright &copy; 2010 <a href="#">SiteName</a> - All Rights Reserved</p>
+            <p class="lf">Copyright &copy; 2011 - <?php echo date('Y') ?> <a href="<?php echo url_for('@homepage') ?>">Коотко о Symfony</a> - All Rights Reserved</p>
             <p class="rf"><a href="http://www.free-css.com/">Free CSS Templates</a> by <a href="http://www.coolwebtemplates.net/">Cool Website Templates</a></p>
             <div class="clr"></div>
             </div>

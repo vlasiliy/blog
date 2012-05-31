@@ -11,8 +11,6 @@ class postActions extends sfActions
   {
       $this->route = "@homepage";
      
-      //$this->getUser()->setCulture('ru');
-      
       $this->posts = new sfDoctrinePager('Post', sfConfig::get('app_max_post_on_page'));
       $this->posts->setQuery(Doctrine_Core::getTable('Post')->createQuery('a')->orderBy('created_at desc'));
       $this->posts->setPage($request->getParameter('page', 1));

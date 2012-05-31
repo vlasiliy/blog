@@ -25,4 +25,5 @@ generator:
       form:    ~
       edit:  
         title: Редактировать страницу "%%name%%"
-      new:     ~
+      new:
+        title: Создать страницу

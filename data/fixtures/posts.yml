@@ -83,7 +83,8 @@ Post:
                     {
                       // ...
                       
-                      protected function getRequiredFields(sfValidatorSchema $validatorSchema = null, $format = null)
+                      protected function getRequiredFields(sfValidatorSchema $validatorSchema = null,
+                                                           $format = null)
                       {
                         if (is_null($validatorSchema))
                         {

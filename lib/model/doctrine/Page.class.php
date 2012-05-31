@@ -12,4 +12,10 @@
  */
 class Page extends BasePage
 {
+    public static function getListPage()
+    {
+        $q = Doctrine_Query::create()->from('Page p');
+        
+        return $q->execute();
+    }
 }
